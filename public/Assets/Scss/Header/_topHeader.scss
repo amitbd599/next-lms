@@ -1,0 +1,20 @@
+// Top Header Section Css
+
+.top__header {
+  button {
+    span,
+    svg {
+      transition: all 0.2s linear;
+    }
+    &:hover {
+      span {
+        color: #ffb606;
+        transition: all 0.2s linear;
+      }
+      svg {
+        color: #ffb606;
+        transition: all 0.2s linear;
+      }
+    }
+  }
+}
