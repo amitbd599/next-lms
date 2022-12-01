@@ -1,11 +1,18 @@
 import React from "react";
-import Menu from "../Common/Header/Menu";
-import TopHeader from "../Common/Header/TopHeader";
+import FeatureCourses from "../ChildComponents/FeatureCourses";
+import HeroSection from "../ChildComponents/HeroSection";
+import Map from "../ChildComponents/Map";
+import TrendingCategories from "../ChildComponents/TrendingCategories";
+import Header from "../Common/Header/Header";
 
 const HomeComponent = () => {
   return (
     <section>
-      <Menu />
+      <Header />
+      <HeroSection />
+      <FeatureCourses />
+      <TrendingCategories />
+      <Map />
     </section>
   );
 };

@@ -71,8 +71,17 @@
 @import "Common/variable";
 @import "Common/reset";
 @import "Common/button";
+
 /**************************************
     Header Styles
 ***************************************/
 @import "Header/topHeader";
 @import "Header/navbar";
+
+/**************************************
+    ChildComponents Styles
+***************************************/
+@import "ChildComponents/heroSection";
+@import "ChildComponents/featureCourses";
+@import "ChildComponents/trendingCategories";
+@import "ChildComponents/map";

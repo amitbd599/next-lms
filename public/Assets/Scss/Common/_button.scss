@@ -1,51 +1,164 @@
 .my__btn {
-  --color: #ffb606;
-  font-family: inherit;
-  display: inline-block;
-  width: 8em;
-  height: 2.6em;
-  line-height: 2.5em;
-  margin: 20px;
-  position: relative;
-  overflow: hidden;
-  border: 2px solid var(--color);
-  -webkit-transition: color 0.5s;
-  transition: color 0.5s;
-  z-index: 1;
-  font-size: 17px;
-  border-radius: 6px;
-  font-weight: 500;
+  background-color: transparent;
+  border: 2px solid #f16126;
+  border-radius: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 1.25em 2em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 13px;
+  &::before {
+    content: " ";
+    width: 1.5625rem;
+    height: 2px;
+    background: #f16126;
+    top: 50%;
+    left: 1.5em;
+    position: absolute;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-transform-origin: center;
+    -ms-transform-origin: center;
+    transform-origin: center;
+    -webkit-transition: background 0.3s linear, width 0.3s linear;
+    transition: background 0.3s linear, width 0.3s linear;
+  }
+  .text {
+    font-size: 1.125em;
+    line-height: 1.33333em;
+    padding-left: 2em;
+    display: block;
+    text-align: left;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #f16126;
+  }
+  .top-key {
+    height: 2px;
+    width: 1.5625rem;
+    top: -2px;
+    left: 0.625rem;
+    position: absolute;
+    background: #e8e8e8;
+    -webkit-transition: width 0.5s ease-out, left 0.3s ease-out;
+    transition: width 0.5s ease-out, left 0.3s ease-out;
+  }
+  .bottom-key-1 {
+    height: 2px;
+    width: 1.5625rem;
+    right: 1.875rem;
+    bottom: -2px;
+    position: absolute;
+    background: #e8e8e8;
+    -webkit-transition: width 0.5s ease-out, right 0.3s ease-out;
+    transition: width 0.5s ease-out, right 0.3s ease-out;
+  }
+  .bottom-key-2 {
+    height: 2px;
+    width: 0.625rem;
+    right: 0.625rem;
+    bottom: -2px;
+    position: absolute;
+    background: #e8e8e8;
+    -webkit-transition: width 0.5s ease-out, right 0.3s ease-out;
+    transition: width 0.5s ease-out, right 0.3s ease-out;
+  }
+  &:hover {
+    color: white;
+    background: #f16126;
+    &::before {
+      width: 0.9375rem;
+      background: white;
+    }
+    .text {
+      color: white;
+      padding-left: 1.5em;
+    }
+    .top-key {
+      left: -2px;
+      width: 0px;
+    }
+    .bottom-key-1,
+    .bottom-key-2 {
+      right: 0;
+      width: 0;
+    }
+  }
 }
 
-.my__btn:before {
+.main_div {
+  --color: #002147;
+  position: relative;
+  z-index: 1;
+}
+
+.main_div::before {
   content: "";
   position: absolute;
-  z-index: -1;
-  background: var(--color);
-  height: 150px;
-  width: 200px;
-  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  top: -7px;
+  left: -7px;
+  z-index: -5;
+  border-top: 3px solid var(--color);
+  border-left: 3px solid var(--color);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
-.my__btn:hover {
+.main_div::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  bottom: -7px;
+  right: -7px;
+  z-index: -5;
+  border-right: 3px solid var(--color);
+  border-bottom: 3px solid var(--color);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.main_div:hover::before {
+  width: 100%;
+  height: 100%;
+}
+
+.main_div:hover::after {
+  width: 100%;
+  height: 100%;
+}
+
+.main_div button {
+  padding: 0.7em 2em;
+  font-size: 16px;
+  background: #feb506;
   color: #fff;
-}
-
-.my__btn:before {
-  top: 100%;
-  left: 100%;
-  -webkit-transition: all 0.7s;
-  transition: all 0.7s;
-}
-
-.my__btn:hover:before {
-  top: -30px;
-  left: -30px;
-}
-
-.my__btn:active:before {
-  background: #3a0ca3;
-  -webkit-transition: background 0s;
-  transition: background 0s;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
 }

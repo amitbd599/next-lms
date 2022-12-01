@@ -1,0 +1,20 @@
+.map {
+  background: url("~/public/Assets/Images/bg_img/map.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  //   background-attachment: fixed !important;
+  padding: 120px 0;
+  &::before {
+    background-color: #002147;
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 0;
+    opacity: 0.5;
+  }
+}

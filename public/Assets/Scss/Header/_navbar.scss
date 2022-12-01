@@ -2,6 +2,35 @@
 menu Area
 =====================*/
 
+// For Sticky Navigation
+.my__sticky__nav {
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  top: -100px;
+  -webkit-animation: example 0.6s linear 0.2s forwards;
+  animation: example 0.6s linear 0.2s forwards;
+}
+
+@-webkit-keyframes example {
+  0% {
+    top: -100px;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+@keyframes example {
+  0% {
+    top: -100px;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+// Nav Section
 nav {
   ul {
     &.menu {
@@ -19,14 +48,14 @@ nav {
         > a {
           transition: all 0.2s linear;
 
-          color: var(--color-white);
+          color: #333;
           font-size: 16px;
           font-weight: 500;
           padding: 20px 0;
           display: inline-block;
         }
         > ul {
-          &.submenu {
+          &.subMenu {
             list-style: none;
             min-width: 240px;
             height: auto;
@@ -44,12 +73,11 @@ nav {
             border-radius: 4px;
             li {
               a {
-                font-size: 16px;
                 font-weight: 500;
-                padding: 5px 20px;
+                padding: 10px 20px;
                 font-size: 14px;
                 display: block;
-                //   color: $heading-color;
+                color: #333;
                 margin: 0 10px;
                 border-radius: 3px;
                 transition: all 0.2s linear;
@@ -64,10 +92,12 @@ nav {
           }
         }
         &:hover {
-          > ul {
-            &.submenu {
-              opacity: 1;
-              visibility: visible;
+          @media #{$lg-device} {
+            > ul {
+              &.subMenu {
+                opacity: 1;
+                visibility: visible;
+              }
             }
           }
         }
@@ -88,61 +118,13 @@ nav {
   }
 }
 
-.humberger-menu {
+.HumbuggerMenu {
   span {
     &.text-white {
       color: #c6c9d8 !important;
     }
   }
 }
-
-.color-white {
-  nav {
-    ul {
-      &.menu {
-        list-style: none;
-        > li {
-          > a {
-            color: #ffffff;
-          }
-          &:hover {
-            > a {
-              color: rgba(255, 255, 255, 0.6);
-              @media #{$md-device} {
-                color: var(--color-primary);
-              }
-              @media #{$sm-device} {
-                color: var(--color-primary);
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-.color-black {
-  nav {
-    ul {
-      &.menu {
-        list-style: none;
-        > li {
-          > a {
-            color: rgba(29, 29, 36, 1);
-          }
-          &:hover {
-            > a {
-              color: var(--color-primary);
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-
 
 /*-----------------------------
       MObile Menu Style Css
@@ -164,7 +146,8 @@ nav {
         top: 0;
         right: -71vw;
         z-index: 99;
-        padding: 55px;
+        // padding: 55px;
+        padding: 80px 30px;
         background: #ffffff;
         -webkit-transition: all 0.8s cubic-bezier(0.77, 0.2, 0.05, 1);
         -o-transition: all 0.8s cubic-bezier(0.77, 0.2, 0.05, 1);
@@ -179,7 +162,8 @@ nav {
         top: 0;
         right: -100vw;
         z-index: 99;
-        padding: 55px;
+        // padding: 55px;
+        padding: 80px 30px;
         background: #ffffff;
         -webkit-transition: all 0.8s cubic-bezier(0.77, 0.2, 0.05, 1);
         -o-transition: all 0.8s cubic-bezier(0.77, 0.2, 0.05, 1);
@@ -198,7 +182,7 @@ nav {
           margin: 0;
           padding: 10px 0;
         }
-        &.has-droupdown {
+        &.root__dropdown {
           @media #{$md-device} {
             position: relative;
           }
@@ -271,14 +255,16 @@ nav {
           @media #{$md-device} {
             padding: 0;
             display: block;
+            font-size: 20px;
           }
           @media #{$sm-device} {
             padding: 0;
             display: block;
+            font-size: 20px;
           }
         }
         ul {
-          &.submenu {
+          &.subMenu {
             @media #{$md-device} {
               position: relative;
               height: 0;
@@ -308,10 +294,12 @@ nav {
               }
               a {
                 @media #{$md-device} {
-                  padding: 2px 10px;
+                  font-size: 20px;
+                  padding: 6px 10px;
                 }
                 @media #{$sm-device} {
-                  padding: 2px 10px;
+                  font-size: 20px;
+                  padding: 6px 10px;
                 }
               }
             }
@@ -345,10 +333,10 @@ nav {
 }
 .close-menu {
   position: fixed;
-  top: 12px;
+  top: 25px;
   opacity: 0;
   visibility: hidden;
-  right: 29px;
+  right: 15px;
   z-index: -10;
 }
 .menu-open {
@@ -357,10 +345,13 @@ nav {
     visibility: visible;
     z-index: 9999;
     span {
-      // color: $black-color;
-      font-size: 30px;
+      font-size: 40px;
       cursor: pointer;
     }
+  }
+  .HumbuggerMenu {
+    visibility: hidden;
+    opacity: 0;
   }
   nav {
     ul {
@@ -381,19 +372,19 @@ nav {
 }
 
 /*------------------------
-      Hamberger Menu
+      Hamburger Menu
   ---------------------------*/
-.humberger-menu {
+.HumbuggerMenu {
   span {
     cursor: pointer;
     @media #{$sm-device} {
-      font-size: 28px;
+      font-size: 40px;
     }
     @media #{$md-device} {
       font-size: 28px;
     }
   }
 }
-navbar.menu-open .humberger-menu span {
+navbar.menu-open .HumbuggerMenu span {
   opacity: 0;
 }
