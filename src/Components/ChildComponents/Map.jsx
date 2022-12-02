@@ -21,14 +21,14 @@ const Map = () => {
     },
   ];
   return (
-    <div className='map pt-[100px]'>
+    <div className='map mt-[100px]'>
       <div className='container mx-auto relative'>
         <div className='grid grid-cols-12 gap-5'>
           {countData.map((item, index) => (
             <div key={index} className='col-span-3'>
               <div className='flex justify-center items-center'>
                 <div className='text-center'>
-                  <TrackVisibility>
+                  <TrackVisibility once>
                     {({ isVisible }) =>
                       isVisible && (
                         <h2 className='text-[60px] text-white font-semibold'>

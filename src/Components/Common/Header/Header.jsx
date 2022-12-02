@@ -14,7 +14,11 @@ const Header = () => {
 
   useEffect(() => {
     window.onscroll = () => {
-      setStickyNav(window.pageYOffset === 0 ? false : true);
+      if (window.pageYOffset < 300) {
+        setStickyNav(false);
+      } else if (window.pageYOffset > 300) {
+        setStickyNav(true);
+      }
       return () => (window.onscroll = null);
     };
   }, []);
@@ -92,6 +96,7 @@ const Header = () => {
       </div>
 
       {/* Menu Section */}
+      <div className={stickyNav ? "h-[80px] " : null}></div>
       <div className={stickyNav ? "my__sticky__nav shadow-lg " : null}>
         <div className={show ? " menu-open " : null}>
           <div className='navbar h-[80px] w-full bg-white sticky top-0 z-[9999]'>

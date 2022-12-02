@@ -36,7 +36,7 @@ const coursesData = [
     lessons: "74",
   },
   {
-    title: "Core Software Development",
+    title: "Core Software",
     thumbnail: "/Assets/Images/courses/courses_4.png",
     authorImg: "Assets/Images/profile/profile_4.png",
     totalRate: "520",
@@ -48,7 +48,7 @@ const coursesData = [
     lessons: "20",
   },
   {
-    title: "Learn About Science And Arts",
+    title: "Science And Arts",
     thumbnail: "/Assets/Images/courses/courses_5.png",
     authorImg: "Assets/Images/profile/profile_5.png",
     totalRate: "3621",
