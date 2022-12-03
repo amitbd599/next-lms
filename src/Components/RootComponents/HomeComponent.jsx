@@ -9,7 +9,6 @@ import {
 import CountUp from "react-countup";
 import TrackVisibility from "react-on-screen";
 import { Fade } from "react-reveal";
-import Header from "../Common/Header/Header";
 import Slider from "react-slick";
 import coursesData from "../../Database/coursesData";
 import FeatureCourse from "../ChildComponents/Elements/FeatureCourse";
@@ -20,6 +19,13 @@ import eventData from "../../Database/eventData";
 import CourseAdvisor from "../ChildComponents/Elements/CourseAdvisor";
 import courseAdvisorData from "../../Database/courseAdvisorData";
 import { Link } from "react-router-dom";
+import Blog from "../ChildComponents/Elements/Blog";
+import blogData from "../../Database/blogData";
+import studentsSaysData from "../../Database/studentsSaysData";
+import StudentsSays from "../ChildComponents/Elements/StudentsSays";
+import NewsLetter from "../Common/NewsLetter";
+import Header from "../Common/Header";
+import Footer from "../Common/Footer";
 
 const HomeComponent = () => {
   const countData = [
@@ -40,6 +46,41 @@ const HomeComponent = () => {
       tag: "Total Awarded",
     },
   ];
+  var settings = {
+    dots: true,
+    infinite: false,
+    arrows: false,
+    speed: 1000,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
   return (
     <section>
       {/* ============ Header Section ============*/}
@@ -281,7 +322,7 @@ const HomeComponent = () => {
         </div>
       </div>
       {/* ============ Trending Categories ============ */}
-      <div className='trendingCategories bg-[#F7F9FB] py-[80px]'>
+      <div className='trendingCategories bg-[#F1F1F1] py-[80px]'>
         {/* Heading Text */}
         <div className='container mx-auto'>
           <div className='grid grid-cols-12 gap-5'>
@@ -406,7 +447,7 @@ const HomeComponent = () => {
         </div>
       </div>
       {/* ============ Course Advisor ============ */}
-      <div className='courseAdvisor bg-[#F7F9FB] py-[80px]'>
+      <div className='courseAdvisor bg-[#F1F1F1] py-[80px]'>
         {/* Heading Text */}
         <div className='container mx-auto'>
           <div className='grid grid-cols-12 gap-5'>
@@ -605,7 +646,7 @@ const HomeComponent = () => {
         </div>
       </div>
       {/* ============ Blog Posts ============ */}
-      <div className='courseAdvisor bg-[#F7F9FB] py-[80px]'>
+      <div className='blogSection bg-[#F1F1F1] py-[80px]'>
         {/* Heading Text */}
         <div className='container mx-auto'>
           <div className='grid grid-cols-12 gap-5'>
@@ -646,14 +687,63 @@ const HomeComponent = () => {
         {/* Blog Data */}
         <div className='container mx-auto mt-14'>
           <div className='grid grid-cols-12 gap-5'>
-            {courseAdvisorData.slice(0, 4).map((item, index) => (
-              <div key={index} className='col-span-3'>
-                <CourseAdvisor item={item} />
+            {blogData.slice(0, 3).map((item, index) => (
+              <div key={index} className='col-span-4 mb-20'>
+                <Blog item={item} />
               </div>
             ))}
           </div>
         </div>
       </div>
+      {/* ============ Students Says ============ */}
+      <div className='studentsSays  py-[80px]'>
+        {/* Heading Text */}
+        <div className='container mx-auto'>
+          <div className='grid grid-cols-12 gap-5'>
+            <div className='col-span-6'>
+              <div>
+                <div>
+                  <h2 className='text-[40px] relative font-semibold text-[#333] inline z-10'>
+                    Students Says
+                    <span>
+                      <img
+                        className='w-[140px]  absolute top-[4px] right-0 z-[-10]'
+                        src='/Assets/Images/shape/shape_6.png'
+                        alt=''
+                      />
+                    </span>
+                  </h2>
+                  <p className='text-[#77838F] mt-1'>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className='col-span-6'></div>
+          </div>
+        </div>
+
+        {/* Students Data */}
+        <div className='container mx-auto mt-10'>
+          <div className='gap-5'>
+            <Slider {...settings}>
+              {studentsSaysData.map((item, index) => (
+                <div key={index}>
+                  <StudentsSays item={item} />
+                </div>
+              ))}
+            </Slider>
+          </div>
+        </div>
+      </div>
+      {/* ============ NewsLetter ============ */}
+      <div className='mt-[40px]'>
+        <NewsLetter />
+      </div>
+      {/* ============ Footer Section ============ */}
+      <Footer />
     </section>
   );
 };

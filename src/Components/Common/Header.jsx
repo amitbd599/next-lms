@@ -116,13 +116,16 @@ const Header = () => {
                   <nav className='lg:block'>
                     <ul className='menu'>
                       <li className='root__dropdown'>
-                        <Link to='#'>Home</Link>
+                        <Link to='/'>Home</Link>
                       </li>
                       <li className='root__dropdown'>
                         <Link to='/course'>Course</Link>
                         <ul className='subMenu'>
                           <li>
-                            <Link to='/course'>Course</Link>
+                            <Link to='/course-grid-page'>Course Grid</Link>
+                          </li>
+                          <li>
+                            <Link to='/course-list-page'>Course List</Link>
                           </li>
                           <li>
                             <Link to='/course-details'>Course Details</Link>

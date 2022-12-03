@@ -1,0 +1,23 @@
+.aboutDetails {
+  .img__section {
+    .shape_1 {
+      position: absolute;
+      top: -47px;
+      left: -44px;
+      z-index: -1;
+    }
+    .shape_2 {
+      position: absolute;
+      top: -48px;
+      right: 40px;
+      z-index: 10;
+    }
+    .text_shape {
+      position: absolute;
+      top: -38px;
+      right: 100px;
+      z-index: 10;
+      transform: rotate(-5deg);
+    }
+  }
+}
