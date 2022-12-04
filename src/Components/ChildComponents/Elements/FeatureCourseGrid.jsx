@@ -2,7 +2,7 @@ import React from "react";
 import { FaBook, FaGlobeAmericas, FaStar } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-const FeatureCourse = ({ item }) => {
+const FeatureCourseGrid = ({ item }) => {
   return (
     <div className='itemContainer relative flex justify-center'>
       <div className=' px-4 py-4 shadow-lg hover:shadow-xl rounded-lg ease-in-out duration-300 w-full'>
@@ -92,4 +92,4 @@ const FeatureCourse = ({ item }) => {
   );
 };
 
-export default FeatureCourse;
+export default FeatureCourseGrid;

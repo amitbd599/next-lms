@@ -1,22 +1,24 @@
+import { Option, Select } from "@material-tailwind/react";
 import React from "react";
-import { Link } from "react-router-dom";
-import { Select, Option } from "@material-tailwind/react";
 import { BsListTask, BsUiChecksGrid } from "react-icons/bs";
-import NewsLetter from "../Common/NewsLetter";
+import { Link } from "react-router-dom";
 import coursesData from "../../Database/coursesData";
-import FeatureCourse from "../ChildComponents/Elements/FeatureCourseGrid";
-import Header from "../Common/Header";
+import FeatureCourseList from "../ChildComponents/Elements/FeatureCourseList";
 import Footer from "../Common/Footer";
+import Header from "../Common/Header";
 import IntroSection from "../Common/IntroSection";
-const CourseGirdComponent = () => {
+import NewsLetter from "../Common/NewsLetter";
+import Sidebar from "../Common/Sidebar";
+
+const CourseListComponent = () => {
   return (
     <section>
       {/* ============ Header Section ============*/}
       <Header />
       {/* ============ Intro Section ============*/}
-      <IntroSection title={"Courses Grid"} />
-      {/* ============ Grid Courses Section ============ */}
-      <div className='featureCourses gridCourses py-[80px]'>
+      <IntroSection title={"Courses List"} />
+      {/* ============ List Courses Section ============ */}
+      <div className='featureCourses listCourses py-[80px]'>
         <div className='container mx-auto'>
           <div className='grid grid-cols-12 gap-5'>
             <div className='col-span-5'>
@@ -24,15 +26,15 @@ const CourseGirdComponent = () => {
                 <div className='flex gap-3'>
                   <Link
                     to={"/course-grid-page"}
-                    className='bg-[#F16126] px-2 py-1.5 rounded-md'
+                    className=' bg-[#fff] border border-[#E9ECEF] px-2 py-1.5 rounded-md'
                   >
-                    <BsUiChecksGrid className='text-[25px] text-white' />
+                    <BsUiChecksGrid className='text-[25px] ' />
                   </Link>
                   <Link
                     to={"/course-list-page"}
-                    className='bg-[#fff] border border-[#E9ECEF] px-2 py-1.5 rounded-md'
+                    className='bg-[#F16126]  px-2 py-1.5 rounded-md'
                   >
-                    <BsListTask className='text-[25px] ' />
+                    <BsListTask className='text-[25px] text-white' />
                   </Link>
                 </div>
               </div>
@@ -43,7 +45,7 @@ const CourseGirdComponent = () => {
                   <Select
                     size='lg'
                     variant='outlined'
-                    label='All Courses '
+                    label='All Courses'
                     color='orange'
                   >
                     <Option>Python</Option>
@@ -61,7 +63,7 @@ const CourseGirdComponent = () => {
                   <Select
                     size='lg'
                     variant='outlined'
-                    label='All Category '
+                    label='All Category'
                     color='orange'
                   >
                     <Option>Data Structure & Algorithm</Option>
@@ -78,7 +80,7 @@ const CourseGirdComponent = () => {
                   <Select
                     size='lg'
                     variant='outlined'
-                    label='Select Sort '
+                    label='Select Sort'
                     color='orange'
                   >
                     <Option>High To Low</Option>
@@ -93,12 +95,17 @@ const CourseGirdComponent = () => {
         </div>
         {/* Courses Info */}
         <div className='container mx-auto mt-14'>
-          <div className='grid grid-cols-12 gap-5'>
-            {coursesData.map((item, index) => (
-              <div key={index} className='col-span-4 mb-4'>
-                <FeatureCourse item={item} />
-              </div>
-            ))}
+          <div className='grid grid-cols-12 gap-8'>
+            <div className='col-span-8 mb-4'>
+              {coursesData.map((item, index) => (
+                <div key={index} className='mb-6'>
+                  <FeatureCourseList item={item} />
+                </div>
+              ))}
+            </div>
+            <div className='col-span-4 mb-4 pl-5'>
+              <Sidebar />
+            </div>
           </div>
         </div>
         {/* Pagination Section */}
@@ -156,4 +163,4 @@ const CourseGirdComponent = () => {
   );
 };
 
-export default CourseGirdComponent;
+export default CourseListComponent;

@@ -11,7 +11,7 @@ import TrackVisibility from "react-on-screen";
 import { Fade } from "react-reveal";
 import Slider from "react-slick";
 import coursesData from "../../Database/coursesData";
-import FeatureCourse from "../ChildComponents/Elements/FeatureCourse";
+import FeatureCourse from "../ChildComponents/Elements/FeatureCourseGrid";
 import categoriesData from "../../Database/categoriesData";
 import Categories from "../ChildComponents/Elements/Categories";
 import Event from "../ChildComponents/Elements/Event";
