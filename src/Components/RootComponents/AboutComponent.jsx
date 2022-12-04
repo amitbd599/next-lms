@@ -389,7 +389,7 @@ const AboutComponent = () => {
         {/* Partner Info */}
         <div className=' mx-auto mt-14'>
           <div className=''>
-            <Marquee gradientColor={[241, 241, 241]}>
+            <Marquee gradientColor={[255, 255, 255]}>
               <div className='mx-10'>
                 <img src='Assets/Images/partner/partner_1.png' alt='' />
               </div>
