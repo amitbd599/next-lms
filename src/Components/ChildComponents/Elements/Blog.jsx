@@ -7,7 +7,7 @@ const Blog = ({ item }) => {
     <div className='itemContainer relative flex justify-center '>
       <div className=' px-4 py-4  rounded-lg ease-in-out duration-300 w-full'>
         <div className='img__file  rounded-md w-full  relative'>
-          <img src='Assets/Images/blogs/Blog_1.png' alt='' />
+          <img src={item.thumbnail} alt='' />
           <div className='text__file shadow-lg  absolute top-[50%] rounded-lg left-[50%] translate-x-[-50%] bg-white w-[calc(100%-25px)]  h-auto'>
             <div className='py-6 px-5'>
               <div className='flex justify-between  '>
@@ -30,9 +30,12 @@ const Blog = ({ item }) => {
                 </h2>
                 <p className='des text-sm mt-2'>{item.des.slice(0, 55)} ...</p>
                 <div className="relative  mt-2 inline-block after:content-[''] after:ease-in-out after:duration-300 after:absolute after:left-0 after:bottom-[-5px] after:w-0 after:hover:w-full after:h-[3px] after:bg-[#F16126] after:rounded-lg">
-                  <button className='relative my__btn_2 flex gap-2 items-center text-base  font-semibold hover:text-[#F16126]'>
+                  <Link
+                    to={"/blog-details"}
+                    className='relative my__btn_2 flex gap-2 items-center text-base  font-semibold hover:text-[#F16126]'
+                  >
                     Read More <FaArrowRight />
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>

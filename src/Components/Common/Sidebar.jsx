@@ -1,12 +1,24 @@
 import React from "react";
-import { FaCalendarCheck } from "react-icons/fa";
+import { FaCalendarCheck, FaSearch } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import blogData from "../../Database/blogData";
 const Sidebar = () => {
   return (
     <div className='sidebar'>
+      {/* Search Box */}
+      <div className='searchBox'>
+        <div className='relative overflow-hidden rounded-md'>
+          <input
+            type='text'
+            className='border border-[#E9ECEF] px-3 py-4  w-full'
+          />
+          <button className='absolute top-0 bottom-0 bg-[#F16126] text-white right-0 px-[25px] py-[5px]'>
+            <FaSearch />
+          </button>
+        </div>
+      </div>
       {/* Categories */}
-      <div className='categories border px-6 py-5 rounded-lg'>
+      <div className='categories border px-6 py-5 rounded-lg mt-6'>
         <div>
           <div>
             <h2 className='text-[30px] inline-block font-semibold relative after:absolute after:content-[""] after:w-full after:h-[4px] after:bg-[#F16126] after:bottom-[-4px] after:left-0 after:rounded-lg'>
@@ -68,7 +80,7 @@ const Sidebar = () => {
         </div>
       </div>
       {/* Latest Post*/}
-      <div className='categories border px-6 py-5 rounded-lg mt-10'>
+      <div className='categories border px-6 py-5 rounded-lg mt-6'>
         <div>
           <div>
             <h2 className='text-[30px] inline-block font-semibold relative after:absolute after:content-[""] after:w-full after:h-[4px] after:bg-[#F16126] after:bottom-[-4px] after:left-0 after:rounded-lg'>
@@ -109,7 +121,7 @@ const Sidebar = () => {
         </div>
       </div>
       {/* Tag */}
-      <div className='categories border px-6 py-5 rounded-lg mt-10'>
+      <div className='categories border px-6 py-5 rounded-lg mt-6'>
         <div>
           <div>
             <h2 className='text-[30px] inline-block font-semibold relative after:absolute after:content-[""] after:w-full after:h-[4px] after:bg-[#F16126] after:bottom-[-4px] after:left-0 after:rounded-lg'>

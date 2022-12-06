@@ -306,11 +306,6 @@ const CourseDetailsComponent = () => {
                                 intrigued and inclined towards areas of
                                 "Software Engineer".
                               </p>
-                              <p className='text-sm mt-3'>
-                                My professional journey has not stopped yet
-                                neither has my learning curve. Throughout my
-                                career I felt one thing.
-                              </p>
                               <div className='mt-3'>
                                 <p className='text-base font-medium'>
                                   Web and Desktop development:
@@ -759,6 +754,11 @@ const CourseDetailsComponent = () => {
                       </div>
                     </li>
                   </ul>
+                </div>
+                <div className='pb-5 px-3  mt-2 w-full block'>
+                  <button className='bg-[#F16126] text-white px-6 py-3 rounded-md w-full block'>
+                    Enroll Now
+                  </button>
                 </div>
               </div>
             </div>

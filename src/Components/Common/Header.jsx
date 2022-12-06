@@ -171,10 +171,7 @@ const Header = () => {
                         <Link to='#'>Blog</Link>
                         <ul className='subMenu'>
                           <li>
-                            <Link to='/blog'>Blog List</Link>
-                          </li>
-                          <li>
-                            <Link to='/blog'>Blog Grid</Link>
+                            <Link to='/blog'>Blog</Link>
                           </li>
                           <li>
                             <Link to='/blog-details'>Blog Details</Link>

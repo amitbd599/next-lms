@@ -25,7 +25,7 @@ const eventData = [
   },
   {
     thumbnail: "Assets/Images/events/event_4.png",
-    title: "Unblock - a CI/CD conference",
+    title: "Unblock CI/CD conference",
     des: "This is a popular ticketing solution for events ranging from small meetups to large concerts.",
     time: "9.20 AM - 05.00 PM",
     location: "Online",

@@ -14,7 +14,7 @@ const Event = ({ item }) => {
         <div className='text__file mt-5'>
           <div className='text-left px-4'>
             <Link
-              to={"/"}
+              to={"/event-details"}
               className='text-[#333] text-[22px] font-semibold hover:text-[#F16126] ease-in-out duration-300 leading-7'
             >
               {item.title}
