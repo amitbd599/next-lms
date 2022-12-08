@@ -3,64 +3,128 @@
 * Demo styles
 * ----------------------------------------------
 **/
-.accordion .accordion__item {
-  margin-bottom: 14px;
-  border: 1px solid #002147;
-  border-radius: 6px;
-}
 
-.accordion__button {
-  position: relative;
-  background-color: #002147;
-  color: #fff;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  text-align: left;
-}
-
-.accordion__button:hover {
-  background-color: #002147;
-}
-
-.accordion__button:before {
-  position: absolute;
-  display: inline-block;
-  content: "";
-  height: 10px;
-  width: 10px;
-  margin-right: 12px;
-  border-bottom: 2px solid currentColor;
-  border-right: 2px solid currentColor;
-  transform: rotate(-45deg) translateY(-50%);
-  top: 48%;
-}
-
-.accordion__button[aria-expanded="true"]::before,
-.accordion__button[aria-selected="true"]::before {
-  transform: rotate(45deg);
-  top: 38%;
-}
-
-[hidden] {
-  display: none;
-}
-
-.accordion__panel {
-  padding: 20px;
-  animation: fadein 0.35s ease-in;
-}
-
-/* -------------------------------------------------- */
-/* ---------------- Animation part ------------------ */
-/* -------------------------------------------------- */
-
-@keyframes fadein {
-  0% {
-    opacity: 0;
+.coursesDetails {
+  .accordion .accordion__item {
+    margin-bottom: 14px;
+    border: 1px solid #002147;
+    border-radius: 6px;
   }
 
-  100% {
-    opacity: 1;
+  .accordion__button {
+    position: relative;
+    background-color: #002147;
+    color: #fff;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+  }
+
+  .accordion__button:hover {
+    background-color: #002147;
+  }
+
+  .accordion__button:before {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    height: 10px;
+    width: 10px;
+    margin-right: 12px;
+    border-bottom: 2px solid currentColor;
+    border-right: 2px solid currentColor;
+    transform: rotate(-45deg) translateY(-50%);
+    top: 48%;
+  }
+
+  .accordion__button[aria-expanded="true"]::before,
+  .accordion__button[aria-selected="true"]::before {
+    transform: rotate(45deg);
+    top: 38%;
+  }
+
+  [hidden] {
+    display: none;
+  }
+
+  .accordion__panel {
+    padding: 20px;
+    animation: fadein 0.35s ease-in;
+  }
+
+  /* -------------------------------------------------- */
+  /* ---------------- Animation part ------------------ */
+  /* -------------------------------------------------- */
+
+  @keyframes fadein {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+.faqSection {
+  .accordion .accordion__item {
+    margin-bottom: 12px;
+    border-radius: 6px;
+    padding: 3px 3px;
+  }
+
+  .accordion__button {
+    position: relative;
+    background-color: #f1f5f9;
+    color: #1e293b;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border-radius: 5px;
+  }
+
+  .accordion__button:before {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    height: 10px;
+    width: 10px;
+    margin-right: 12px;
+    border-bottom: 2px solid currentColor;
+    border-right: 2px solid currentColor;
+    transform: rotate(-45deg) translateY(-50%);
+    top: 48%;
+  }
+
+  .accordion__button[aria-expanded="true"]::before,
+  .accordion__button[aria-selected="true"]::before {
+    transform: rotate(45deg);
+    top: 38%;
+  }
+
+  [hidden] {
+    display: none;
+  }
+
+  .accordion__panel {
+    padding: 20px;
+    animation: fadein 0.35s linear;
+  }
+
+  /* -------------------------------------------------- */
+  /* ---------------- Animation part ------------------ */
+  /* -------------------------------------------------- */
+
+  @keyframes fadein {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
   }
 }

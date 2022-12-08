@@ -38,57 +38,57 @@ const CourseDetailsComponent = () => {
       {/* ============ Intro Section ============*/}
       <IntroSection title={"Courses Details"} />
       {/* ============ Grid Courses Section ============ */}
-      <div className='coursesDetails gridCourses py-[80px]'>
-        <div className='container mx-auto'>
-          <div className='grid grid-cols-12 gap-6'>
-            <div className='col-span-8 '>
+      <div className="coursesDetails gridCourses py-[80px]">
+        <div className="container mx-auto">
+          <div className="grid grid-cols-12 gap-6">
+            <div className="col-span-8 ">
               {/* Intro Advisor */}
-              <div className='bg-[#002147] px-10 py-8 rounded-md shadow-lg'>
+              <div className="rounded-md bg-[#002147] px-10 py-8 shadow-lg">
                 <div>
-                  <h2 className='text-[35px] text-white font-semibold'>
+                  <h2 className="text-[35px] font-semibold text-white">
                     All You Need To Know About MERN Stack
                   </h2>
                 </div>
-                <div className='flex gap-4 mt-6'>
+                <div className="mt-6 flex gap-4">
                   <div>
                     <img
-                      className='w-[80px] rounded-full '
-                      src='/Assets/Images/advisors/Advisor_1.png'
-                      alt=''
+                      className="w-[80px] rounded-full "
+                      src="/Assets/Images/advisors/Advisor_1.png"
+                      alt=""
                     />
                   </div>
                   <div>
-                    <h3 className='text-white text-lg'>By Alex Norton</h3>
-                    <p className='text-white text-sm'>JavaScript Programmer</p>
-                    <div className='flex gap-3 items-center'>
+                    <h3 className="text-lg text-white">By Alex Norton</h3>
+                    <p className="text-sm text-white">JavaScript Programmer</p>
+                    <div className="flex items-center gap-3">
                       <div>
-                        <div className='flex '>
+                        <div className="flex ">
                           <span>
-                            <FaStar className='text-[#F7B519]' />
+                            <FaStar className="text-[#F7B519]" />
                           </span>
                           <span>
-                            <FaStar className='text-[#F7B519]' />
+                            <FaStar className="text-[#F7B519]" />
                           </span>
                           <span>
-                            <FaStar className='text-[#F7B519]' />
+                            <FaStar className="text-[#F7B519]" />
                           </span>
                           <span>
-                            <FaStar className='text-[#F7B519]' />
+                            <FaStar className="text-[#F7B519]" />
                           </span>
                           <span>
-                            <FaStar className='text-[#F7B519]' />
+                            <FaStar className="text-[#F7B519]" />
                           </span>
                         </div>
                       </div>
                       <div>
-                        <span className='text-sm text-white'>(720 Rating)</span>
+                        <span className="text-sm text-white">(720 Rating)</span>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
               {/* Item Overview */}
-              <div className='itemOverview mt-14'>
+              <div className="itemOverview mt-14">
                 <div>
                   <Tabs>
                     <TabList>
@@ -103,12 +103,12 @@ const CourseDetailsComponent = () => {
                     </TabList>
                     {/* TabPanel Overview */}
                     <TabPanel>
-                      <div className='mb-10'>
+                      <div className="mb-10">
                         <div>
-                          <h2 className='text-[25px] font-medium'>
+                          <h2 className="text-[25px] font-medium">
                             MERN Stack Full Form
                           </h2>
-                          <p className='mt-3 leading-relaxed text-sm'>
+                          <p className="mt-3 text-sm leading-relaxed">
                             MERN stack is a collection of technologies that
                             enables faster application development. It is used
                             by developers worldwide. The main purpose of using
@@ -119,27 +119,27 @@ const CourseDetailsComponent = () => {
                             and database can be operated easily.
                           </p>
                         </div>
-                        <div className='mt-6'>
-                          <h2 className='text-[25px] font-medium'>
+                        <div className="mt-6">
+                          <h2 className="text-[25px] font-medium">
                             MERN Stack Components
                           </h2>
-                          <div className='mt-3'>
-                            <ul className='list-disc pl-8'>
-                              <li className='leading-relaxed text-sm'>
+                          <div className="mt-3">
+                            <ul className="list-disc pl-8">
+                              <li className="text-sm leading-relaxed">
                                 The first component is MongoDB, which is a NoSQL
                                 database management system.
                               </li>
-                              <li className='leading-relaxed text-sm'>
+                              <li className="text-sm leading-relaxed">
                                 The second MERN stack component is ExpressJS. It
                                 is a backend web application framework for
                                 NodeJS.
                               </li>
-                              <li className='leading-relaxed text-sm'>
+                              <li className="text-sm leading-relaxed">
                                 The third component is ReactJS, a JavaScript
                                 library for developing UIs based on UI
                                 components.
                               </li>
-                              <li className='leading-relaxed text-sm'>
+                              <li className="text-sm leading-relaxed">
                                 The final component of the MERN stack is NodeJS.
                                 It is a JS runtime environment, i.e., it enables
                                 running JavaScript code outside the browser.
@@ -147,9 +147,9 @@ const CourseDetailsComponent = () => {
                             </ul>
                           </div>
                         </div>
-                        <div className='mt-6'>
-                          <h2 className='text-[25px] font-medium'>MongoDB</h2>
-                          <p className='mt-3 leading-relaxed text-sm'>
+                        <div className="mt-6">
+                          <h2 className="text-[25px] font-medium">MongoDB</h2>
+                          <p className="mt-3 text-sm leading-relaxed">
                             MongoDB is a NoSQL DBMS where data is stored in the
                             form of documents having key-value pairs similar to
                             JSON objects. MongoDB enables users to create
@@ -158,9 +158,9 @@ const CourseDetailsComponent = () => {
                             querying, and updating the records.
                           </p>
                         </div>
-                        <div className='mt-6'>
-                          <h2 className='text-[25px] font-medium'>ExpressJS</h2>
-                          <p className='mt-3 leading-relaxed text-sm'>
+                        <div className="mt-6">
+                          <h2 className="text-[25px] font-medium">ExpressJS</h2>
+                          <p className="mt-3 text-sm leading-relaxed">
                             MongoDB is a NoSQL DBMS where data is stored in the
                             form of documents having key-value pairs similar to
                             JSON objects. MongoDB enables users to create
@@ -169,9 +169,9 @@ const CourseDetailsComponent = () => {
                             querying, and updating the records.
                           </p>
                         </div>
-                        <div className='mt-6'>
-                          <h2 className='text-[25px] font-medium'>ReactJS</h2>
-                          <p className='mt-3 leading-relaxed text-sm'>
+                        <div className="mt-6">
+                          <h2 className="text-[25px] font-medium">ReactJS</h2>
+                          <p className="mt-3 text-sm leading-relaxed">
                             ReactJS is a JS library that allows the development
                             of user interfaces for mobile apps and SPAs. It
                             allows you to code JavaScript and develop UI
@@ -179,9 +179,9 @@ const CourseDetailsComponent = () => {
                             doing everything.
                           </p>
                         </div>
-                        <div className='mt-6'>
-                          <h2 className='text-[25px] font-medium'>NodeJS</h2>
-                          <p className='mt-3 leading-relaxed text-sm'>
+                        <div className="mt-6">
+                          <h2 className="text-[25px] font-medium">NodeJS</h2>
+                          <p className="mt-3 text-sm leading-relaxed">
                             NodeJS is an open-source JavaScript runtime
                             environment that allows users to run code on the
                             server. It comes with the node package manager or
@@ -197,10 +197,10 @@ const CourseDetailsComponent = () => {
                     <TabPanel>
                       <div>
                         <div>
-                          <h2 className='text-[25px] font-medium'>
+                          <h2 className="text-[25px] font-medium">
                             Getting Started with MERN Stack Development
                           </h2>
-                          <p className='mt-3 leading-relaxed text-sm'>
+                          <p className="mt-3 text-sm leading-relaxed">
                             MERN stack is a collection of technologies that
                             enables faster application development. It is used
                             by developers worldwide. The main purpose of using
@@ -211,31 +211,31 @@ const CourseDetailsComponent = () => {
                             and database can be operated easily.
                           </p>
                         </div>
-                        <div className='mt-5'>
+                        <div className="mt-5">
                           <div>
-                            <h2 className='text-[25px] font-medium'>
+                            <h2 className="text-[25px] font-medium">
                               Course Content
                             </h2>
                           </div>
-                          <div className='mt-5'>
-                            <div className='flex gap-2'>
-                              <span className='text-[14px]'>30 sections </span>
-                              <span className='text-[14px]'>120 lectures </span>
+                          <div className="mt-5">
+                            <div className="flex gap-2">
+                              <span className="text-[14px]">30 sections </span>
+                              <span className="text-[14px]">120 lectures </span>
                             </div>
                           </div>
                           {/* Course Accordion */}
-                          <div className='mt-2'>
+                          <div className="mt-2">
                             <div>
                               <Accordion allowZeroExpanded>
                                 {courseContentData.map((item, index) => (
                                   <AccordionItem key={index}>
                                     <AccordionItemHeading>
                                       <AccordionItemButton>
-                                        <div className='flex justify-between items-center w-full pl-8  '>
-                                          <span className='text-sm'>
+                                        <div className="flex w-full items-center justify-between pl-8  ">
+                                          <span className="text-sm">
                                             {item.title}
                                           </span>
-                                          <span className='text-xs bg-[#F16126] rounded-full px-2 py-0.5'>
+                                          <span className="rounded-full bg-[#F16126] px-2 py-0.5 text-xs">
                                             6 Lecture - 96 Min
                                           </span>
                                         </div>
@@ -246,27 +246,27 @@ const CourseDetailsComponent = () => {
                                         (childItem, childIndex) => (
                                           <div key={childIndex}>
                                             <ModalVideo
-                                              channel='youtube'
+                                              channel="youtube"
                                               autoplay
                                               isOpen={isOpen}
-                                              videoId='tujhGdn1EMI'
+                                              videoId="tujhGdn1EMI"
                                               onClose={() => setOpen(false)}
                                             />
                                             <button
-                                              className='block w-full'
+                                              className="block w-full"
                                               onClick={() => setOpen(true)}
                                             >
-                                              <div className='flex justify-between items-center'>
-                                                <div className='flex gap-4 items-center  my-2 py-1 text-[#77838F] hover:text-[#F16126] ease-in-out duration-300'>
+                                              <div className="flex items-center justify-between">
+                                                <div className="my-2 flex items-center  gap-4 py-1 text-[#77838F] duration-300 ease-in-out hover:text-[#F16126]">
                                                   <span>
-                                                    <BsPlayCircleFill className=' text-[25px]' />
+                                                    <BsPlayCircleFill className=" text-[25px]" />
                                                   </span>
-                                                  <span className='text-sm font-medium'>
+                                                  <span className="text-sm font-medium">
                                                     {childItem.title}
                                                   </span>
                                                 </div>
-                                                <div className='flex items-center gap-3'>
-                                                  <span className='text-sm'>
+                                                <div className="flex items-center gap-3">
+                                                  <span className="text-sm">
                                                     04.54
                                                   </span>
                                                   <span>
@@ -290,36 +290,36 @@ const CourseDetailsComponent = () => {
                     {/* TabPanel Instructor */}
                     <TabPanel>
                       <div>
-                        <div className='flex gap-6 w-full'>
-                          <div className='img__file w-4/12'>
+                        <div className="flex w-full gap-6">
+                          <div className="img__file w-4/12">
                             <img
-                              className='rounded-lg'
-                              src='/Assets/Images/advisors/Advisor_1.png'
-                              alt=''
+                              className="rounded-lg"
+                              src="/Assets/Images/advisors/Advisor_1.png"
+                              alt=""
                             />
                           </div>
-                          <div className='text__file w-8/12'>
+                          <div className="text__file w-8/12">
                             <div>
-                              <p className='text-sm mt-3'>
+                              <p className="mt-3 text-sm">
                                 A self-motivated, self-taught and an inspired
                                 team player, who is looking for opportunities
                                 intrigued and inclined towards areas of
                                 "Software Engineer".
                               </p>
-                              <div className='mt-3'>
-                                <p className='text-base font-medium'>
+                              <div className="mt-3">
+                                <p className="text-base font-medium">
                                   Web and Desktop development:
                                 </p>
-                                <ul className='list-disc pl-6'>
-                                  <li className='text-sm'>
+                                <ul className="list-disc pl-6">
+                                  <li className="text-sm">
                                     Front-end /UI/UX Animation with Library.
                                   </li>
-                                  <li className='text-sm'>MVC framework,.</li>
-                                  <li className='text-sm'>
+                                  <li className="text-sm">MVC framework,.</li>
+                                  <li className="text-sm">
                                     Node Js/MongoDb using ExpressJS framework.
                                   </li>
-                                  <li className='text-sm'>ReactJS.</li>
-                                  <li className='text-sm'>NodeJS.</li>
+                                  <li className="text-sm">ReactJS.</li>
+                                  <li className="text-sm">NodeJS.</li>
                                 </ul>
                               </div>
                             </div>
@@ -331,218 +331,218 @@ const CourseDetailsComponent = () => {
                     <TabPanel>
                       <div>
                         <div>
-                          <h2 className='text-[26px] font-medium'>
+                          <h2 className="text-[26px] font-medium">
                             Student Feedback
                           </h2>
                         </div>
-                        <div className='w-full flex gap-5'>
-                          <div className='w-3/12 h-[200px] bg-[#f1f5f9]  px-6 py-6 rounded-md flex justify-center items-center mt-6'>
-                            <div className='text-center'>
-                              <h2 className='text-[52px] font-bold text-[#F16126]'>
+                        <div className="flex w-full gap-5">
+                          <div className="mt-6 flex h-[200px]  w-3/12 items-center justify-center rounded-md bg-[#f1f5f9] px-6 py-6">
+                            <div className="text-center">
+                              <h2 className="text-[52px] font-bold text-[#F16126]">
                                 4.9
                               </h2>
                               <div>
-                                <div className='flex mt-[-5px]'>
+                                <div className="mt-[-5px] flex">
                                   <span>
-                                    <FaStar className='text-[#F7B519]' />
+                                    <FaStar className="text-[#F7B519]" />
                                   </span>
                                   <span>
-                                    <FaStar className='text-[#F7B519]' />
+                                    <FaStar className="text-[#F7B519]" />
                                   </span>
                                   <span>
-                                    <FaStar className='text-[#F7B519]' />
+                                    <FaStar className="text-[#F7B519]" />
                                   </span>
                                   <span>
-                                    <FaStar className='text-[#F7B519]' />
+                                    <FaStar className="text-[#F7B519]" />
                                   </span>
                                   <span>
-                                    <FaStar className='text-[#F7B519]' />
+                                    <FaStar className="text-[#F7B519]" />
                                   </span>
                                 </div>
-                                <div className='mt-1'>
+                                <div className="mt-1">
                                   <p>Rising Star</p>
                                 </div>
                               </div>
                             </div>
                           </div>
 
-                          <div className='w-9/12 bg-[#f1f5f9] px-6 py-6 rounded-md mt-6'>
-                            <div className='flex items-center justify-between w-full mb-1.5'>
-                              <div className='block w-9/12'>
+                          <div className="mt-6 w-9/12 rounded-md bg-[#f1f5f9] px-6 py-6">
+                            <div className="mb-1.5 flex w-full items-center justify-between">
+                              <div className="block w-9/12">
                                 <Progress
-                                  className='block h-[8px]'
+                                  className="block h-[8px]"
                                   value={80}
                                 />
                               </div>
-                              <div className='flex gap-2 items-center justify-end w-3/12'>
-                                <div className='flex gap-0.5 justify-end'>
+                              <div className="flex w-3/12 items-center justify-end gap-2">
+                                <div className="flex justify-end gap-0.5">
                                   <span>
-                                    <FaStar className='text-[#F7B519]' />{" "}
+                                    <FaStar className="text-[#F7B519]" />{" "}
                                   </span>
                                   <span>
-                                    <FaStar className='text-[#F7B519]' />
+                                    <FaStar className="text-[#F7B519]" />
                                   </span>
                                   <span>
-                                    <FaStar className='text-[#F7B519]' />
+                                    <FaStar className="text-[#F7B519]" />
                                   </span>
                                   <span>
-                                    <FaStar className='text-[#F7B519]' />
+                                    <FaStar className="text-[#F7B519]" />
                                   </span>
                                   <span>
-                                    <FaStar className='text-[#F7B519]' />
+                                    <FaStar className="text-[#F7B519]" />
                                   </span>
                                 </div>
                                 <div>
-                                  <span className='text-sm'>80%</span>
+                                  <span className="text-sm">80%</span>
                                 </div>
                               </div>
                             </div>
-                            <div className='flex items-center justify-between w-full mb-1.5'>
-                              <div className='block w-9/12'>
+                            <div className="mb-1.5 flex w-full items-center justify-between">
+                              <div className="block w-9/12">
                                 <Progress
-                                  className='block h-[8px]'
+                                  className="block h-[8px]"
                                   value={60}
                                 />
                               </div>
-                              <div className='flex gap-2 items-center justify-end w-3/12'>
-                                <div className='flex gap-0.5 justify-end'>
+                              <div className="flex w-3/12 items-center justify-end gap-2">
+                                <div className="flex justify-end gap-0.5">
                                   <span>
-                                    <FaStar className='text-[#F7B519]' />{" "}
+                                    <FaStar className="text-[#F7B519]" />{" "}
                                   </span>
                                   <span>
-                                    <FaStar className='text-[#F7B519]' />
+                                    <FaStar className="text-[#F7B519]" />
                                   </span>
                                   <span>
-                                    <FaStar className='text-[#F7B519]' />
+                                    <FaStar className="text-[#F7B519]" />
                                   </span>
                                   <span>
-                                    <FaStar className='text-[#F7B519]' />
+                                    <FaStar className="text-[#F7B519]" />
                                   </span>
                                   <span>
-                                    <FaRegStar className='text-[#F7B519]' />
+                                    <FaRegStar className="text-[#F7B519]" />
                                   </span>
                                 </div>
                                 <div>
-                                  <span className='text-sm'>60%</span>
+                                  <span className="text-sm">60%</span>
                                 </div>
                               </div>
                             </div>
-                            <div className='flex items-center justify-between w-full mb-1.5'>
-                              <div className='block w-9/12'>
+                            <div className="mb-1.5 flex w-full items-center justify-between">
+                              <div className="block w-9/12">
                                 <Progress
-                                  className='block h-[8px]'
+                                  className="block h-[8px]"
                                   value={35}
                                 />
                               </div>
-                              <div className='flex gap-2 items-center justify-end w-3/12'>
-                                <div className='flex gap-0.5 justify-end'>
+                              <div className="flex w-3/12 items-center justify-end gap-2">
+                                <div className="flex justify-end gap-0.5">
                                   <span>
-                                    <FaStar className='text-[#F7B519]' />{" "}
+                                    <FaStar className="text-[#F7B519]" />{" "}
                                   </span>
                                   <span>
-                                    <FaStar className='text-[#F7B519]' />
+                                    <FaStar className="text-[#F7B519]" />
                                   </span>
                                   <span>
-                                    <FaStar className='text-[#F7B519]' />
+                                    <FaStar className="text-[#F7B519]" />
                                   </span>
                                   <span>
-                                    <FaRegStar className='text-[#F7B519]' />
+                                    <FaRegStar className="text-[#F7B519]" />
                                   </span>
                                   <span>
-                                    <FaRegStar className='text-[#F7B519]' />
+                                    <FaRegStar className="text-[#F7B519]" />
                                   </span>
                                 </div>
                                 <div>
-                                  <span className='text-sm'>35%</span>
+                                  <span className="text-sm">35%</span>
                                 </div>
                               </div>
                             </div>
-                            <div className='flex items-center justify-between w-full mb-1.5'>
-                              <div className='block w-9/12'>
+                            <div className="mb-1.5 flex w-full items-center justify-between">
+                              <div className="block w-9/12">
                                 <Progress
-                                  className='block h-[8px]'
+                                  className="block h-[8px]"
                                   value={20}
                                 />
                               </div>
-                              <div className='flex gap-2 items-center justify-end w-3/12'>
-                                <div className='flex gap-0.5 justify-end'>
+                              <div className="flex w-3/12 items-center justify-end gap-2">
+                                <div className="flex justify-end gap-0.5">
                                   <span>
-                                    <FaStar className='text-[#F7B519]' />{" "}
+                                    <FaStar className="text-[#F7B519]" />{" "}
                                   </span>
                                   <span>
-                                    <FaStar className='text-[#F7B519]' />
+                                    <FaStar className="text-[#F7B519]" />
                                   </span>
                                   <span>
-                                    <FaRegStar className='text-[#F7B519]' />
+                                    <FaRegStar className="text-[#F7B519]" />
                                   </span>
                                   <span>
-                                    <FaRegStar className='text-[#F7B519]' />
+                                    <FaRegStar className="text-[#F7B519]" />
                                   </span>
                                   <span>
-                                    <FaRegStar className='text-[#F7B519]' />
+                                    <FaRegStar className="text-[#F7B519]" />
                                   </span>
                                 </div>
                                 <div>
-                                  <span className='text-sm'>20%</span>
+                                  <span className="text-sm">20%</span>
                                 </div>
                               </div>
                             </div>
-                            <div className='flex items-center justify-between w-full mb-1.5'>
-                              <div className='block w-9/12'>
+                            <div className="mb-1.5 flex w-full items-center justify-between">
+                              <div className="block w-9/12">
                                 <Progress
-                                  className='block h-[8px]'
+                                  className="block h-[8px]"
                                   value={10}
                                 />
                               </div>
-                              <div className='flex gap-2 items-center justify-end w-3/12'>
-                                <div className='flex gap-0.5 justify-end'>
+                              <div className="flex w-3/12 items-center justify-end gap-2">
+                                <div className="flex justify-end gap-0.5">
                                   <span>
-                                    <FaStar className='text-[#F7B519]' />{" "}
+                                    <FaStar className="text-[#F7B519]" />{" "}
                                   </span>
                                   <span>
-                                    <FaRegStar className='text-[#F7B519]' />
+                                    <FaRegStar className="text-[#F7B519]" />
                                   </span>
                                   <span>
-                                    <FaRegStar className='text-[#F7B519]' />
+                                    <FaRegStar className="text-[#F7B519]" />
                                   </span>
                                   <span>
-                                    <FaRegStar className='text-[#F7B519]' />
+                                    <FaRegStar className="text-[#F7B519]" />
                                   </span>
                                   <span>
-                                    <FaRegStar className='text-[#F7B519]' />
+                                    <FaRegStar className="text-[#F7B519]" />
                                   </span>
                                 </div>
                                 <div>
-                                  <span className='text-sm'>10%</span>
+                                  <span className="text-sm">10%</span>
                                 </div>
                               </div>
                             </div>
                           </div>
                         </div>
-                        <div className='mt-10'>
+                        <div className="mt-10">
                           <div>
-                            <h2 className='text-[20px] font-medium'>Reviews</h2>
+                            <h2 className="text-[20px] font-medium">Reviews</h2>
                           </div>
-                          <div className='mt-5 pb-10 mb-8 border-b '>
-                            <div className='flex gap-6'>
+                          <div className="mt-5 mb-8 border-b pb-10 ">
+                            <div className="flex gap-6">
                               <div>
-                                <span className='bg-[#002147] w-[70px] h-[70px] rounded-full flex items-center justify-center'>
-                                  <FaUserAlt className=' text-[25px] text-white' />
+                                <span className="flex h-[70px] w-[70px] items-center justify-center rounded-full bg-[#002147]">
+                                  <FaUserAlt className=" text-[25px] text-white" />
                                 </span>
                               </div>
                               <div>
-                                <div className='flex gap-2 items-center'>
-                                  <h3 className='text-[18px] font-medium'>
+                                <div className="flex items-center gap-2">
+                                  <h3 className="text-[18px] font-medium">
                                     Anik Biswas
                                   </h3>
-                                  <span className='text-sm'>(4 Days ago)</span>
+                                  <span className="text-sm">(4 Days ago)</span>
                                 </div>
                                 <div>
-                                  <h3 className='text-base'>
+                                  <h3 className="text-base">
                                     Compare the best business software with
                                     comprehensive reviews.
                                   </h3>
-                                  <p className='text-sm mt-2'>
+                                  <p className="mt-2 text-sm">
                                     Lorem ipsum dolor sit amet consectetur
                                     adipisicing elit. Consectetur laudantium
                                     explicabo cumque quod iste deleniti
@@ -554,26 +554,26 @@ const CourseDetailsComponent = () => {
                               </div>
                             </div>
                           </div>
-                          <div className='mt-5 pb-10 mb-8 border-b '>
-                            <div className='flex gap-6'>
+                          <div className="mt-5 mb-8 border-b pb-10 ">
+                            <div className="flex gap-6">
                               <div>
-                                <span className='bg-[#002147] w-[70px] h-[70px] rounded-full flex items-center justify-center'>
-                                  <FaUserAlt className=' text-[25px] text-white' />
+                                <span className="flex h-[70px] w-[70px] items-center justify-center rounded-full bg-[#002147]">
+                                  <FaUserAlt className=" text-[25px] text-white" />
                                 </span>
                               </div>
                               <div>
-                                <div className='flex gap-2 items-center'>
-                                  <h3 className='text-[18px] font-medium'>
+                                <div className="flex items-center gap-2">
+                                  <h3 className="text-[18px] font-medium">
                                     Alex W Ellais
                                   </h3>
-                                  <span className='text-sm'>(8 Days ago)</span>
+                                  <span className="text-sm">(8 Days ago)</span>
                                 </div>
                                 <div>
-                                  <h3 className='text-base'>
+                                  <h3 className="text-base">
                                     Compare the best business software with
                                     comprehensive reviews.
                                   </h3>
-                                  <p className='text-sm mt-2'>
+                                  <p className="mt-2 text-sm">
                                     Lorem ipsum dolor sit amet consectetur
                                     adipisicing elit. Consectetur laudantium
                                     explicabo cumque quod iste deleniti
@@ -587,56 +587,56 @@ const CourseDetailsComponent = () => {
                           </div>
                         </div>
                         <div>
-                          <div className='flex items-center justify-between'>
-                            <h2 className='text-[20px] font-medium'>
+                          <div className="flex items-center justify-between">
+                            <h2 className="text-[20px] font-medium">
                               Write a Review
                             </h2>
                             <div>
-                              <div className='flex gap-0.5 justify-center'>
+                              <div className="flex justify-center gap-0.5">
                                 <span>
-                                  <FaStar className='text-[#F7B519]' />{" "}
+                                  <FaStar className="text-[#F7B519]" />{" "}
                                 </span>
                                 <span>
-                                  <FaStar className='text-[#F7B519]' />
+                                  <FaStar className="text-[#F7B519]" />
                                 </span>
                                 <span>
-                                  <FaStar className='text-[#F7B519]' />
+                                  <FaStar className="text-[#F7B519]" />
                                 </span>
                                 <span>
-                                  <FaStar className='text-[#F7B519]' />
+                                  <FaStar className="text-[#F7B519]" />
                                 </span>
                                 <span>
-                                  <FaRegStar className='text-[#F7B519]' />
+                                  <FaRegStar className="text-[#F7B519]" />
                                 </span>
                               </div>
                             </div>
                           </div>
-                          <div className='mt-5'>
-                            <label className='block text-sm' htmlFor='review'>
+                          <div className="mt-5">
+                            <label className="block text-sm" htmlFor="review">
                               Enter Your Review
                             </label>
                             <input
-                              className='block text-sm border px-3 py-3 rounded-md w-full mt-1.5'
-                              type='text'
-                              placeholder='Text...'
+                              className="mt-1.5 block w-full rounded-md border px-3 py-3 text-sm"
+                              type="text"
+                              placeholder="Text..."
                             />
                           </div>
-                          <div className='mt-3'>
-                            <label className='block text-sm' htmlFor='review'>
+                          <div className="mt-3">
+                            <label className="block text-sm" htmlFor="review">
                               Content
                             </label>
                             <textarea
-                              className='block text-sm border px-3 py-3 rounded-md w-full mt-1.5'
-                              id='w3review'
-                              name='w3review'
-                              rows='6'
-                              cols='50'
-                              placeholder='Content...'
+                              className="mt-1.5 block w-full rounded-md border px-3 py-3 text-sm"
+                              id="w3review"
+                              name="w3review"
+                              rows="6"
+                              cols="50"
+                              placeholder="Content..."
                             ></textarea>
                           </div>
                         </div>
-                        <div className='mt-5'>
-                          <button className='bg-[#F16126] text-white px-5 py-3 rounded-md'>
+                        <div className="mt-5">
+                          <button className="rounded-md bg-[#F16126] px-5 py-3 text-white">
                             Submit Review
                           </button>
                         </div>
@@ -646,117 +646,117 @@ const CourseDetailsComponent = () => {
                 </div>
               </div>
             </div>
-            <div className='col-span-4 pl-4'>
-              <div className='bg-white shadow-lg px-3 py-3 rounded-md'>
+            <div className="col-span-4 pl-4">
+              <div className="rounded-md bg-white px-3 py-3 shadow-lg">
                 <Link to={"/"}>
-                  <div className='relative'>
-                    <img src='Assets/Images/courses/courses_1.png' alt='' />
-                    <span className='absolute top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%]'>
-                      <img src='Assets/Images/shape/shape_10.png' alt='' />
+                  <div className="relative">
+                    <img src="Assets/Images/courses/courses_1.png" alt="" />
+                    <span className="absolute top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%]">
+                      <img src="Assets/Images/shape/shape_10.png" alt="" />
                     </span>
                   </div>
                 </Link>
 
-                <div className='mt-4 pb-3'>
+                <div className="mt-4 pb-3">
                   <ul>
-                    <li className='flex justify-between px-3 border-b pb-4 pt-4'>
-                      <div className='flex items-center gap-2'>
+                    <li className="flex justify-between border-b px-3 pb-4 pt-4">
+                      <div className="flex items-center gap-2">
                         <span>
-                          <FaTags className='text-sm' />
+                          <FaTags className="text-sm" />
                         </span>
-                        <span className='text-sm'>Price</span>
+                        <span className="text-sm">Price</span>
                       </div>
-                      <div className='flex items-center gap-1'>
+                      <div className="flex items-center gap-1">
                         <span>
-                          <FaDollarSign className='text-[#333] text-[20px]' />
+                          <FaDollarSign className="text-[20px] text-[#333]" />
                         </span>
-                        <span className='text-lg font-semibold text-[#333] text-[26px]'>
+                        <span className="text-lg text-[26px] font-semibold text-[#333]">
                           170
                         </span>
                       </div>
                     </li>
-                    <li className='flex justify-between px-3 border-b pb-4 pt-3'>
-                      <div className='flex items-center gap-2'>
+                    <li className="flex justify-between border-b px-3 pb-4 pt-3">
+                      <div className="flex items-center gap-2">
                         <span>
-                          <FaUserAlt className='text-sm' />
+                          <FaUserAlt className="text-sm" />
                         </span>
-                        <span className='text-sm'>Instructor</span>
+                        <span className="text-sm">Instructor</span>
                       </div>
-                      <div className='flex items-center gap-1'>
-                        <span className='font-medium text-[#333] text-base'>
+                      <div className="flex items-center gap-1">
+                        <span className="text-base font-medium text-[#333]">
                           Alex Norton
                         </span>
                       </div>
                     </li>
-                    <li className='flex justify-between px-3 border-b pb-4 pt-3'>
-                      <div className='flex items-center gap-2'>
+                    <li className="flex justify-between border-b px-3 pb-4 pt-3">
+                      <div className="flex items-center gap-2">
                         <span>
-                          <FaHistory className='text-sm' />
+                          <FaHistory className="text-sm" />
                         </span>
-                        <span className='text-sm'>Duration</span>
+                        <span className="text-sm">Duration</span>
                       </div>
-                      <div className='flex items-center gap-1'>
-                        <span className='font-medium text-[#333] text-base'>
+                      <div className="flex items-center gap-1">
+                        <span className="text-base font-medium text-[#333]">
                           3 Month
                         </span>
                       </div>
                     </li>
-                    <li className='flex justify-between px-3 border-b pb-4 pt-3'>
-                      <div className='flex items-center gap-2'>
+                    <li className="flex justify-between border-b px-3 pb-4 pt-3">
+                      <div className="flex items-center gap-2">
                         <span>
-                          <FaBookReader className='text-sm' />
+                          <FaBookReader className="text-sm" />
                         </span>
-                        <span className='text-sm'>Lessons</span>
+                        <span className="text-sm">Lessons</span>
                       </div>
-                      <div className='flex items-center gap-1'>
-                        <span className='font-medium text-[#333] text-base'>
+                      <div className="flex items-center gap-1">
+                        <span className="text-base font-medium text-[#333]">
                           12
                         </span>
                       </div>
                     </li>
-                    <li className='flex justify-between px-3 border-b pb-4 pt-3'>
-                      <div className='flex items-center gap-2'>
+                    <li className="flex justify-between border-b px-3 pb-4 pt-3">
+                      <div className="flex items-center gap-2">
                         <span>
-                          <FaUserGraduate className='text-sm' />
+                          <FaUserGraduate className="text-sm" />
                         </span>
-                        <span className='text-sm'>Enrolled</span>
+                        <span className="text-sm">Enrolled</span>
                       </div>
-                      <div className='flex items-center gap-1'>
-                        <span className='font-medium text-[#333] text-base'>
+                      <div className="flex items-center gap-1">
+                        <span className="text-base font-medium text-[#333]">
                           923 Students
                         </span>
                       </div>
                     </li>
-                    <li className='flex justify-between px-3 border-b pb-4 pt-3'>
-                      <div className='flex items-center gap-2'>
+                    <li className="flex justify-between border-b px-3 pb-4 pt-3">
+                      <div className="flex items-center gap-2">
                         <span>
-                          <FaGlobe className='text-sm' />
+                          <FaGlobe className="text-sm" />
                         </span>
-                        <span className='text-sm'>Language</span>
+                        <span className="text-sm">Language</span>
                       </div>
-                      <div className='flex items-center gap-1'>
-                        <span className='font-medium text-[#333] text-base'>
+                      <div className="flex items-center gap-1">
+                        <span className="text-base font-medium text-[#333]">
                           English
                         </span>
                       </div>
                     </li>
-                    <li className='flex justify-between px-2 pb-3 pt-3'>
-                      <div className='flex items-center gap-2'>
+                    <li className="flex justify-between px-2 pb-3 pt-3">
+                      <div className="flex items-center gap-2">
                         <span>
-                          <FaBookReader className='text-sm' />
+                          <FaBookReader className="text-sm" />
                         </span>
-                        <span className='text-sm'>Certificate</span>
+                        <span className="text-sm">Certificate</span>
                       </div>
-                      <div className='flex items-center gap-1'>
-                        <span className='font-medium text-[#333] text-base'>
+                      <div className="flex items-center gap-1">
+                        <span className="text-base font-medium text-[#333]">
                           Yes
                         </span>
                       </div>
                     </li>
                   </ul>
                 </div>
-                <div className='pb-5 px-3  mt-2 w-full block'>
-                  <button className='bg-[#F16126] text-white px-6 py-3 rounded-md w-full block'>
+                <div className="mt-2 block  w-full px-3 pb-5">
+                  <button className="block w-full rounded-md bg-[#F16126] px-6 py-3 text-white">
                     Enroll Now
                   </button>
                 </div>
