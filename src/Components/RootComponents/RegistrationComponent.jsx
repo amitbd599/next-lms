@@ -5,30 +5,28 @@ import Footer from "../Common/Footer";
 import Header from "../Common/Header";
 import IntroSection from "../Common/IntroSection";
 
-const LoginComponent = () => {
+const RegistrationComponent = () => {
   return (
     <section>
       {/* ============ Header Section ============*/}
       <Header />
       {/* ============ Intro Section ============*/}
-      <IntroSection title={"Login"} />
+      <IntroSection title={"Registration"} />
 
       {/* ============ Login Section ============ */}
-      <div className="loginSection  py-[80px]">
+      <div className="registrationSection  py-[80px]">
         {/* Courses Info */}
         <div className="container mx-auto">
           <div className="mx-[300px]">
             <div className="rounded-lg bg-white px-10 py-10 shadow-xl	">
-              <h2 className="text-[30px] font-semibold">
-                Login with Email or Username
-              </h2>
+              <h2 className="text-[30px] font-semibold">Create New Account</h2>
               <p className="mt-2 text-sm">
-                To login enter the email address associated with your account,
-                and the password.
+                To Registration enter the email address associated with your
+                account, and the password.
               </p>
               <div className="mt-5">
                 <label className="text-sm" htmlFor="userName">
-                  Username or Email Address:
+                  Username:
                 </label>
                 <input
                   id="userName"
@@ -46,25 +44,67 @@ const LoginComponent = () => {
                   className="mt-2 w-full rounded-md bg-[#F2F0EF] px-4 py-3"
                 />
               </div>
-              <div className="mt-3 flex items-center justify-between gap-2">
+              <div className="mt-3">
+                <label className="text-sm" htmlFor="email">
+                  Email address:
+                </label>
+                <input
+                  id="email"
+                  type="text"
+                  className="mt-2 w-full rounded-md bg-[#F2F0EF] px-4 py-3"
+                />
+              </div>
+              <div className="mt-3">
+                <label className="text-sm" htmlFor="emailAgain">
+                  Email (again):
+                </label>
+                <input
+                  id="emailAgain"
+                  type="text"
+                  className="mt-2 w-full rounded-md bg-[#F2F0EF] px-4 py-3"
+                />
+              </div>
+              <div className="mt-3">
+                <label className="text-sm" htmlFor="fastName">
+                  First name:
+                </label>
+                <input
+                  id="fastName"
+                  type="text"
+                  className="mt-2 w-full rounded-md bg-[#F2F0EF] px-4 py-3"
+                />
+              </div>
+              <div className="mt-3">
+                <label className="text-sm" htmlFor="lastName">
+                  Last name:
+                </label>
+                <input
+                  id="lastName"
+                  type="text"
+                  className="mt-2 w-full rounded-md bg-[#F2F0EF] px-4 py-3"
+                />
+              </div>
+              <div className="mt-3">
+                <label className="text-sm" htmlFor="city">
+                  City:
+                </label>
+                <input
+                  id="city"
+                  type="text"
+                  className="mt-2 w-full rounded-md bg-[#F2F0EF] px-4 py-3"
+                />
+              </div>
+              <div className="mt-4 flex items-center justify-between gap-2">
                 <div className="flex items-center gap-2">
                   <input type="checkbox" name="" id="Remember" />
                   <label className="cursor-pointer text-sm" htmlFor="Remember">
-                    Remember Me
+                    I agree to terms & Policy.
                   </label>
-                </div>
-                <div>
-                  <Link
-                    className="text-sm duration-200 ease-in-out hover:text-[#F16126]"
-                    to={"/"}
-                  >
-                    Forgot password?
-                  </Link>
                 </div>
               </div>
               <div className="mt-5 flex w-full items-center gap-2">
                 <button className="block w-full rounded-md bg-[#F16126] px-6 py-3 text-white">
-                  Log In
+                  Create New Account
                 </button>
               </div>
               <div className="mt-5 flex justify-center">
@@ -96,6 +136,19 @@ const LoginComponent = () => {
                   </button>
                 </div>
               </div>
+              <div className="mt-6 flex justify-center">
+                <div>
+                  <p>
+                    Already have an account?{" "}
+                    <Link
+                      to={"/login"}
+                      className="font-semibold duration-300 ease-in-out hover:text-[#F16126]"
+                    >
+                      Login Here!
+                    </Link>{" "}
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -108,4 +161,4 @@ const LoginComponent = () => {
   );
 };
 
-export default LoginComponent;
+export default RegistrationComponent;

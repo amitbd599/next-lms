@@ -17,6 +17,7 @@ import FAQPage from "./Pages/FAQPage";
 import GalleryPage from "./Pages/GalleryPage";
 import HomePage from "./Pages/HomePage";
 import LoginPage from "./Pages/LoginPage";
+import RegistrationPage from "./Pages/RegistrationPage";
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
         <Route exact path="/gallery" element={<GalleryPage />} />
         <Route exact path="/category" element={<CategoryPage />} />
         <Route exact path="/login" element={<LoginPage />} />
+        <Route exact path="/registration" element={<RegistrationPage />} />
         <Route exact path="/error" element={<ErrorPage />} />
       </Routes>
       <ScrollToTop smooth color="#fff" className="scrollToTop" />
