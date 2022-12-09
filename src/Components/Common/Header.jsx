@@ -38,57 +38,57 @@ const Header = () => {
   return (
     <header>
       {/* Top Header Section*/}
-      <div className='top__header hidden lg:block w-full h-[40px] bg-[#002147]'>
-        <div className='container mx-auto   h-full flex justify-between items-center'>
-          <div className='flex items-center h-full gap-4'>
-            <div className='flex items-center gap-4'>
-              <div className='flex gap-2 items-center'>
+      <div className="top__header hidden h-[40px] w-full bg-[#002147] lg:block">
+        <div className="container mx-auto   flex h-full items-center justify-between">
+          <div className="flex h-full items-center gap-4">
+            <div className="flex items-center gap-4">
+              <div className="flex items-center gap-2">
                 <span>
-                  <FaFolderOpen className='text-[18px] text-primary' />
+                  <FaFolderOpen className="text-primary text-[18px]" />
                 </span>
-                <span className='text-white text-[14px] font-normal'>
+                <span className="text-[14px] font-normal text-white">
                   Total Course: 23400
                 </span>
               </div>
-              <div className='flex items-center'>
-                <span className='text-slate-400 text-[14px] mb-0.5'>|</span>
+              <div className="flex items-center">
+                <span className="text-slate-400 mb-0.5 text-[14px]">|</span>
               </div>
-              <div className='flex gap-2 items-center'>
+              <div className="flex items-center gap-2">
                 <span>
-                  <FaUserTie className='text-[18px] text-primary' />
+                  <FaUserTie className="text-primary text-[18px]" />
                 </span>
-                <span className='text-white text-[14px] font-normal'>
+                <span className="text-[14px] font-normal text-white">
                   Total Teacher: 320
                 </span>
               </div>
-              <div className='flex items-center'>
-                <span className='text-slate-400 text-[14px] mb-0.5'>|</span>
+              <div className="flex items-center">
+                <span className="text-slate-400 mb-0.5 text-[14px]">|</span>
               </div>
-              <div className='flex gap-2 items-center'>
+              <div className="flex items-center gap-2">
                 <span>
-                  <FaPhoneAlt className='text-[18px] text-primary' />
+                  <FaPhoneAlt className="text-primary text-[18px]" />
                 </span>
-                <span className='text-white text-[14px] font-normal'>
+                <span className="text-[14px] font-normal text-white">
                   Hot Line : +88 0181 234567
                 </span>
               </div>
             </div>
           </div>
-          <div className='flex items-center gap-2'>
+          <div className="flex items-center gap-2">
             <div>
-              <button className='flex items-center gap-1.5  ease-in-out duration-200 px-3 py-2 rounded-md'>
+              <button className="flex items-center gap-1.5  rounded-md px-3 py-2 duration-200 ease-in-out">
                 <span>
-                  <FaEdit className='text-white ' />
+                  <FaEdit className="text-white " />
                 </span>
-                <span className='text-white text-sm font-medium'>Register</span>
+                <span className="text-sm font-medium text-white">Register</span>
               </button>
             </div>
             <div>
-              <button className='flex items-center gap-2 px-3 py-2 rounded-md'>
+              <button className="flex items-center gap-2 rounded-md px-3 py-2">
                 <span>
-                  <FaUserEdit className='text-white' />
+                  <FaUserEdit className="text-white" />
                 </span>
-                <span className='text-white text-sm font-medium'>Login</span>
+                <span className="text-sm font-medium text-white">Login</span>
               </button>
             </div>
           </div>
@@ -99,104 +99,107 @@ const Header = () => {
       <div className={stickyNav ? "h-[80px] " : null}></div>
       <div className={stickyNav ? "my__sticky__nav shadow-lg " : null}>
         <div className={show ? " menu-open " : null}>
-          <div className='navbar h-[80px] w-full bg-white sticky top-0 z-[9999]'>
-            <div className='container h-[80px] w-full mx-auto flex items-center'>
-              <div className='flex w-full justify-between items-center'>
-                <div className='header__left'>
-                  <div className='logo__section'>
+          <div className="navbar sticky top-0 z-[9999] h-[80px] w-full bg-white">
+            <div className="container mx-auto flex h-[80px] w-full items-center">
+              <div className="flex w-full items-center justify-between">
+                <div className="header__left">
+                  <div className="logo__section">
                     <img
-                      className='w-[230px]'
-                      src='/Assets/Images/logo.png'
-                      alt=''
+                      className="w-[230px]"
+                      src="/Assets/Images/logo.png"
+                      alt=""
                     />
                   </div>
                 </div>
 
-                <div className='header__right'>
-                  <nav className='lg:block'>
-                    <ul className='menu'>
-                      <li className='root__dropdown'>
-                        <Link to='/'>Home</Link>
+                <div className="header__right">
+                  <nav className="lg:block">
+                    <ul className="menu">
+                      <li className="root__dropdown">
+                        <Link to="/">Home</Link>
                       </li>
-                      <li className='root__dropdown'>
-                        <Link to='/course'>Course</Link>
-                        <ul className='subMenu'>
+                      <li className="root__dropdown">
+                        <Link to="/course">Course</Link>
+                        <ul className="subMenu">
                           <li>
-                            <Link to='/course-grid-page'>Course Grid</Link>
+                            <Link to="/course-grid-page">Course Grid</Link>
                           </li>
                           <li>
-                            <Link to='/course-list-page'>Course List</Link>
+                            <Link to="/course-list-page">Course List</Link>
                           </li>
                           <li>
-                            <Link to='/course-details'>Course Details</Link>
+                            <Link to="/course-details">Course Details</Link>
                           </li>
                         </ul>
                       </li>
 
-                      <li className='root__dropdown'>
-                        <Link to='#pages'>Pages</Link>
-                        <ul className='subMenu'>
+                      <li className="root__dropdown">
+                        <Link to="#pages">Pages</Link>
+                        <ul className="subMenu">
                           <li>
-                            <Link to='/course-advisor'>Course Advisor</Link>
+                            <Link to="/course-advisor">Course Advisor</Link>
                           </li>
                           <li>
-                            <Link to='/course-advisor-details'>
+                            <Link to="/course-advisor-details">
                               Course Advisor Details
                             </Link>
                           </li>
                           <li>
-                            <Link to='/event'>Event</Link>
+                            <Link to="/event">Event</Link>
                           </li>
                           <li>
-                            <Link to='/event-details'>Event Details</Link>
+                            <Link to="/event-details">Event Details</Link>
                           </li>
                           <li>
-                            <Link to='/faq'>Faq</Link>
+                            <Link to="/faq">Faq</Link>
                           </li>
                           <li>
-                            <Link to='/gallery'>Gallery</Link>
+                            <Link to="/gallery">Gallery</Link>
                           </li>
                           <li>
-                            <Link to='/category'>Category</Link>
+                            <Link to="/category">Category</Link>
                           </li>
                           <li>
-                            <Link to='/login'>Login</Link>
+                            <Link to="/login">Login</Link>
                           </li>
                           <li>
-                            <Link to='/registration'>Registration</Link>
+                            <Link to="/registration">Registration</Link>
+                          </li>
+                          <li>
+                            <Link to="/error">404 Page</Link>
                           </li>
                         </ul>
                       </li>
-                      <li className='root__dropdown'>
-                        <Link to='#'>Blog</Link>
-                        <ul className='subMenu'>
+                      <li className="root__dropdown">
+                        <Link to="#">Blog</Link>
+                        <ul className="subMenu">
                           <li>
-                            <Link to='/blog'>Blog</Link>
+                            <Link to="/blog">Blog</Link>
                           </li>
                           <li>
-                            <Link to='/blog-details'>Blog Details</Link>
+                            <Link to="/blog-details">Blog Details</Link>
                           </li>
                         </ul>
                       </li>
                       <li>
-                        <Link to='/about'>About</Link>
+                        <Link to="/about">About</Link>
                       </li>
                       <li>
-                        <Link to='/contact'>Contact</Link>
+                        <Link to="/contact">Contact</Link>
                       </li>
                     </ul>
                   </nav>
                   {/* Start Humbugger Menu  */}
-                  <button className='HumbuggerMenu block lg:hidden'>
+                  <button className="HumbuggerMenu block lg:hidden">
                     <span
                       onClick={MenuControl}
-                      className='menuOpenTrigger text-white'
+                      className="menuOpenTrigger text-white"
                     >
                       <FiMenu />
                     </span>
                   </button>
-                  <button className='close-menu block lg:hidden'>
-                    <span onClick={MenuControl} className='MenuCloseTrigger'>
+                  <button className="close-menu block lg:hidden">
+                    <span onClick={MenuControl} className="MenuCloseTrigger">
                       <FiX />
                     </span>
                   </button>

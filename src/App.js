@@ -3,17 +3,20 @@ import ScrollToTop from "react-scroll-to-top";
 import AboutPage from "./Pages/AboutPage";
 import BlogDetailsPage from "./Pages/BlogDetailsPage";
 import BlogPage from "./Pages/BlogPage";
+import CategoryPage from "./Pages/CategoryPage";
 import ContactPage from "./Pages/ContactPage";
 import CourseAdvisorDetailsPage from "./Pages/CourseAdvisorDetailsPage";
 import CourseAdvisorPage from "./Pages/CourseAdvisorPage";
 import CourseDetailsPage from "./Pages/CourseDetailsPage";
 import CourseGridPage from "./Pages/CourseGridPage";
 import CourseListPage from "./Pages/CourseListPage";
+import ErrorPage from "./Pages/ErrorPage";
 import EventDetailsPage from "./Pages/EventDetailsPage";
 import EventPage from "./Pages/EventPage";
 import FAQPage from "./Pages/FAQPage";
 import GalleryPage from "./Pages/GalleryPage";
 import HomePage from "./Pages/HomePage";
+import LoginPage from "./Pages/LoginPage";
 
 function App() {
   return (
@@ -37,6 +40,9 @@ function App() {
         <Route exact path="/faq" element={<FAQPage />} />
         <Route exact path="/contact" element={<ContactPage />} />
         <Route exact path="/gallery" element={<GalleryPage />} />
+        <Route exact path="/category" element={<CategoryPage />} />
+        <Route exact path="/login" element={<LoginPage />} />
+        <Route exact path="/error" element={<ErrorPage />} />
       </Routes>
       <ScrollToTop smooth color="#fff" className="scrollToTop" />
     </BrowserRouter>

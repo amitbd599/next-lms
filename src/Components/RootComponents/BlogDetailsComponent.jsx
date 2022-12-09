@@ -1,7 +1,6 @@
 import React from "react";
 import {
   FaFacebookF,
-  FaFacebookSquare,
   FaHistory,
   FaInstagramSquare,
   FaLinkedinIn,
@@ -24,53 +23,53 @@ const BlogDetailsComponent = () => {
       {/* ============ Intro Section ============*/}
       <IntroSection title={"Blog"} />
       {/* Single Blog Section */}
-      <div className='blogDetails py-[80px]'>
-        <div className='container mx-auto'>
-          <div className='grid grid-cols-12 gap-5'>
-            <div className='col-span-8'>
+      <div className="blogDetails py-[80px]">
+        <div className="container mx-auto">
+          <div className="grid grid-cols-12 gap-5">
+            <div className="col-span-8">
               <div>
                 {/* Title Section */}
                 <div>
-                  <h2 className='text-[40px] font-semibold leading-[52px]'>
+                  <h2 className="text-[40px] font-semibold leading-[52px]">
                     When is it (if ever) a good idea to use JavaScript instead
                     of TypeScript?
                   </h2>
                 </div>
                 {/* Date Intro */}
-                <div className='flex gap-3 mt-2'>
-                  <div className='flex gap-2 items-center border-r-2 pr-3'>
+                <div className="mt-2 flex gap-3">
+                  <div className="flex items-center gap-2 border-r-2 pr-3">
                     <span>
-                      <FaUserAlt className='text-sm text-[#F16126]' />
+                      <FaUserAlt className="text-sm text-[#F16126]" />
                     </span>
-                    <span className='text-sm'>Admin</span>
+                    <span className="text-sm">Admin</span>
                   </div>
-                  <div className='flex gap-2 items-center border-r-2 pr-3'>
+                  <div className="flex items-center gap-2 border-r-2 pr-3">
                     <span>
-                      <FaHistory className='text-sm text-[#F16126]' />
+                      <FaHistory className="text-sm text-[#F16126]" />
                     </span>
-                    <span className='text-sm'>Jan 10, 2022 </span>
+                    <span className="text-sm">Jan 10, 2022 </span>
                   </div>
-                  <div className='flex gap-2 items-center pr-3'>
+                  <div className="flex items-center gap-2 pr-3">
                     <span>
-                      <FaRegEye className='text-sm text-[#F16126]' />
+                      <FaRegEye className="text-sm text-[#F16126]" />
                     </span>
-                    <span className='text-sm'>Jan 10, 2022 </span>
+                    <span className="text-sm">Jan 10, 2022 </span>
                   </div>
                 </div>
                 {/* Blog Image */}
-                <div className='flex justify-center'>
-                  <div className='mt-6'>
+                <div className="flex justify-center">
+                  <div className="mt-6">
                     <img
-                      className='rounded-md'
-                      src='Assets/Images/blogs/Blog_10.png'
-                      alt=''
+                      className="rounded-md"
+                      src="Assets/Images/blogs/Blog_10.png"
+                      alt=""
                     />
                   </div>
                 </div>
                 {/* Blog Description */}
-                <div className='description mt-8'>
-                  <div className='text-sm leading-relaxed'>
-                    <h2 className='text-[30px] font-semibold'>
+                <div className="description mt-8">
+                  <div className="text-sm leading-relaxed">
+                    <h2 className="text-[30px] font-semibold">
                       What is TypeScript?
                     </h2>
                     <p>
@@ -94,13 +93,13 @@ const BlogDetailsComponent = () => {
                       optimize to have the smallest code file.
                     </p>
                     <br />
-                    <p className='font-medium text-base'>
+                    <p className="text-base font-medium">
                       Though I see the pros, here’s why I’m not a big fan after
                       using it on a few big projects:
                     </p>
 
                     <div>
-                      <ul className='list-disc pl-6 pt-2'>
+                      <ul className="list-disc pl-6 pt-2">
                         <li>
                           Not worth the overhead. I find I spend more time
                           trying to make TS happy than I do building. It feels
@@ -156,7 +155,7 @@ const BlogDetailsComponent = () => {
                       TS.
                     </p>
                     <br />
-                    <h2 className='text-[28px] font-semibold'>
+                    <h2 className="text-[28px] font-semibold">
                       TypeScript is a superset of JavaScript
                     </h2>
                     <p>
@@ -178,12 +177,12 @@ const BlogDetailsComponent = () => {
                     </p>
                     <br />
                     <br />
-                    <div className='flex gap-8'>
+                    <div className="flex gap-8">
                       <span>
-                        <img src='/Assets/Images/blogs/Blog_3.png' alt='' />
+                        <img src="/Assets/Images/blogs/Blog_3.png" alt="" />
                       </span>
                       <span>
-                        <img src='/Assets/Images/blogs/Blog_2.png' alt='' />
+                        <img src="/Assets/Images/blogs/Blog_2.png" alt="" />
                       </span>
                     </div>
                     <br />
@@ -211,49 +210,49 @@ const BlogDetailsComponent = () => {
                   </div>
                 </div>
                 {/* Tag and Search Box */}
-                <div className='flex items-center justify-between mt-8 border-[#E9ECEF] border-b pb-10'>
-                  <div className='tag '>
-                    <div className='flex gap-4 items-center'>
-                      <span className='text-lg font-semibold text-[#333]'>
+                <div className="mt-8 flex items-center justify-between border-b border-[#E9ECEF] pb-10">
+                  <div className="tag ">
+                    <div className="flex items-center gap-4">
+                      <span className="text-lg font-semibold text-[#333]">
                         Tags :
                       </span>
-                      <button className='border border-[#E9ECEF] px-4 py-2 hover:bg-[#F16126] hover:text-white hover:border-[#F16126] ease-in-out duration-200 rounded-md'>
+                      <button className="rounded-md border border-[#E9ECEF] px-4 py-2 duration-200 ease-in-out hover:border-[#F16126] hover:bg-[#F16126] hover:text-white">
                         JavaScript
                       </button>
-                      <button className='border border-[#E9ECEF] px-4 py-2 hover:bg-[#F16126] hover:text-white hover:border-[#F16126] ease-in-out duration-200 rounded-md'>
+                      <button className="rounded-md border border-[#E9ECEF] px-4 py-2 duration-200 ease-in-out hover:border-[#F16126] hover:bg-[#F16126] hover:text-white">
                         PHP
                       </button>
-                      <button className='border border-[#E9ECEF] px-4 py-2 hover:bg-[#F16126] hover:text-white hover:border-[#F16126] ease-in-out duration-200 rounded-md'>
+                      <button className="rounded-md border border-[#E9ECEF] px-4 py-2 duration-200 ease-in-out hover:border-[#F16126] hover:bg-[#F16126] hover:text-white">
                         Java
                       </button>
                     </div>
                   </div>
-                  <div className='share'>
-                    <div className='flex gap-2 items-center'>
-                      <span className='text-lg font-semibold text-[#333]'>
+                  <div className="share">
+                    <div className="flex items-center gap-2">
+                      <span className="text-lg font-semibold text-[#333]">
                         Share on:
                       </span>
                       <a
-                        href='#'
-                        className='text-[20px] hover:text-[#F16126] p-1 ml-2 ease-in-out duration-200'
+                        href="#"
+                        className="ml-2 p-1 text-[20px] duration-200 ease-in-out hover:text-[#F16126]"
                       >
                         <FaFacebookF />
                       </a>
                       <a
-                        href='#'
-                        className='text-[20px] hover:text-[#F16126] p-[1px]  ease-in-out duration-200'
+                        href="#"
+                        className="p-[1px] text-[20px] duration-200  ease-in-out hover:text-[#F16126]"
                       >
                         <FaTwitter />
                       </a>
                       <a
-                        href='#'
-                        className='text-[20px] hover:text-[#F16126] p-[1px] ease-in-out duration-200'
+                        href="#"
+                        className="p-[1px] text-[20px] duration-200 ease-in-out hover:text-[#F16126]"
                       >
                         <FaLinkedinIn />
                       </a>
                       <a
-                        href='#'
-                        className='text-[20px] hover:text-[#F16126] p-[1px] ease-in-out duration-200'
+                        href="#"
+                        className="p-[1px] text-[20px] duration-200 ease-in-out hover:text-[#F16126]"
                       >
                         <FaInstagramSquare />
                       </a>
@@ -261,33 +260,33 @@ const BlogDetailsComponent = () => {
                   </div>
                 </div>
                 {/* Comment Section */}
-                <div className='commentSection mt-8'>
+                <div className="commentSection mt-8">
                   <div>
-                    <h2 className='text-[22px] font-semibold'>3 Comments</h2>
+                    <h2 className="text-[22px] font-semibold">3 Comments</h2>
                   </div>
-                  <div className='mainContent border-b border-[#E9ECEF] pb-4'>
-                    <div className='main mt-8 flex w-full '>
-                      <div className='w-2/12 flex justify-center'>
+                  <div className="mainContent border-b border-[#E9ECEF] pb-4">
+                    <div className="main mt-8 flex w-full ">
+                      <div className="flex w-2/12 justify-center">
                         <div>
                           <img
-                            className='w-[80px] rounded-full'
-                            src='/Assets/Images/students/Students_1.png'
-                            alt=''
+                            className="w-[80px] rounded-full"
+                            src="/Assets/Images/students/Students_1.png"
+                            alt=""
                           />
                         </div>
                       </div>
-                      <div className='w-10/12 border-b border-[#E9ECEF] pb-4'>
-                        <h2 className='text-lg font-semibold'>Alex Amit</h2>
-                        <p className='text-sm mt-[-2px]'>Jan 20, 2022</p>
-                        <p className='mt-1 text-sm leading-relaxed'>
+                      <div className="w-10/12 border-b border-[#E9ECEF] pb-4">
+                        <h2 className="text-lg font-semibold">Alex Amit</h2>
+                        <p className="mt-[-2px] text-sm">Jan 20, 2022</p>
+                        <p className="mt-1 text-sm leading-relaxed">
                           Typescript is the millennial “team manager” of
                           languages. Everyone gets a prize and no one fails. It
                           turns great javascript coders into mediocre typescript
                           coders and great C# or Java coders into mediocre
                           typescript coders.
                         </p>
-                        <div className='mt-2 ml-2'>
-                          <button className='font-semibold text-[#333] flex gap-2 items-center'>
+                        <div className="mt-2 ml-2">
+                          <button className="flex items-center gap-2 font-semibold text-[#333]">
                             <span>Reply</span>
                             <span>
                               <FaReply />
@@ -296,27 +295,27 @@ const BlogDetailsComponent = () => {
                         </div>
                       </div>
                     </div>
-                    <div className='child mt-8 flex w-full pl-16'>
-                      <div className='w-2/12 flex justify-center'>
+                    <div className="child mt-8 flex w-full pl-16">
+                      <div className="flex w-2/12 justify-center">
                         <div>
                           <img
-                            className='w-[80px] rounded-full'
-                            src='/Assets/Images/students/Students_2.png'
-                            alt=''
+                            className="w-[80px] rounded-full"
+                            src="/Assets/Images/students/Students_2.png"
+                            alt=""
                           />
                         </div>
                       </div>
-                      <div className='w-10/12 '>
-                        <h2 className='text-lg font-semibold'>Admin</h2>
-                        <p className='text-sm mt-[-2px]'>Jan 26, 2022</p>
-                        <p className='mt-1 text-sm leading-relaxed'>
+                      <div className="w-10/12 ">
+                        <h2 className="text-lg font-semibold">Admin</h2>
+                        <p className="mt-[-2px] text-sm">Jan 26, 2022</p>
+                        <p className="mt-1 text-sm leading-relaxed">
                           Typescript is the millennial “team manager” of
                           languages. Everyone gets a prize and no one fails. It
                           turns great javascript coders into mediocre typescript
                           coders.
                         </p>
-                        <div className='mt-2 ml-2'>
-                          <button className='font-semibold text-[#333] flex gap-2 items-center'>
+                        <div className="mt-2 ml-2">
+                          <button className="flex items-center gap-2 font-semibold text-[#333]">
                             <span>Reply</span>
                             <span>
                               <FaReply />
@@ -326,29 +325,29 @@ const BlogDetailsComponent = () => {
                       </div>
                     </div>
                   </div>
-                  <div className='mainContent  pb-4'>
-                    <div className='main mt-8 flex w-full '>
-                      <div className='w-2/12 flex justify-center'>
+                  <div className="mainContent  pb-4">
+                    <div className="main mt-8 flex w-full ">
+                      <div className="flex w-2/12 justify-center">
                         <div>
                           <img
-                            className='w-[80px] rounded-full'
-                            src='/Assets/Images/students/Students_3.png'
-                            alt=''
+                            className="w-[80px] rounded-full"
+                            src="/Assets/Images/students/Students_3.png"
+                            alt=""
                           />
                         </div>
                       </div>
-                      <div className='w-10/12 border-b border-[#E9ECEF] pb-4'>
-                        <h2 className='text-lg font-semibold'>Raj Roy</h2>
-                        <p className='text-sm mt-[-2px]'>Jan 27, 2022</p>
-                        <p className='mt-1 text-sm leading-relaxed'>
+                      <div className="w-10/12 border-b border-[#E9ECEF] pb-4">
+                        <h2 className="text-lg font-semibold">Raj Roy</h2>
+                        <p className="mt-[-2px] text-sm">Jan 27, 2022</p>
+                        <p className="mt-1 text-sm leading-relaxed">
                           Typescript is the millennial “team manager” of
                           languages. Everyone gets a prize and no one fails. It
                           turns great javascript coders into mediocre typescript
                           coders and great C# or Java coders into mediocre
                           typescript coders.
                         </p>
-                        <div className='mt-2 ml-2'>
-                          <button className='font-semibold text-[#333] flex gap-2 items-center'>
+                        <div className="mt-2 ml-2">
+                          <button className="flex items-center gap-2 font-semibold text-[#333]">
                             <span>Reply</span>
                             <span>
                               <FaReply />
@@ -357,27 +356,27 @@ const BlogDetailsComponent = () => {
                         </div>
                       </div>
                     </div>
-                    <div className='child mt-8 flex w-full pl-16'>
-                      <div className='w-2/12 flex justify-center'>
+                    <div className="child mt-8 flex w-full pl-16">
+                      <div className="flex w-2/12 justify-center">
                         <div>
                           <img
-                            className='w-[80px] rounded-full'
-                            src='/Assets/Images/students/Students_2.png'
-                            alt=''
+                            className="w-[80px] rounded-full"
+                            src="/Assets/Images/students/Students_2.png"
+                            alt=""
                           />
                         </div>
                       </div>
-                      <div className='w-10/12 '>
-                        <h2 className='text-lg font-semibold'>Admin</h2>
-                        <p className='text-sm mt-[-2px]'>Jan 29, 2022</p>
-                        <p className='mt-1 text-sm leading-relaxed'>
+                      <div className="w-10/12 ">
+                        <h2 className="text-lg font-semibold">Admin</h2>
+                        <p className="mt-[-2px] text-sm">Jan 29, 2022</p>
+                        <p className="mt-1 text-sm leading-relaxed">
                           Typescript is the millennial “team manager” of
                           languages. Everyone gets a prize and no one fails. It
                           turns great javascript coders into mediocre typescript
                           coders.
                         </p>
-                        <div className='mt-2 ml-2'>
-                          <button className='font-semibold text-[#333] flex gap-2 items-center'>
+                        <div className="mt-2 ml-2">
+                          <button className="flex items-center gap-2 font-semibold text-[#333]">
                             <span>Reply</span>
                             <span>
                               <FaReply />
@@ -388,57 +387,57 @@ const BlogDetailsComponent = () => {
                     </div>
                   </div>
                 </div>
-                <div className='commentInput mt-14'>
+                <div className="commentInput mt-14">
                   <div>
-                    <h2 className='text-[22px] font-semibold'>
+                    <h2 className="text-[22px] font-semibold">
                       Leave Your Comment Here
                     </h2>
                   </div>
-                  <div className='mt-5'>
-                    <div className='flex gap-3'>
-                      <div className='w-full'>
+                  <div className="mt-5">
+                    <div className="flex gap-3">
+                      <div className="w-full">
                         <input
-                          className='text-slate-400 border border-[#E9ECEF] px-3 py-3 rounded-lg w-full text-sm'
-                          type='text'
-                          placeholder='Your Name*'
+                          className="text-slate-400 w-full rounded-lg border border-[#E9ECEF] px-3 py-3 text-sm"
+                          type="text"
+                          placeholder="Your Name*"
                         />
                       </div>
-                      <div className='w-full'>
+                      <div className="w-full">
                         <input
-                          className='text-slate-400 border border-[#E9ECEF] px-3 py-3 rounded-lg w-full text-sm'
-                          type='text'
-                          placeholder='Your Email*'
+                          className="text-slate-400 w-full rounded-lg border border-[#E9ECEF] px-3 py-3 text-sm"
+                          type="text"
+                          placeholder="Your Email*"
                         />
                       </div>
                     </div>
                   </div>
-                  <div className='mt-5'>
+                  <div className="mt-5">
                     <textarea
-                      className='text-slate-400 border border-[#E9ECEF] px-3 py-3 rounded-lg w-full text-sm'
-                      id='txtid'
-                      name='txtname'
-                      rows='6'
-                      cols='50'
-                      maxlength='200'
-                      placeholder='Leave A Comment ...'
+                      className="text-slate-400 w-full rounded-lg border border-[#E9ECEF] px-3 py-3 text-sm"
+                      id="txtid"
+                      name="txtname"
+                      rows="6"
+                      cols="50"
+                      maxlength="200"
+                      placeholder="Leave A Comment ..."
                     ></textarea>
                   </div>
-                  <div className='flex gap-2 items-center mt-3'>
-                    <input type='checkbox' name='' id='comment' />
-                    <label htmlFor='comment' className='text-sm'>
+                  <div className="mt-3 flex items-center gap-2">
+                    <input type="checkbox" name="" id="comment" />
+                    <label htmlFor="comment" className="text-sm">
                       Save my name, email, and website in this browser for the
                       next time I comment.
                     </label>
                   </div>
                   <div>
-                    <button className='bg-[#F16126] px-8 py-3 rounded-md text-white mt-4'>
+                    <button className="mt-4 rounded-md bg-[#F16126] px-8 py-3 text-white">
                       Submit
                     </button>
                   </div>
                 </div>
               </div>
             </div>
-            <div className='col-span-4 pl-6'>
+            <div className="col-span-4 pl-6">
               <Sidebar />
             </div>
           </div>
