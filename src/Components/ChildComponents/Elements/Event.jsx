@@ -1,38 +1,52 @@
 import React from "react";
 import { FaHistory, FaMapMarkerAlt } from "react-icons/fa";
+import { Fade } from "react-reveal";
 import { Link } from "react-router-dom";
 const Event = ({ item }) => {
   return (
-    <div className='itemContainer relative flex justify-center'>
-      <div className=' px-4 py-4 shadow-lg hover:shadow-xl rounded-lg ease-in-out duration-300'>
-        <div className='img__file overflow-hidden rounded-md  relative'>
-          <img className='w-full object-cover' src={item.thumbnail} alt='' />
-          <span className='bg-[#F16126] text-white text-sm px-3 py-1 rounded-full absolute z-10 bottom-2 right-2'>
-            21 Jan, 2023
-          </span>
+    <div className="itemContainer relative flex justify-center">
+      <div className=" rounded-lg px-4 py-4 shadow-lg duration-300 ease-in-out hover:shadow-xl">
+        <div className="img__file relative overflow-hidden  rounded-md">
+          <Fade>
+            <img className="w-full object-cover" src={item.thumbnail} alt="" />
+          </Fade>
+          <Fade bottom>
+            <span className="absolute bottom-2 right-2 z-10 rounded-full bg-[#F16126] px-3 py-1 text-sm text-white">
+              21 Jan, 2023
+            </span>
+          </Fade>
         </div>
-        <div className='text__file mt-5'>
-          <div className='text-left px-4'>
-            <Link
-              to={"/event-details"}
-              className='text-[#333] text-[22px] font-semibold hover:text-[#F16126] ease-in-out duration-300 leading-7'
-            >
-              {item.title}
-            </Link>
-            <p className='text-sm mt-2'>Over {item.des} Courses</p>
-            <div className='mt-3 mb-3'>
-              <div className='flex gap-2 items-center'>
-                <span className='text-[#F16126]'>
-                  <FaHistory />
-                </span>
-                <span className='text-sm'>{item.time}</span>
-              </div>
-              <div className='flex gap-2 items-center mt-1'>
-                <span className='text-[#F16126]'>
-                  <FaMapMarkerAlt />
-                </span>
-                <span className='text-sm'>{item.location}</span>
-              </div>
+        <div className="text__file mt-5">
+          <div className="px-4 text-left">
+            <Fade bottom>
+              <Link
+                to={"/event-details"}
+                className="text-[22px] font-semibold leading-7 text-[#333] duration-300 ease-in-out hover:text-[#F16126]"
+              >
+                {item.title}
+              </Link>
+            </Fade>
+            <Fade bottom>
+              <p className="mt-2 text-sm">Over {item.des} Courses</p>
+            </Fade>
+
+            <div className="mt-3 mb-3">
+              <Fade bottom>
+                <div className="flex items-center gap-2">
+                  <span className="text-[#F16126]">
+                    <FaHistory />
+                  </span>
+                  <span className="text-sm">{item.time}</span>
+                </div>
+              </Fade>
+              <Fade bottom>
+                <div className="mt-1 flex items-center gap-2">
+                  <span className="text-[#F16126]">
+                    <FaMapMarkerAlt />
+                  </span>
+                  <span className="text-sm">{item.location}</span>
+                </div>
+              </Fade>
             </div>
           </div>
         </div>

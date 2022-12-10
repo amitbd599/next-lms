@@ -20,6 +20,8 @@
   --twitch: #6441a3;
 }
 // Media queries
-$lg-device: "only screen and (min-width: 992px)";
-$md-device: "only screen and (min-width: 768px) and (max-width: 991px)";
+
+$xl-device: "only screen and (min-width: 1280px)";
+$lg-device: "only screen and (min-width: 1024px) and (max-width: 1279px)";
+$md-device: "only screen and (min-width: 768px) and (max-width: 1023px)";
 $sm-device: "only screen and (max-width: 767px)";

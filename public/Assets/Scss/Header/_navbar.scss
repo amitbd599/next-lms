@@ -92,7 +92,7 @@ nav {
           }
         }
         &:hover {
-          @media #{$lg-device} {
+          @media #{$xl-device} {
             > ul {
               &.subMenu {
                 opacity: 1;
@@ -131,6 +131,9 @@ nav {
   -------------------------------*/
 
 nav {
+  @media #{$lg-device} {
+    position: absolute;
+  }
   @media #{$md-device} {
     position: absolute;
   }
@@ -139,14 +142,28 @@ nav {
   }
   ul {
     &.menu {
+      @media #{$lg-device} {
+        width: 80vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100vw;
+        z-index: 99;
+        padding: 80px 30px;
+        background: #ffffff;
+        -webkit-transition: all 0.8s cubic-bezier(0.77, 0.2, 0.05, 1);
+        -o-transition: all 0.8s cubic-bezier(0.77, 0.2, 0.05, 1);
+        transition: all 0.8s cubic-bezier(0.77, 0.2, 0.05, 1);
+        display: block;
+        overflow-y: auto;
+      }
       @media #{$md-device} {
         width: 80vw;
         height: 100vh;
         position: fixed;
         top: 0;
-        right: -71vw;
+        right: -100vw;
         z-index: 99;
-        // padding: 55px;
         padding: 80px 30px;
         background: #ffffff;
         -webkit-transition: all 0.8s cubic-bezier(0.77, 0.2, 0.05, 1);
@@ -162,7 +179,6 @@ nav {
         top: 0;
         right: -100vw;
         z-index: 99;
-        // padding: 55px;
         padding: 80px 30px;
         background: #ffffff;
         -webkit-transition: all 0.8s cubic-bezier(0.77, 0.2, 0.05, 1);
@@ -173,6 +189,10 @@ nav {
       }
 
       li {
+        @media #{$lg-device} {
+          margin: 0;
+          padding: 10px 0;
+        }
         @media #{$md-device} {
           margin: 0;
           padding: 10px 0;
@@ -183,6 +203,9 @@ nav {
           padding: 10px 0;
         }
         &.root__dropdown {
+          @media #{$lg-device} {
+            position: relative;
+          }
           @media #{$md-device} {
             position: relative;
           }
@@ -192,7 +215,7 @@ nav {
           }
 
           > a {
-            @media #{$sm-device} {
+            @media #{$lg-device} {
               position: relative;
               &::after {
                 width: 0;
@@ -244,14 +267,46 @@ nav {
                   height: 0;
                   border-style: solid;
                   border-width: 0 7px 7px 7px;
-                  border-color: transparent transparent var(--color-primary)
-                    transparent;
+                  border-color: transparent transparent #333 transparent;
+                }
+              }
+            }
+            @media #{$sm-device} {
+              position: relative;
+              &::after {
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 7px 7px 0 7px;
+                border-color: #1f1f25 transparent transparent transparent;
+                position: absolute;
+                content: "";
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+                background: transparent;
+                left: auto;
+              }
+              &.open {
+                color: var(--color-primary);
+                &::after {
+                  width: 0;
+                  height: 0;
+                  border-style: solid;
+                  border-width: 0 7px 7px 7px;
+                  border-color: transparent transparent #333 transparent;
                 }
               }
             }
           }
         }
         a {
+          @media #{$lg-device} {
+            padding: 0;
+            display: block;
+            font-size: 20px;
+          }
           @media #{$md-device} {
             padding: 0;
             display: block;
@@ -265,6 +320,16 @@ nav {
         }
         ul {
           &.subMenu {
+            @media #{$lg-device} {
+              position: relative;
+              height: 0;
+              transition: 0.3s;
+              padding: 0;
+              opacity: 0;
+              visibility: hidden;
+              background: transparent;
+              box-shadow: inherit;
+            }
             @media #{$md-device} {
               position: relative;
               height: 0;
@@ -286,6 +351,9 @@ nav {
               box-shadow: inherit;
             }
             li {
+              @media #{$lg-device} {
+                padding: 3px 0;
+              }
               @media #{$md-device} {
                 padding: 3px 0;
               }
@@ -293,6 +361,10 @@ nav {
                 padding: 3px 0;
               }
               a {
+                @media #{$lg-device} {
+                  font-size: 20px;
+                  padding: 6px 10px;
+                }
                 @media #{$md-device} {
                   font-size: 20px;
                   padding: 6px 10px;
@@ -304,6 +376,12 @@ nav {
               }
             }
             &.active {
+              @media #{$lg-device} {
+                height: 100%;
+                padding: 12px 0;
+                opacity: 1;
+                visibility: visible;
+              }
               @media #{$md-device} {
                 height: 100%;
                 padding: 12px 0;
@@ -320,6 +398,9 @@ nav {
           }
         }
         a {
+          @media #{$lg-device} {
+            //   color: $heading-color;
+          }
           @media #{$md-device} {
             //   color: $heading-color;
           }
@@ -333,11 +414,21 @@ nav {
 }
 .close-menu {
   position: fixed;
-  top: 25px;
   opacity: 0;
   visibility: hidden;
-  right: 15px;
   z-index: -10;
+  @media #{$lg-device} {
+    top: 20px;
+    right: 58px;
+  }
+  @media #{$md-device} {
+    top: 20px;
+    right: 58px;
+  }
+  @media #{$sm-device} {
+    top: 25px;
+    right: 15px;
+  }
 }
 .menu-open {
   .close-menu {
@@ -356,13 +447,24 @@ nav {
   nav {
     ul {
       &.menu {
+        @media #{$lg-device} {
+          right: -1px;
+        }
         @media #{$md-device} {
           right: -1px;
         }
         @media #{$sm-device} {
           right: -1px;
         }
+        @media #{$lg-device} {
+          width: 86vw;
+          padding: 80px 45px;
+        }
         @media #{$md-device} {
+          width: 86vw;
+          padding: 80px 45px;
+        }
+        @media #{$sm-device} {
           width: 86vw;
           padding: 54px 20px;
         }
@@ -377,11 +479,14 @@ nav {
 .HumbuggerMenu {
   span {
     cursor: pointer;
-    @media #{$sm-device} {
-      font-size: 40px;
+    @media #{$lg-device} {
+      font-size: 28px;
     }
     @media #{$md-device} {
       font-size: 28px;
+    }
+    @media #{$sm-device} {
+      font-size: 40px;
     }
   }
 }

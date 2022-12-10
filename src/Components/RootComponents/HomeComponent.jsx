@@ -46,7 +46,7 @@ const HomeComponent = () => {
       tag: "Total Awarded",
     },
   ];
-  var settings = {
+  const settings = {
     dots: true,
     infinite: false,
     arrows: false,
@@ -86,164 +86,138 @@ const HomeComponent = () => {
       {/* ============ Header Section ============*/}
       <Header />
       {/* ============ Hero Section ============ */}
-      <div className='heroSection'>
-        <div className='container mx-auto relative'>
-          <div className='grid grid-cols-12 gap-4'>
-            <div className='col-span-6'>
-              <div className='leftSide'>
-                <Fade>
-                  <div className='flex gap-8'>
-                    <div className='item flex items-center gap-2'>
+      <div className="heroSection relative overflow-hidden">
+        <div className="container relative z-[99] mx-auto">
+          <div className="grid grid-cols-12 gap-4">
+            <div className="col-span-6">
+              <div className="leftSide">
+                <Fade left cascade>
+                  <div className="flex gap-8">
+                    <div className="item flex items-center gap-2">
                       <span>
-                        <FaGraduationCap className='text-primary text-[20px]' />
+                        <FaGraduationCap className="text-primary text-[20px]" />
                       </span>
-                      <span className='text-white text-[14px]'>
+                      <span className="text-[14px] text-white">
                         Transmission
                       </span>
                     </div>
-                    <div className='item flex items-center gap-2'>
+                    <div className="item flex items-center gap-2">
                       <span>
-                        <FaBuffer className='text-primary text-[20px]' />
+                        <FaBuffer className="text-primary text-[20px]" />
                       </span>
-                      <span className='text-white text-[14px]'>Equivalent</span>
+                      <span className="text-[14px] text-white">Equivalent</span>
                     </div>
-                    <div className='item flex items-center gap-2'>
+                    <div className="item flex items-center gap-2">
                       <span>
-                        <FaSquareRootAlt className='text-primary text-[20px]' />
+                        <FaSquareRootAlt className="text-primary text-[20px]" />
                       </span>
-                      <span className='text-white text-[14px]'>Education</span>
+                      <span className="text-[14px] text-white">Education</span>
                     </div>
                   </div>
                 </Fade>
-                <Fade>
-                  <div className='mt-5 relative '>
-                    <h2 className='text-[60px] text-white font-bold leading-[80px] relative z-10'>
+                <Fade left cascade>
+                  <div className="shape relative mt-5 ">
+                    <h2 className="relative z-10 text-[60px] font-bold leading-[70px] text-white">
                       Growth You Career With Complete Courses
                     </h2>
-                    <span className='absolute top-[20px] right-[50px] z-[-0]'>
-                      <img src='/Assets/Images/shape/shape_6.png' alt='' />
+
+                    <span className="absolute top-[-5px] right-[10px] z-[-0]">
+                      <img
+                        className="w-[250px]"
+                        src="/Assets/Images/shape/shape_26.png"
+                        alt=""
+                      />
                     </span>
                   </div>
                 </Fade>
-                <Fade>
-                  <div className='relative flex mt-5'>
-                    <div className='item'>
+                <Fade left cascade>
+                  {/* <div className="relative mt-5 flex">
+                    <div className="item">
                       <img
-                        className='w-[80px] h-[80px] relative top-0 left-0 border-4 border-[#F16126] rounded-full'
-                        src='Assets/Images/profile/Ellipse_1.png'
-                        alt=''
+                        className="relative top-0 left-0 h-[80px] w-[80px] rounded-full border-4 border-[#F16126]"
+                        src="Assets/Images/profile/Ellipse_1.png"
+                        alt=""
                       />
                     </div>
-                    <div className='item'>
+                    <div className="item">
                       <img
-                        className='w-[80px] h-[80px] relative top-0 left-[-30px] border-4 border-[#F16126] rounded-full'
-                        src='Assets/Images/profile/Ellipse_2.png'
-                        alt=''
+                        className="relative top-0 left-[-30px] h-[80px] w-[80px] rounded-full border-4 border-[#F16126]"
+                        src="Assets/Images/profile/Ellipse_2.png"
+                        alt=""
                       />
                     </div>
-                    <div className='item'>
+                    <div className="item">
                       <img
-                        className='w-[80px] h-[80px] relative top-0 left-[-60px] border-4 border-[#F16126] rounded-full'
-                        src='Assets/Images/profile/Ellipse_3.png'
-                        alt=''
+                        className="relative top-0 left-[-60px] h-[80px] w-[80px] rounded-full border-4 border-[#F16126]"
+                        src="Assets/Images/profile/Ellipse_3.png"
+                        alt=""
                       />
                     </div>
-                    <div className='item'>
+                    <div className="item">
                       <img
-                        className='w-[80px] h-[80px] relative top-0 left-[-90px] border-4 border-[#F16126] rounded-full'
-                        src='Assets/Images/profile/Ellipse_4.png'
-                        alt=''
+                        className="relative top-0 left-[-90px] h-[80px] w-[80px] rounded-full border-4 border-[#F16126]"
+                        src="Assets/Images/profile/Ellipse_4.png"
+                        alt=""
                       />
                     </div>
-                    <div className='item'>
+                    <div className="item">
                       <img
-                        className='w-[80px] h-[80px] relative top-0 left-[-120px] border-4 border-[#F16126] rounded-full'
-                        src='Assets/Images/profile/Ellipse_5.png'
-                        alt=''
+                        className="relative top-0 left-[-120px] h-[80px] w-[80px] rounded-full border-4 border-[#F16126]"
+                        src="Assets/Images/profile/Ellipse_5.png"
+                        alt=""
                       />
                     </div>
-                    <div className='item'>
+                    <div className="item">
                       <img
-                        className='w-[80px] h-[80px] relative top-0 left-[-150px] border-4 border-[#F16126] rounded-full'
-                        src='Assets/Images/profile/Ellipse_6.png'
-                        alt=''
+                        className="relative top-0 left-[-150px] h-[80px] w-[80px] rounded-full border-4 border-[#F16126]"
+                        src="Assets/Images/profile/Ellipse_6.png"
+                        alt=""
                       />
                     </div>
+                  </div> */}
+                  <div className="mt-5 flex justify-start">
+                    <img src="/Assets/Images/shape/shape_31.png" alt="" />
                   </div>
                 </Fade>
               </div>
             </div>
-            <div className='col-span-6 ml-8'>
-              <div className='rightSide relative'>
-                <div className=' shape mt-10'>
-                  <Fade>
-                    <div className='  h-[80px] flex justify-center'>
-                      <div className='item w-[80px] h-[80px] '>
-                        <img
-                          className=' border-4 border-[#F16126] rounded-full'
-                          src='Assets/Images/shape/shape_1.png'
-                          alt=''
-                        />
-                      </div>
-                      <div className='item w-[80px] h-[80px]   ml-[-20px]'>
-                        <img
-                          className=' border-4 border-[#F16126] rounded-full'
-                          src='Assets/Images/shape/shape_2.png'
-                          alt=''
-                        />
-                      </div>
-                      <div className='item w-[80px] h-[80px]  ml-[-20px]'>
-                        <img
-                          className=' border-4 border-[#F16126] rounded-full'
-                          src='Assets/Images/shape/shape_3.png'
-                          alt=''
-                        />
-                      </div>
-                      <div className='item w-[80px] h-[80px]  ml-[-20px]'>
-                        <img
-                          className=' border-4 border-[#F16126] rounded-full'
-                          src='Assets/Images/shape/shape_4.png'
-                          alt=''
-                        />
-                      </div>
-                      <div className='item w-[80px] h-[80px]  ml-[-20px]'>
-                        <img
-                          className=' border-4 border-[#fff] rounded-full'
-                          src='Assets/Images/shape/shape_5.png'
-                          alt=''
-                        />
-                      </div>
+            <div className="col-span-6 ml-8">
+              <div className="rightSide relative">
+                <div className=" shape mt-10">
+                  <Fade right cascade>
+                    <div className="flex items-center justify-center">
+                      <img src="/Assets/Images/shape/shape_30.png" alt="" />
                     </div>
                   </Fade>
                 </div>
-                <Fade>
-                  <div className='flex justify-center gap-4 mt-6'>
-                    <div className='item'>
-                      <div className='text-right'>
-                        <h2 className='text-white text-[40px] font-semibold'>
+                <Fade right cascade>
+                  <div className="mt-6 flex justify-center gap-4">
+                    <div className="item">
+                      <div className="text-right">
+                        <h2 className="text-[40px] font-semibold text-white">
                           <CountUp delay={0} start={21} end={2617} />
                         </h2>
-                        <span className='text-white text-sm'>
+                        <span className="text-sm text-white">
                           Enrolled Students
                         </span>
                       </div>
                     </div>
-                    <div className='item'>
-                      <div className='text-right'>
-                        <h2 className='text-white text-[40px] font-semibold'>
+                    <div className="item">
+                      <div className="text-right">
+                        <h2 className="text-[40px] font-semibold text-white">
                           <CountUp delay={0} start={21} end={902} />
                         </h2>
-                        <span className='text-white text-sm'>
+                        <span className="text-sm text-white">
                           Online Course
                         </span>
                       </div>
                     </div>
-                    <div className='item'>
-                      <div className='text-right'>
-                        <h2 className='text-white text-[40px] font-semibold'>
+                    <div className="item">
+                      <div className="text-right">
+                        <h2 className="text-[40px] font-semibold text-white">
                           <CountUp delay={0} start={21} end={630} />K
                         </h2>
-                        <span className='text-white text-sm'>
+                        <span className="text-sm text-white">
                           Platform Followers
                         </span>
                       </div>
@@ -251,15 +225,15 @@ const HomeComponent = () => {
                   </div>
                 </Fade>
 
-                <div className='mt-6'>
-                  <Fade>
-                    <div className='input__search flex justify-center relative'>
+                <div className="mt-6">
+                  <Fade right cascade>
+                    <div className="input__search relative flex justify-center">
                       <input
-                        className='h-[64px] px-6 py-4 w-[430px] rounded-md border-2 border-white bg-transparent text-white'
-                        type='text'
-                        placeholder='Enter Course Name'
+                        className="h-[64px] w-[430px] rounded-md border-2 border-white bg-transparent px-6 py-4 text-white"
+                        type="text"
+                        placeholder="Enter Course Name"
                       />
-                      <button className='absolute top-[7px] right-[53px] rounded-md bg-[#F16126] h-[50px] flex gap-2 text-white items-center px-4 py-2'>
+                      <button className="absolute top-[7px] right-[53px] flex h-[50px] items-center gap-2 rounded-md bg-[#F16126] px-4 py-2 text-white">
                         <span>
                           <FaSearch />
                         </span>
@@ -272,49 +246,70 @@ const HomeComponent = () => {
             </div>
           </div>
         </div>
+        <div className="shapeImg">
+          <Fade>
+            <div className="absolute top-[-40px] right-[-25px] z-[-0]">
+              <img
+                className="animation__style__1 w-[160px]"
+                src="/Assets/Images/shape/shape_20.png"
+                alt=""
+              />
+            </div>
+            <div className="absolute bottom-3 left-[50%] z-[-0] translate-x-[-50%] opacity-80">
+              <img
+                className="animation__style__2 w-[30px]"
+                src="/Assets/Images/shape/shape_27.png"
+                alt=""
+              />
+            </div>
+          </Fade>
+        </div>
       </div>
       {/* ============ Featured Courses ============ */}
-      <div className='featureCourses py-[80px]'>
+      <div className="featureCourses py-[80px]">
         {/* Heading Text */}
-        <div className='container mx-auto'>
-          <div className='grid grid-cols-12 gap-5'>
-            <div className='col-span-6'>
+        <div className="container mx-auto">
+          <div className="grid grid-cols-12 gap-5">
+            <div className="col-span-6">
               <div>
-                <div>
-                  <h2 className='text-[40px] relative font-semibold text-[#333] inline z-10'>
-                    Featured Courses
-                    <span>
-                      <img
-                        className='w-[140px]  absolute top-[4px] right-0 z-[-10]'
-                        src='/Assets/Images/shape/shape_6.png'
-                        alt=''
-                      />
-                    </span>
+                <Fade>
+                  <h2 className="relative z-10 flex gap-3 text-[40px] font-semibold text-[#333]">
+                    <Fade left>
+                      <span>Featured</span>
+                    </Fade>
+                    <Fade right>
+                      <span className="text-[#F16126]">Courses</span>{" "}
+                    </Fade>
                   </h2>
-
-                  <p className='text-[#77838F] mt-1'>
-                    Discover Your Perfect Program In Our Courses.
-                  </p>
-                </div>
+                  <Fade bottom cascade>
+                    <p className="mt-1 text-sm text-[#77838F]">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Amet doloribus ipsam vero eaque, repellendus recusandae
+                      aut delectus nostrum reiciendis vel!
+                    </p>
+                  </Fade>
+                </Fade>
               </div>
             </div>
-            <div className='col-span-6'>
-              <div className='flex justify-end mt-5'>
-                <button className='bg-[#F16126] flex gap-2 items-center px-4 py-4 rounded-md'>
-                  <span className='text-white'>
-                    <FaArrowRight />
-                  </span>
-                  <span className='text-white'>All Courses</span>
-                </button>
+            <div className="col-span-6">
+              <div className="mt-5 flex justify-end">
+                <Fade right>
+                  <button className="flex items-center gap-2 rounded-md bg-[#F16126] px-4 py-4">
+                    <span className="text-white">
+                      <FaArrowRight />
+                    </span>
+                    <span className="text-white">All Courses</span>
+                  </button>
+                </Fade>
               </div>
             </div>
           </div>
         </div>
         {/* Courses Info */}
-        <div className='container mx-auto mt-14'>
-          <div className='grid grid-cols-12 gap-5'>
+        <div className="container mx-auto mt-14">
+          <div className="grid grid-cols-12 gap-5">
             {coursesData.slice(0, 6).map((item, index) => (
-              <div key={index} className='col-span-4 mb-4'>
+              <div key={index} className="col-span-4 mb-4">
                 <FeatureCourse item={item} />
               </div>
             ))}
@@ -322,48 +317,51 @@ const HomeComponent = () => {
         </div>
       </div>
       {/* ============ Trending Categories ============ */}
-      <div className='trendingCategories bg-[#F1F1F1] py-[80px]'>
+      <div className="trendingCategories bg-[#F1F1F1] py-[80px]">
         {/* Heading Text */}
-        <div className='container mx-auto'>
-          <div className='grid grid-cols-12 gap-5'>
-            <div className='col-span-6'>
+        <div className="container mx-auto">
+          <div className="grid grid-cols-12 gap-5">
+            <div className="col-span-6">
               <div>
-                <div>
-                  <h2 className='text-[40px] relative font-semibold text-[#333] inline z-10'>
-                    Trending Categories
-                    <span>
-                      <img
-                        className='w-[140px]  absolute top-[4px] right-0 z-[-10]'
-                        src='/Assets/Images/shape/shape_6.png'
-                        alt=''
-                      />
-                    </span>
+                <Fade>
+                  <h2 className="relative z-10 flex gap-3 text-[40px] font-semibold text-[#333]">
+                    <Fade left>
+                      <span>Trending</span>
+                    </Fade>
+                    <Fade right>
+                      <span className="text-[#F16126]">Categories</span>{" "}
+                    </Fade>
                   </h2>
-
-                  <p className='text-[#77838F] mt-1'>
-                    Discover Your Perfect Program In Our Courses.
-                  </p>
-                </div>
+                  <Fade bottom cascade>
+                    <p className="mt-1 text-sm text-[#77838F]">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Amet doloribus ipsam vero eaque, repellendus recusandae
+                      aut delectus nostrum reiciendis vel!
+                    </p>
+                  </Fade>
+                </Fade>
               </div>
             </div>
-            <div className='col-span-6'>
-              <div className='flex justify-end mt-5'>
-                <button className='bg-[#F16126] flex gap-2 items-center px-4 py-4 rounded-md'>
-                  <span className='text-white'>
-                    <FaArrowRight />
-                  </span>
-                  <span className='text-white'>All Categories</span>
-                </button>
+            <div className="col-span-6">
+              <div className="mt-5 flex justify-end">
+                <Fade right>
+                  <button className="flex items-center gap-2 rounded-md bg-[#F16126] px-4 py-4">
+                    <span className="text-white">
+                      <FaArrowRight />
+                    </span>
+                    <span className="text-white">All Categories</span>
+                  </button>
+                </Fade>
               </div>
             </div>
           </div>
         </div>
 
         {/* Courses Info */}
-        <div className='container mx-auto mt-14'>
-          <div className='grid grid-cols-12 gap-5'>
+        <div className="container mx-auto mt-14">
+          <div className="grid grid-cols-12 gap-5">
             {categoriesData.slice(0, 4).map((item, index) => (
-              <div key={index} className='col-span-3'>
+              <div key={index} className="col-span-3">
                 <Categories item={item} />
               </div>
             ))}
@@ -371,25 +369,27 @@ const HomeComponent = () => {
         </div>
       </div>
       {/* ============ Map Section ============ */}
-      <div className='map py-[80px]'>
-        <div className='container mx-auto relative'>
-          <div className='grid grid-cols-12 gap-5'>
+      <div className="map py-[80px]">
+        <div className="container relative mx-auto">
+          <div className="grid grid-cols-12 gap-5">
             {countData.map((item, index) => (
-              <div key={index} className='col-span-3'>
-                <div className='flex justify-center items-center'>
-                  <div className='text-center'>
-                    <TrackVisibility once>
-                      {({ isVisible }) =>
-                        isVisible && (
-                          <h2 className='text-[60px] text-white font-semibold'>
-                            <CountUp delay={0} start={0} end={item.count} />
-                          </h2>
-                        )
-                      }
-                    </TrackVisibility>
+              <div key={index} className="col-span-3">
+                <div className="flex items-center justify-center">
+                  <Fade bottom cascade>
+                    <div className="text-center">
+                      <TrackVisibility once>
+                        {({ isVisible }) =>
+                          isVisible && (
+                            <h2 className="text-[60px] font-semibold text-white">
+                              <CountUp delay={0} start={0} end={item.count} />
+                            </h2>
+                          )
+                        }
+                      </TrackVisibility>
 
-                    <p className='text-white'>{item.tag}</p>
-                  </div>
+                      <p className="text-white">{item.tag}</p>
+                    </div>
+                  </Fade>
                 </div>
               </div>
             ))}
@@ -397,49 +397,51 @@ const HomeComponent = () => {
         </div>
       </div>
       {/* ============ Event Section ============ */}
-      <div className='eventSection  py-[80px]'>
+      <div className="eventSection  py-[80px]">
         {/* Heading Text */}
-        <div className='container mx-auto '>
-          <div className='grid grid-cols-12 gap-5'>
-            <div className='col-span-6'>
+        <div className="container mx-auto ">
+          <div className="grid grid-cols-12 gap-5">
+            <div className="col-span-6">
               <div>
-                <div>
-                  <h2 className='text-[40px] relative font-semibold text-[#333] inline z-10'>
-                    Upcoming Events
-                    <span>
-                      <img
-                        className='w-[140px]  absolute top-[4px] right-0 z-[-10]'
-                        src='/Assets/Images/shape/shape_6.png'
-                        alt=''
-                      />
-                    </span>
+                <Fade>
+                  <h2 className="relative z-10 flex gap-3 text-[40px] font-semibold text-[#333]">
+                    <Fade left>
+                      <span>Upcoming</span>
+                    </Fade>
+                    <Fade right>
+                      <span className="text-[#F16126]">Events</span>{" "}
+                    </Fade>
                   </h2>
-
-                  <p className='text-[#77838F] mt-1'>
-                    Trending topics often evolve around popular cultural
-                    occurrences such as current events.
-                  </p>
-                </div>
+                  <Fade bottom cascade>
+                    <p className="mt-1 text-sm text-[#77838F]">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Amet doloribus ipsam vero eaque, repellendus recusandae
+                      aut delectus nostrum reiciendis vel!
+                    </p>
+                  </Fade>
+                </Fade>
               </div>
             </div>
-            <div className='col-span-6'>
-              <div className='flex justify-end mt-5'>
-                <button className='bg-[#F16126] flex gap-2 items-center px-4 py-4 rounded-md'>
-                  <span className='text-white'>
-                    <FaArrowRight />
-                  </span>
-                  <span className='text-white'>All Events</span>
-                </button>
+            <div className="col-span-6">
+              <div className="mt-5 flex justify-end">
+                <Fade right>
+                  <button className="flex items-center gap-2 rounded-md bg-[#F16126] px-4 py-4">
+                    <span className="text-white">
+                      <FaArrowRight />
+                    </span>
+                    <span className="text-white">All Events</span>
+                  </button>
+                </Fade>
               </div>
             </div>
           </div>
         </div>
 
         {/* Event Info */}
-        <div className='container mx-auto mt-14'>
-          <div className='grid grid-cols-12 gap-5'>
+        <div className="container mx-auto mt-14">
+          <div className="grid grid-cols-12 gap-5">
             {eventData.slice(0, 3).map((item, index) => (
-              <div key={index} className='col-span-4'>
+              <div key={index} className="col-span-4">
                 <Event item={item} />
               </div>
             ))}
@@ -447,38 +449,32 @@ const HomeComponent = () => {
         </div>
       </div>
       {/* ============ Course Advisor ============ */}
-      <div className='courseAdvisor bg-[#F1F1F1] py-[80px]'>
+      <div className="courseAdvisor bg-[#F1F1F1] py-[80px]">
         {/* Heading Text */}
-        <div className='container mx-auto'>
-          <div className='grid grid-cols-12 gap-5'>
-            <div className='col-span-6'>
+        <div className="container mx-auto">
+          <div className="grid grid-cols-12 gap-5">
+            <div className="col-span-6">
               <div>
                 <div>
-                  <h2 className='text-[40px] relative font-semibold text-[#333] inline z-10'>
-                    Course Advisor
-                    <span>
-                      <img
-                        className='w-[140px]  absolute top-[4px] right-0 z-[-10]'
-                        src='/Assets/Images/shape/shape_6.png'
-                        alt=''
-                      />
-                    </span>
+                  <h2 className="relative z-10 inline text-[40px] font-semibold text-[#333]">
+                    Course <span className="text-[#F16126]">Advisor</span>
                   </h2>
-                  <p className='text-[#77838F] mt-1'>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
+
+                  <p className="mt-1 text-sm text-[#77838F]">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Amet doloribus ipsam vero eaque, repellendus recusandae aut
+                    delectus nostrum reiciendis vel!
                   </p>
                 </div>
               </div>
             </div>
-            <div className='col-span-6'>
-              <div className='flex justify-end mt-5'>
-                <button className='bg-[#F16126] flex gap-2 items-center px-4 py-4 rounded-md'>
-                  <span className='text-white'>
+            <div className="col-span-6">
+              <div className="mt-5 flex justify-end">
+                <button className="flex items-center gap-2 rounded-md bg-[#F16126] px-4 py-4">
+                  <span className="text-white">
                     <FaArrowRight />
                   </span>
-                  <span className='text-white'>All Advisor</span>
+                  <span className="text-white">All Advisor</span>
                 </button>
               </div>
             </div>
@@ -486,10 +482,10 @@ const HomeComponent = () => {
         </div>
 
         {/* Courses Info */}
-        <div className='container mx-auto mt-14'>
-          <div className='grid grid-cols-12 gap-5'>
+        <div className="container mx-auto mt-14">
+          <div className="grid grid-cols-12 gap-5">
             {courseAdvisorData.slice(0, 4).map((item, index) => (
-              <div key={index} className='col-span-3'>
+              <div key={index} className="col-span-3">
                 <CourseAdvisor item={item} />
               </div>
             ))}
@@ -497,10 +493,10 @@ const HomeComponent = () => {
         </div>
         {/* Become An Instructor */}
 
-        <div className='container mx-auto mt-14'>
-          <div className='flex justify-center'>
-            <div className='text-center px-[150px]'>
-              <h2 className='text-[48px] font-semibold'>
+        <div className="container mx-auto mt-14">
+          <div className="flex justify-center">
+            <div className="px-[150px] text-center">
+              <h2 className="text-[48px] font-semibold">
                 Become An Instructor
               </h2>
               <p>
@@ -508,12 +504,12 @@ const HomeComponent = () => {
                 and earn up to 50% of the revenue share. And we will promote
                 your course on other platforms.
               </p>
-              <div className='flex justify-center mt-6'>
-                <Link className='my__btn' to={"/"}>
-                  <span className='top-key'></span>
-                  <span className='text'>Appiy for An Instructor</span>
-                  <span className='bottom-key-1'></span>
-                  <span className='bottom-key-2'></span>
+              <div className="mt-6 flex justify-center">
+                <Link className="my__btn" to={"/"}>
+                  <span className="top-key"></span>
+                  <span className="text">Appiy for An Instructor</span>
+                  <span className="bottom-key-1"></span>
+                  <span className="bottom-key-2"></span>
                 </Link>
               </div>
             </div>
@@ -521,121 +517,121 @@ const HomeComponent = () => {
         </div>
       </div>
       {/* ============ Register Option ============ */}
-      <div className='registerOption  py-[80px]'>
+      <div className="registerOption  py-[80px]">
         {/* Heading Text */}
-        <div className='container mx-auto'>
-          <div className='grid grid-cols-12 gap-5'>
-            <div className='col-span-6'>
+        <div className="container mx-auto">
+          <div className="grid grid-cols-12 gap-5">
+            <div className="col-span-6">
               <div>
                 <div>
-                  <h2 className='text-[40px] font-semibold leading-[50px]'>
+                  <h2 className="text-[40px] font-semibold leading-[50px]">
                     Get Awesome 80s of online Courses For Free!
                   </h2>
-                  <p className='text-base mt-5 leading-relaxed'>
+                  <p className="mt-5 text-base leading-relaxed">
                     Software is a set of instructions, data or programs used to
                     operate computers and execute specific tasks.
                   </p>
-                  <p className='text-base mt-2 leading-relaxed'>
+                  <p className="mt-2 text-base leading-relaxed">
                     We’re living in strange and unpredictable times. Just when
                     we thought things were getting better, another development
                     happens, and it can feel like we’re taking one step forward
                     and three steps back. But hey, enough of that negative talk.
                     Let’s look at the positives as we head into the new year!
                   </p>
-                  <div className='relative flex mt-5'>
-                    <div className='item'>
+                  <div className="relative mt-5 flex">
+                    <div className="item">
                       <img
-                        className='w-[80px] h-[80px] relative top-0 left-0 border-4 border-[#F16126] rounded-full'
-                        src='Assets/Images/profile/Ellipse_1.png'
-                        alt=''
+                        className="relative top-0 left-0 h-[80px] w-[80px] rounded-full border-4 border-[#F16126]"
+                        src="Assets/Images/profile/Ellipse_1.png"
+                        alt=""
                       />
                     </div>
-                    <div className='item'>
+                    <div className="item">
                       <img
-                        className='w-[80px] h-[80px] relative top-0 left-[-30px] border-4 border-[#F16126] rounded-full'
-                        src='Assets/Images/profile/Ellipse_2.png'
-                        alt=''
+                        className="relative top-0 left-[-30px] h-[80px] w-[80px] rounded-full border-4 border-[#F16126]"
+                        src="Assets/Images/profile/Ellipse_2.png"
+                        alt=""
                       />
                     </div>
-                    <div className='item'>
+                    <div className="item">
                       <img
-                        className='w-[80px] h-[80px] relative top-0 left-[-60px] border-4 border-[#F16126] rounded-full'
-                        src='Assets/Images/profile/Ellipse_3.png'
-                        alt=''
+                        className="relative top-0 left-[-60px] h-[80px] w-[80px] rounded-full border-4 border-[#F16126]"
+                        src="Assets/Images/profile/Ellipse_3.png"
+                        alt=""
                       />
                     </div>
-                    <div className='item'>
+                    <div className="item">
                       <img
-                        className='w-[80px] h-[80px] relative top-0 left-[-90px] border-4 border-[#F16126] rounded-full'
-                        src='Assets/Images/profile/Ellipse_4.png'
-                        alt=''
+                        className="relative top-0 left-[-90px] h-[80px] w-[80px] rounded-full border-4 border-[#F16126]"
+                        src="Assets/Images/profile/Ellipse_4.png"
+                        alt=""
                       />
                     </div>
-                    <div className='item'>
+                    <div className="item">
                       <img
-                        className='w-[80px] h-[80px] relative top-0 left-[-120px] border-4 border-[#F16126] rounded-full'
-                        src='Assets/Images/profile/Ellipse_5.png'
-                        alt=''
+                        className="relative top-0 left-[-120px] h-[80px] w-[80px] rounded-full border-4 border-[#F16126]"
+                        src="Assets/Images/profile/Ellipse_5.png"
+                        alt=""
                       />
                     </div>
-                    <div className='item'>
+                    <div className="item">
                       <img
-                        className='w-[80px] h-[80px] relative top-0 left-[-150px] border-4 border-[#F16126] rounded-full'
-                        src='Assets/Images/profile/Ellipse_6.png'
-                        alt=''
+                        className="relative top-0 left-[-150px] h-[80px] w-[80px] rounded-full border-4 border-[#F16126]"
+                        src="Assets/Images/profile/Ellipse_6.png"
+                        alt=""
                       />
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className='col-span-6 pl-10'>
-              <div className='shadow-lg px-10 py-10 h-full'>
-                <div className='flex items-center h-full'>
+            <div className="col-span-6 pl-10">
+              <div className="h-full px-10 py-10 shadow-lg">
+                <div className="flex h-full items-center">
                   <div>
-                    <div className='mb-4'>
+                    <div className="mb-4">
                       <input
-                        className='text-slate-400 border-2 border-[#E9ECEF] px-3 py-3 rounded-lg w-full'
-                        type='text'
-                        placeholder='Email :'
+                        className="text-slate-400 w-full rounded-lg border-2 border-[#E9ECEF] px-3 py-3"
+                        type="text"
+                        placeholder="Email :"
                       />
                     </div>
-                    <div className='mb-4 flex gap-3'>
+                    <div className="mb-4 flex gap-3">
                       <div>
                         <input
-                          className='text-slate-400 border-2 border-[#E9ECEF] px-3 py-3 rounded-lg w-full'
-                          type='text'
-                          placeholder='First Name :'
+                          className="text-slate-400 w-full rounded-lg border-2 border-[#E9ECEF] px-3 py-3"
+                          type="text"
+                          placeholder="First Name :"
                         />
                       </div>
                       <div>
                         <input
-                          className='text-slate-400 border-2 border-[#E9ECEF] px-3 py-3 rounded-lg w-full'
-                          type='text'
-                          placeholder='Last Name :'
+                          className="text-slate-400 w-full rounded-lg border-2 border-[#E9ECEF] px-3 py-3"
+                          type="text"
+                          placeholder="Last Name :"
                         />
                       </div>
                     </div>
-                    <div className='mb-4'>
+                    <div className="mb-4">
                       <input
-                        className='text-slate-400 border-2 border-[#E9ECEF] px-3 py-3 rounded-lg w-full'
-                        type='text'
-                        placeholder='Subject :'
+                        className="text-slate-400 w-full rounded-lg border-2 border-[#E9ECEF] px-3 py-3"
+                        type="text"
+                        placeholder="Subject :"
                       />
                     </div>
-                    <div className='mb-4'>
+                    <div className="mb-4">
                       <input
-                        className='text-slate-400 border-2 border-[#E9ECEF] px-3 py-3 rounded-lg w-full'
-                        type='text'
-                        placeholder='Phone :'
+                        className="text-slate-400 w-full rounded-lg border-2 border-[#E9ECEF] px-3 py-3"
+                        type="text"
+                        placeholder="Phone :"
                       />
                     </div>
                     <div>
-                      <button className='bg-[#F16126] flex gap-2 items-center px-4 py-4 rounded-md'>
-                        <span className='text-white'>
+                      <button className="flex items-center gap-2 rounded-md bg-[#F16126] px-4 py-4">
+                        <span className="text-white">
                           <FaArrowRight />
                         </span>
-                        <span className='text-white'>Register Now</span>
+                        <span className="text-white">Register Now</span>
                       </button>
                     </div>
                   </div>
@@ -646,38 +642,32 @@ const HomeComponent = () => {
         </div>
       </div>
       {/* ============ Blog Posts ============ */}
-      <div className='blogSection bg-[#F1F1F1] py-[80px]'>
+      <div className="blogSection bg-[#F1F1F1] py-[80px]">
         {/* Heading Text */}
-        <div className='container mx-auto'>
-          <div className='grid grid-cols-12 gap-5'>
-            <div className='col-span-6'>
+        <div className="container mx-auto">
+          <div className="grid grid-cols-12 gap-5">
+            <div className="col-span-6">
               <div>
                 <div>
-                  <h2 className='text-[40px] relative font-semibold text-[#333] inline z-10'>
-                    Our Blog Posts
-                    <span>
-                      <img
-                        className='w-[140px]  absolute top-[4px] right-0 z-[-10]'
-                        src='/Assets/Images/shape/shape_6.png'
-                        alt=''
-                      />
-                    </span>
+                  <h2 className="relative z-10 inline text-[40px] font-semibold text-[#333]">
+                    Blog <span className="text-[#F16126]">Posts</span>
                   </h2>
-                  <p className='text-[#77838F] mt-1'>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
+
+                  <p className="mt-1 text-sm text-[#77838F]">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Amet doloribus ipsam vero eaque, repellendus recusandae aut
+                    delectus nostrum reiciendis vel!
                   </p>
                 </div>
               </div>
             </div>
-            <div className='col-span-6'>
-              <div className='flex justify-end mt-5'>
-                <button className='bg-[#F16126] flex gap-2 items-center px-4 py-4 rounded-md'>
-                  <span className='text-white'>
+            <div className="col-span-6">
+              <div className="mt-5 flex justify-end">
+                <button className="flex items-center gap-2 rounded-md bg-[#F16126] px-4 py-4">
+                  <span className="text-white">
                     <FaArrowRight />
                   </span>
-                  <span className='text-white'>All Blog Post</span>
+                  <span className="text-white">All Blog Post</span>
                 </button>
               </div>
             </div>
@@ -685,10 +675,10 @@ const HomeComponent = () => {
         </div>
 
         {/* Blog Data */}
-        <div className='container mx-auto mt-14'>
-          <div className='grid grid-cols-12 gap-5'>
+        <div className="container mx-auto mt-14">
+          <div className="grid grid-cols-12 gap-5">
             {blogData.slice(0, 3).map((item, index) => (
-              <div key={index} className='col-span-4 mb-20'>
+              <div key={index} className="col-span-4 mb-20">
                 <Blog item={item} />
               </div>
             ))}
@@ -696,38 +686,32 @@ const HomeComponent = () => {
         </div>
       </div>
       {/* ============ Students Says ============ */}
-      <div className='studentsSays  py-[80px]'>
+      <div className="studentsSays  py-[80px]">
         {/* Heading Text */}
-        <div className='container mx-auto'>
-          <div className='grid grid-cols-12 gap-5'>
-            <div className='col-span-6'>
+        <div className="container mx-auto">
+          <div className="grid grid-cols-12 gap-5">
+            <div className="col-span-6">
               <div>
                 <div>
-                  <h2 className='text-[40px] relative font-semibold text-[#333] inline z-10'>
-                    Students Says
-                    <span>
-                      <img
-                        className='w-[140px]  absolute top-[4px] right-0 z-[-10]'
-                        src='/Assets/Images/shape/shape_6.png'
-                        alt=''
-                      />
-                    </span>
+                  <h2 className="relative z-10 inline text-[40px] font-semibold text-[#333]">
+                    Students <span className="text-[#F16126]">Says</span>
                   </h2>
-                  <p className='text-[#77838F] mt-1'>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
+
+                  <p className="mt-1 text-sm text-[#77838F]">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Amet doloribus ipsam vero eaque, repellendus recusandae aut
+                    delectus nostrum reiciendis vel!
                   </p>
                 </div>
               </div>
             </div>
-            <div className='col-span-6'></div>
+            <div className="col-span-6"></div>
           </div>
         </div>
 
         {/* Students Data */}
-        <div className='container mx-auto mt-10'>
-          <div className='gap-5'>
+        <div className="container mx-auto mt-10">
+          <div className="gap-5">
             <Slider {...settings}>
               {studentsSaysData.map((item, index) => (
                 <div key={index}>
@@ -739,7 +723,7 @@ const HomeComponent = () => {
         </div>
       </div>
       {/* ============ NewsLetter ============ */}
-      <div className='mt-[40px]'>
+      <div className="mt-[40px]">
         <NewsLetter />
       </div>
       {/* ============ Footer Section ============ */}

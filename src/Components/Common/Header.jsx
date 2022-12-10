@@ -8,6 +8,7 @@ import {
   FaEdit,
   FaUserEdit,
 } from "react-icons/fa";
+import { Fade } from "react-reveal";
 const Header = () => {
   const [show, setShow] = useState(false);
   const [stickyNav, setStickyNav] = useState(false);
@@ -27,7 +28,7 @@ const Header = () => {
   };
 
   let items = document.querySelectorAll(".root__dropdown > a");
-  for (var i in items) {
+  for (let i in items) {
     if (items.hasOwnProperty(i)) {
       items[i].onclick = function () {
         this.parentElement.querySelector(".subMenu").classList.toggle("active");
@@ -38,59 +39,68 @@ const Header = () => {
   return (
     <header>
       {/* Top Header Section*/}
-      <div className="top__header hidden h-[40px] w-full bg-[#002147] lg:block">
+      <div className="top__header hidden h-[35px] w-full bg-[#002147] xl:block">
         <div className="container mx-auto   flex h-full items-center justify-between">
           <div className="flex h-full items-center gap-4">
             <div className="flex items-center gap-4">
-              <div className="flex items-center gap-2">
-                <span>
-                  <FaFolderOpen className="text-primary text-[18px]" />
-                </span>
-                <span className="text-[14px] font-normal text-white">
-                  Total Course: 23400
-                </span>
-              </div>
-              <div className="flex items-center">
-                <span className="text-slate-400 mb-0.5 text-[14px]">|</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <span>
-                  <FaUserTie className="text-primary text-[18px]" />
-                </span>
-                <span className="text-[14px] font-normal text-white">
-                  Total Teacher: 320
-                </span>
-              </div>
-              <div className="flex items-center">
-                <span className="text-slate-400 mb-0.5 text-[14px]">|</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <span>
-                  <FaPhoneAlt className="text-primary text-[18px]" />
-                </span>
-                <span className="text-[14px] font-normal text-white">
-                  Hot Line : +88 0181 234567
-                </span>
-              </div>
+              <Fade>
+                <div className="flex items-center gap-2">
+                  <span>
+                    <FaFolderOpen className="text-sm text-white" />
+                  </span>
+                  <span className="text-xs font-light text-white">
+                    Total Course: 23400
+                  </span>
+                </div>
+                <div className="flex items-center">
+                  <span className="text-slate-400 mb-[-1px] text-[14px]">
+                    |
+                  </span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span>
+                    <FaUserTie className="text-sm text-white" />
+                  </span>
+                  <span className="text-xs font-light text-white">
+                    Total Teacher: 320
+                  </span>
+                </div>
+
+                <div className="flex items-center">
+                  <span className="text-slate-400 mb-[-1px] text-[14px]">
+                    |
+                  </span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span>
+                    <FaPhoneAlt className="text-sm text-white" />
+                  </span>
+                  <span className="text-xs font-light text-white">
+                    Hot Line : +88 0181 234567
+                  </span>
+                </div>
+              </Fade>
             </div>
           </div>
           <div className="flex items-center gap-2">
-            <div>
-              <button className="flex items-center gap-1.5  rounded-md px-3 py-2 duration-200 ease-in-out">
-                <span>
-                  <FaEdit className="text-white " />
-                </span>
-                <span className="text-sm font-medium text-white">Register</span>
-              </button>
-            </div>
-            <div>
-              <button className="flex items-center gap-2 rounded-md px-3 py-2">
-                <span>
-                  <FaUserEdit className="text-white" />
-                </span>
-                <span className="text-sm font-medium text-white">Login</span>
-              </button>
-            </div>
+            <Fade>
+              <div>
+                <button className="flex items-center gap-1.5  rounded-md px-3 py-2 duration-200 ease-in-out">
+                  <span>
+                    <FaEdit className="text-white " />
+                  </span>
+                  <span className="text-xs  text-white">Register</span>
+                </button>
+              </div>
+              <div>
+                <button className="flex items-center gap-1.5 rounded-md px-3 py-2">
+                  <span>
+                    <FaUserEdit className="text-white" />
+                  </span>
+                  <span className="text-xs text-white">Login</span>
+                </button>
+              </div>
+            </Fade>
           </div>
         </div>
       </div>
@@ -104,11 +114,13 @@ const Header = () => {
               <div className="flex w-full items-center justify-between">
                 <div className="header__left">
                   <div className="logo__section">
-                    <img
-                      className="w-[230px]"
-                      src="/Assets/Images/logo.png"
-                      alt=""
-                    />
+                    <Link to={"/"}>
+                      <img
+                        className="w-[230px]"
+                        src="/Assets/Images/logo.png"
+                        alt=""
+                      />
+                    </Link>
                   </div>
                 </div>
 
@@ -190,7 +202,7 @@ const Header = () => {
                     </ul>
                   </nav>
                   {/* Start Humbugger Menu  */}
-                  <button className="HumbuggerMenu block lg:hidden">
+                  <button className="HumbuggerMenu block xl:hidden">
                     <span
                       onClick={MenuControl}
                       className="menuOpenTrigger text-white"
@@ -198,7 +210,7 @@ const Header = () => {
                       <FiMenu />
                     </span>
                   </button>
-                  <button className="close-menu block lg:hidden">
+                  <button className="close-menu block xl:hidden">
                     <span onClick={MenuControl} className="MenuCloseTrigger">
                       <FiX />
                     </span>
