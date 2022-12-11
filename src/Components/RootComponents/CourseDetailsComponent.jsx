@@ -54,7 +54,7 @@ const CourseDetailsComponent = () => {
                     <img
                       className="w-[80px] rounded-full "
                       src="/Assets/Images/advisors/Advisor_1.png"
-                      alt=""
+                      alt="Next LMS"
                     />
                   </div>
                   <div>
@@ -295,7 +295,7 @@ const CourseDetailsComponent = () => {
                             <img
                               className="rounded-lg"
                               src="/Assets/Images/advisors/Advisor_1.png"
-                              alt=""
+                              alt="Next LMS"
                             />
                           </div>
                           <div className="text__file w-8/12">
@@ -650,9 +650,15 @@ const CourseDetailsComponent = () => {
               <div className="rounded-md bg-white px-3 py-3 shadow-lg">
                 <Link to={"/"}>
                   <div className="relative">
-                    <img src="Assets/Images/courses/courses_1.png" alt="" />
+                    <img
+                      src="Assets/Images/courses/courses_1.png"
+                      alt="Next LMS"
+                    />
                     <span className="absolute top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%]">
-                      <img src="Assets/Images/shape/shape_10.png" alt="" />
+                      <img
+                        src="Assets/Images/shape/shape_10.png"
+                        alt="Next LMS"
+                      />
                     </span>
                   </div>
                 </Link>

@@ -13,8 +13,9 @@ import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import studentsSaysData from "../../Database/studentsSaysData";
 import StudentsSays from "../ChildComponents/Elements/StudentsSays";
+import { Fade } from "react-reveal";
 const AboutComponent = () => {
-  var settings = {
+  const settings = {
     dots: true,
     infinite: false,
     arrows: false,
@@ -26,25 +27,10 @@ const AboutComponent = () => {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: true,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          infinite: true,
+          dots: true,
         },
       },
     ],
@@ -57,70 +43,66 @@ const AboutComponent = () => {
       <IntroSection title={"About US"} />
 
       {/* ============ About Details  ============*/}
-      <div className='aboutDetails py-[80px] mt-[60px]'>
-        <div className='container mx-auto'>
-          <div className='grid grid-cols-12 gap-5'>
-            <div className='col-span-6'>
+      <div className="aboutDetails mt-[60px] py-[80px]">
+        <div className="container mx-auto">
+          <div className="grid grid-cols-12 gap-5">
+            <div className="col-span-12 lg:col-span-6">
               <div>
-                <div className='img__section relative'>
-                  <div className='relative w-[420px] after:absolute after:content-[""] after:bg-[#F16126] after:left-[20px] after:top-[20px] after:rounded-md after:w-full after:h-full after:z-[-99]'>
-                    <img
-                      className='w-[420px] rounded-md'
-                      src='/Assets/Images/aboutInfo.png'
-                      alt=''
-                    />
+                <Fade left>
+                  <div className="img__section relative flex justify-center lg:block">
+                    <div className='relative w-[330px] after:absolute after:left-[20px] after:top-[20px] after:z-[-99] after:h-full after:w-full after:rounded-md after:bg-[#F16126] after:content-[""] lg:w-[420px]'>
+                      <img
+                        className="rounded-md"
+                        src="/Assets/Images/aboutInfo.png"
+                        alt=""
+                      />
+                    </div>
+                    <div className="shape_1">
+                      <img
+                        className="w-[120px] object-cover"
+                        src="/Assets/Images/shape/shape_8.png"
+                        alt=""
+                      />
+                    </div>
+                    <div className="shape_2">
+                      <img
+                        className="w-[220px] object-cover"
+                        src="/Assets/Images/shape/shape_9.png"
+                        alt=""
+                      />
+                    </div>
+                    <div className="text_shape">
+                      <p className="text-[40px] font-bold text-white">
+                        <span className="inline-block w-[68px]">
+                          <CountUp delay={0} start={0} end={190} />
+                        </span>
+                        +
+                      </p>
+                      <p className="mt-[-10px] leading-5 text-white">
+                        Services <br /> We Provide
+                      </p>
+                    </div>
                   </div>
-                  <div className='shape_1'>
-                    <img
-                      className='w-[120px] object-cover'
-                      src='/Assets/Images/shape/shape_8.png'
-                      alt=''
-                    />
-                  </div>
-                  <div className='shape_2'>
-                    <img
-                      className='w-[220px] object-cover'
-                      src='/Assets/Images/shape/shape_9.png'
-                      alt=''
-                    />
-                  </div>
-                  <div className='text_shape'>
-                    <TrackVisibility once>
-                      {({ isVisible }) =>
-                        isVisible && (
-                          <p className='text-white text-[40px] font-bold'>
-                            <span className='w-[68px] inline-block'>
-                              <CountUp delay={0} start={0} end={190} />
-                            </span>
-                            +
-                          </p>
-                        )
-                      }
-                    </TrackVisibility>
-                    <p className='text-white mt-[-10px] leading-5'>
-                      Services <br /> We Provide
-                    </p>
-                  </div>
-                </div>
+                </Fade>
               </div>
             </div>
-            <div className='col-span-6'>
-              <div>
-                <div>
-                  <h2 className='text-[24px] font-semibold text-[#F16126] tracking-[6px]'>
+            <div className="col-span-12 lg:col-span-6">
+              <div className="mt-[40px] md:mt-[40px] lg:mt-0">
+                <Fade right>
+                  <h2 className="text-[24px] font-semibold tracking-[6px] text-[#F16126]">
                     ABOUT OUR NEXT LMS
                   </h2>
-                  <h3 className='text-[40px] font-semibold leading-[45px] mt-4'>
+                  <h3 className="mt-4 text-[30px]  font-semibold leading-[35px] md:text-[40px] md:leading-[45px]">
                     Education system consists of excellent education and ideals.
                   </h3>
-                  <p className='mt-4 leading-relaxed'>
+                  <p className="mt-4 leading-relaxed">
                     An education system refers to the economic and social
                     factors that typically make up public schools at the
                     federal, state or community levels. Such factors include
                     public funding, school facilities, staffing.
                   </p>
                   <div>
-                    <ul className='list-disc pl-8 mt-4'>
+                    <ul className="mt-4 list-disc pl-8">
                       <li>
                         The term education system generally refers to public
                         schooling.
@@ -136,7 +118,7 @@ const AboutComponent = () => {
                       </li>
                     </ul>
                   </div>
-                </div>
+                </Fade>
               </div>
             </div>
           </div>
@@ -144,146 +126,156 @@ const AboutComponent = () => {
       </div>
 
       {/* ============  Popular Courses ============ */}
-      <div className='aboutDetails bg-[#F1F1F1] py-[80px] mt-[60px]'>
+      <div className="aboutDetails mt-[60px] bg-[#F1F1F1] py-[80px]">
         {/* Heading Text */}
-        <div className='container mx-auto '>
-          <div className='grid grid-cols-12 gap-5'>
-            <div className='col-span-6'>
+        <div className="container mx-auto ">
+          <div className="grid grid-cols-12 gap-5">
+            <div className="col-span-12 lg:col-span-6">
               <div>
-                <div>
-                  <h2 className='text-[40px] relative font-semibold text-[#333] inline z-10'>
-                    Our Popular Courses
-                    <span>
-                      <img
-                        className='w-[140px]  absolute top-[4px] right-0 z-[-10]'
-                        src='/Assets/Images/shape/shape_6.png'
-                        alt=''
-                      />
-                    </span>
+                <Fade>
+                  <h2 className="relative z-10 flex gap-3 text-[40px] font-semibold text-[#333]">
+                    <Fade left>
+                      <span>Popular</span>
+                    </Fade>
+                    <Fade right>
+                      <span className="text-[#F16126]">Courses</span>{" "}
+                    </Fade>
                   </h2>
-
-                  <p className='text-[#77838F] mt-1'>
-                    Education shapes the skills, attitudes, and beliefs of the
-                    individual and plays a role in shaping the norms and values
-                    of a particular society.
-                  </p>
-                </div>
+                  <Fade bottom cascade>
+                    <p className="mt-1 text-base text-[#77838F]">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Amet doloribus ipsam vero eaque, repellendus recusandae
+                      aut delectus nostrum reiciendis vel!
+                    </p>
+                  </Fade>
+                </Fade>
               </div>
             </div>
-            <div className='col-span-6'>
-              <div className='flex justify-end mt-5'>
-                <button className='bg-[#F16126] flex gap-2 items-center px-4 py-4 rounded-md'>
-                  <span className='text-white'>
-                    <FaArrowRight />
-                  </span>
-                  <span className='text-white'>View All Courses</span>
-                </button>
+            <div className="col-span-12 lg:col-span-6">
+              <div className="mt-2 flex justify-start lg:mt-5 lg:justify-end">
+                <Fade right>
+                  <button className="flex items-center gap-2 rounded-md bg-[#F16126] px-4 py-4">
+                    <span className="text-white">
+                      <FaArrowRight />
+                    </span>
+                    <span className="text-white">View All Courses</span>
+                  </button>
+                </Fade>
               </div>
             </div>
           </div>
         </div>
-        <div className='container mx-auto mt-20'>
-          <div className='grid grid-cols-12 gap-6'>
-            <div className='col-span-4 '>
-              <div className='flex justify-center bg-white shadow-xl rounded-lg px-5 py-10'>
-                <div>
-                  <div className='flex justify-center'>
-                    <FaBuffer className='text-[50px] text-[#F16126]' />
-                  </div>
-                  <div className='text-center'>
-                    <h2 className='text-[35px] font-semibold'>JavaScript</h2>
-                    <p className='leading-relaxed mt-1'>
-                      People misled by false beliefs do more harm than good to
-                      society. Education helps us question, gives us an
-                      analytical mind and helps us reject superstitions.
-                    </p>
+        <div className="container mx-auto mt-10 lg:mt-20">
+          <div className="grid grid-cols-12 gap-6">
+            <div className="col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-4">
+              <Fade left>
+                <div className="flex justify-center rounded-lg bg-white px-5 py-10 shadow-xl">
+                  <div>
+                    <div className="flex justify-center">
+                      <FaBuffer className="text-[50px] text-[#F16126]" />
+                    </div>
+                    <div className="text-center">
+                      <h2 className="text-[35px] font-semibold">JavaScript</h2>
+                      <p className="mt-1 leading-relaxed">
+                        People misled by false beliefs do more harm than good to
+                        society. Education helps us question, gives us an
+                        analytical mind and helps us reject superstitions.
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </Fade>
             </div>
-            <div className='col-span-4 '>
-              <div className='flex justify-center bg-[#002147] shadow-xl rounded-lg px-5 py-10 mt-[-20px]'>
-                <div>
-                  <div className='flex justify-center'>
-                    <FaBuffer className='text-[50px] text-[#fff]' />
-                  </div>
-                  <div className='text-center'>
-                    <h2 className='text-[35px] font-semibold text-[#fff]'>
-                      PHP
-                    </h2>
-                    <p className='leading-relaxed mt-1 text-[#fff]'>
-                      People misled by false beliefs do more harm than good to
-                      society. Education helps us question, gives us an
-                      analytical mind and helps us reject superstitions.
-                    </p>
+            <div className="col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-4">
+              <Fade bottom>
+                <div className="flex justify-center rounded-lg bg-[#002147] px-5 py-10 shadow-xl lg:mt-[-20px]">
+                  <div>
+                    <div className="flex justify-center">
+                      <FaBuffer className="text-[50px] text-[#fff]" />
+                    </div>
+                    <div className="text-center">
+                      <h2 className="text-[35px] font-semibold text-[#fff]">
+                        PHP
+                      </h2>
+                      <p className="mt-1 leading-relaxed text-[#fff]">
+                        People misled by false beliefs do more harm than good to
+                        society. Education helps us question, gives us an
+                        analytical mind and helps us reject superstitions.
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </Fade>
             </div>
-            <div className='col-span-4 '>
-              <div className='flex justify-center bg-white shadow-xl rounded-lg px-5 py-10'>
-                <div>
-                  <div className='flex justify-center'>
-                    <FaBuffer className='text-[50px] text-[#F16126]' />
-                  </div>
-                  <div className='text-center'>
-                    <h2 className='text-[35px] font-semibold'>Python</h2>
-                    <p className='leading-relaxed mt-1'>
-                      People misled by false beliefs do more harm than good to
-                      society. Education helps us question, gives us an
-                      analytical mind and helps us reject superstitions.
-                    </p>
+            <div className="col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-4">
+              <Fade right>
+                <div className="flex justify-center rounded-lg bg-white px-5 py-10 shadow-xl">
+                  <div>
+                    <div className="flex justify-center">
+                      <FaBuffer className="text-[50px] text-[#F16126]" />
+                    </div>
+                    <div className="text-center">
+                      <h2 className="text-[35px] font-semibold">Python</h2>
+                      <p className="mt-1 leading-relaxed">
+                        People misled by false beliefs do more harm than good to
+                        society. Education helps us question, gives us an
+                        analytical mind and helps us reject superstitions.
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </Fade>
             </div>
           </div>
         </div>
       </div>
       {/* ============ Course Advisor ============ */}
-      <div className='courseAdvisor py-[80px]'>
+      <div className="courseAdvisor py-[80px]">
         {/* Heading Text */}
-        <div className='container mx-auto'>
-          <div className='grid grid-cols-12 gap-5'>
-            <div className='col-span-6'>
+        <div className="container mx-auto">
+          <div className="grid grid-cols-12 gap-5">
+            <div className="col-span-12 lg:col-span-6">
               <div>
-                <div>
-                  <h2 className='text-[40px] relative font-semibold text-[#333] inline z-10'>
-                    Course Advisor
-                    <span>
-                      <img
-                        className='w-[140px]  absolute top-[4px] right-0 z-[-10]'
-                        src='/Assets/Images/shape/shape_6.png'
-                        alt=''
-                      />
-                    </span>
+                <Fade>
+                  <h2 className="relative z-10 flex gap-3 text-[40px] font-semibold text-[#333]">
+                    <Fade left>
+                      <span>Course</span>
+                    </Fade>
+                    <Fade right>
+                      <span className="text-[#F16126]">Advisor</span>{" "}
+                    </Fade>
                   </h2>
-                  <p className='text-[#77838F] mt-1'>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
-                  </p>
-                </div>
+                  <Fade bottom cascade>
+                    <p className="mt-1 text-base text-[#77838F]">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Amet doloribus ipsam vero eaque, repellendus recusandae
+                      aut delectus nostrum reiciendis vel!
+                    </p>
+                  </Fade>
+                </Fade>
               </div>
             </div>
-            <div className='col-span-6'>
-              <div className='flex justify-end mt-5'>
-                <button className='bg-[#F16126] flex gap-2 items-center px-4 py-4 rounded-md'>
-                  <span className='text-white'>
+            <div className="col-span-12 lg:col-span-6">
+              <div className="mt-2 flex justify-start lg:mt-5 lg:justify-end">
+                <button className="flex items-center gap-2 rounded-md bg-[#F16126] px-4 py-4">
+                  <span className="text-white">
                     <FaArrowRight />
                   </span>
-                  <span className='text-white'>All Advisor</span>
+                  <span className="text-white">All Advisor</span>
                 </button>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Courses Info */}
-        <div className='container mx-auto mt-14'>
-          <div className='grid grid-cols-12 gap-5'>
+        {/* Course Advisor Info */}
+        <div className="container mx-auto mt-8 lg:mt-14">
+          <div className="grid grid-cols-12 gap-5">
             {courseAdvisorData.slice(0, 4).map((item, index) => (
-              <div key={index} className='col-span-3'>
+              <div
+                key={index}
+                className="col-span-12  md:col-span-6  lg:col-span-3"
+              >
                 <CourseAdvisor item={item} />
               </div>
             ))}
@@ -291,66 +283,74 @@ const AboutComponent = () => {
         </div>
         {/* Become An Instructor */}
 
-        <div className='container mx-auto mt-14'>
-          <div className='flex justify-center'>
-            <div className='text-center px-[150px]'>
-              <h2 className='text-[48px] font-semibold'>
-                Become An Instructor
-              </h2>
-              <p>
-                At Thriving Skills, you can become an instructor at zero cost
-                and earn up to 50% of the revenue share. And we will promote
-                your course on other platforms.
-              </p>
-              <div className='flex justify-center mt-6'>
-                <Link className='my__btn' to={"/"}>
-                  <span className='top-key'></span>
-                  <span className='text'>Appiy for An Instructor</span>
-                  <span className='bottom-key-1'></span>
-                  <span className='bottom-key-2'></span>
-                </Link>
+        <div className="container mx-auto mt-12 lg:mt-14">
+          <div className="flex justify-center">
+            <div className="px-2 text-center md:px-[50px] lg:px-[150px]">
+              <Fade bottom>
+                <h2 className="text-[35px] font-semibold lg:text-[48px]">
+                  Become An Instructor
+                </h2>
+              </Fade>
+              <Fade bottom>
+                <p>
+                  At Thriving Skills, you can become an instructor at zero cost
+                  and earn up to 50% of the revenue share. And we will promote
+                  your course on other platforms.
+                </p>
+              </Fade>
+
+              <div className="mt-6 flex justify-center">
+                <Fade bottom>
+                  <Link className="my__btn" to={"/"}>
+                    <span className="top-key"></span>
+                    <span className="text">Appiy for An Instructor</span>
+                    <span className="bottom-key-1"></span>
+                    <span className="bottom-key-2"></span>
+                  </Link>
+                </Fade>
               </div>
             </div>
           </div>
         </div>
       </div>
       {/* ============ Students Says ============ */}
-      <div className='studentsSays bg-[#F1F1F1]  py-[80px]'>
+      <div className="studentsSays bg-[#F1F1F1]  py-[80px]">
         {/* Heading Text */}
-        <div className='container mx-auto'>
-          <div className='grid grid-cols-12 gap-5'>
-            <div className='col-span-6'>
+        <div className="container mx-auto">
+          <div className="grid grid-cols-12 gap-5">
+            <div className="col-span-12 lg:col-span-6">
               <div>
-                <div>
-                  <h2 className='text-[40px] relative font-semibold text-[#333] inline z-10'>
-                    Students Says
-                    <span>
-                      <img
-                        className='w-[140px]  absolute top-[4px] right-0 z-[-10]'
-                        src='/Assets/Images/shape/shape_6.png'
-                        alt=''
-                      />
-                    </span>
+                <Fade>
+                  <h2 className="relative z-10 flex gap-3 text-[40px] font-semibold text-[#333]">
+                    <Fade left>
+                      <span>Students</span>
+                    </Fade>
+                    <Fade right>
+                      <span className="text-[#F16126]">Says</span>{" "}
+                    </Fade>
                   </h2>
-                  <p className='text-[#77838F] mt-1'>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
-                  </p>
-                </div>
+                  <Fade bottom cascade>
+                    <p className="mt-1 text-base text-[#77838F]">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Amet doloribus ipsam vero eaque, repellendus recusandae
+                      aut delectus nostrum reiciendis vel!
+                    </p>
+                  </Fade>
+                </Fade>
               </div>
             </div>
-            <div className='col-span-6'></div>
           </div>
         </div>
 
         {/* Students Data */}
-        <div className='container mx-auto mt-10'>
-          <div className='gap-5'>
+        <div className="container mx-auto mt-10">
+          <div className="gap-5">
             <Slider {...settings}>
               {studentsSaysData.map((item, index) => (
                 <div key={index}>
-                  <StudentsSays item={item} />
+                  <Fade>
+                    <StudentsSays item={item} />
+                  </Fade>
                 </div>
               ))}
             </Slider>
@@ -358,60 +358,61 @@ const AboutComponent = () => {
         </div>
       </div>
       {/* ============ Our Partner ============ */}
-      <div className='ourPartner  py-[80px]'>
+      <div className="ourPartner  py-[80px]">
         {/* Heading Text */}
-        <div className='container mx-auto'>
-          <div className='grid grid-cols-12 gap-5'>
-            <div className='col-span-6'>
+        <div className="container mx-auto">
+          <div className="grid grid-cols-12 gap-5">
+            <div className="col-span-12 lg:col-span-6">
               <div>
-                <div>
-                  <h2 className='text-[40px] relative font-semibold text-[#333] inline z-10'>
-                    Our Partner
-                    <span>
-                      <img
-                        className='w-[140px]  absolute top-[4px] right-0 z-[-10]'
-                        src='/Assets/Images/shape/shape_6.png'
-                        alt=''
-                      />
-                    </span>
+                <Fade>
+                  <h2 className="relative z-10 flex gap-3 text-[40px] font-semibold text-[#333]">
+                    <Fade left>
+                      <span>Our</span>
+                    </Fade>
+                    <Fade right>
+                      <span className="text-[#F16126]">Partner</span>{" "}
+                    </Fade>
                   </h2>
-                  <p className='text-[#77838F] mt-1'>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
-                  </p>
-                </div>
+                  <Fade bottom cascade>
+                    <p className="mt-1 text-base text-[#77838F]">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Amet doloribus ipsam vero eaque, repellendus recusandae
+                      aut delectus nostrum reiciendis vel!
+                    </p>
+                  </Fade>
+                </Fade>
               </div>
             </div>
-            <div className='col-span-6'></div>
           </div>
         </div>
         {/* Partner Info */}
-        <div className=' mx-auto mt-14'>
-          <div className=''>
-            <Marquee gradientColor={[255, 255, 255]}>
-              <div className='mx-10'>
-                <img src='Assets/Images/partner/partner_1.png' alt='' />
-              </div>
-              <div className='mx-10'>
-                <img src='Assets/Images/partner/partner_2.png' alt='' />
-              </div>
-              <div className='mx-10'>
-                <img src='Assets/Images/partner/partner_3.png' alt='' />
-              </div>
-              <div className='mx-10'>
-                <img src='Assets/Images/partner/partner_4.png' alt='' />
-              </div>
-              <div className='mx-10'>
-                <img src='Assets/Images/partner/partner_5.png' alt='' />
-              </div>
-              <div className='mx-10'>
-                <img src='Assets/Images/partner/partner_6.png' alt='' />
-              </div>
-              <div className='mx-10'>
-                <img src='Assets/Images/partner/partner_7.png' alt='' />
-              </div>
-            </Marquee>
+        <div className=" mx-auto mt-14">
+          <div>
+            <Fade>
+              <Marquee gradientColor={[255, 255, 255]}>
+                <div className="mx-10">
+                  <img src="Assets/Images/partner/partner_1.png" alt="" />
+                </div>
+                <div className="mx-10">
+                  <img src="Assets/Images/partner/partner_2.png" alt="" />
+                </div>
+                <div className="mx-10">
+                  <img src="Assets/Images/partner/partner_3.png" alt="" />
+                </div>
+                <div className="mx-10">
+                  <img src="Assets/Images/partner/partner_4.png" alt="" />
+                </div>
+                <div className="mx-10">
+                  <img src="Assets/Images/partner/partner_5.png" alt="" />
+                </div>
+                <div className="mx-10">
+                  <img src="Assets/Images/partner/partner_6.png" alt="" />
+                </div>
+                <div className="mx-10">
+                  <img src="Assets/Images/partner/partner_7.png" alt="" />
+                </div>
+              </Marquee>
+            </Fade>
           </div>
         </div>
       </div>

@@ -5,6 +5,15 @@
   background-size: cover;
   position: relative;
   padding: 120px 0;
+  @media #{$lg-device} {
+    padding: 100px 0;
+  }
+  @media #{$md-device} {
+    padding: 80px 0;
+  }
+  @media #{$sm-device} {
+    padding: 80px 0;
+  }
 
   &::before {
     background-color: #000;

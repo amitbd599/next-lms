@@ -7,7 +7,7 @@ const Categories = ({ item }) => {
       <div className=" rounded-lg px-4 py-4 shadow-lg duration-300 ease-in-out hover:shadow-xl">
         <div className="img__file relative overflow-hidden  rounded-md">
           <Fade>
-            <img src={item.thumbnail} alt="" />
+            <img src={item.thumbnail} alt="Next LMS" />
           </Fade>
         </div>
         <div className="text__file mt-5 mb-3">

@@ -99,7 +99,7 @@ const GalleryComponent = (props) => {
                       <img
                         className="z-20 mb-4 cursor-pointer rounded-lg"
                         src={item.bigImage}
-                        alt=""
+                        alt="Next LMS"
                       />
                       <div
                         onClick={() => {

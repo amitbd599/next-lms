@@ -5,12 +5,19 @@
       top: -47px;
       left: -44px;
       z-index: -1;
+      @media #{$md-device} {
+        top: -46px;
+        left: 92px;
+      }
     }
     .shape_2 {
       position: absolute;
       top: -48px;
       right: 40px;
       z-index: 10;
+      @media #{$sm-device} {
+        top: -90px;
+      }
     }
     .text_shape {
       position: absolute;
@@ -18,6 +25,10 @@
       right: 100px;
       z-index: 10;
       transform: rotate(-5deg);
+      @media #{$sm-device} {
+        top: -80px;
+        right: 100px;
+      }
     }
   }
 }

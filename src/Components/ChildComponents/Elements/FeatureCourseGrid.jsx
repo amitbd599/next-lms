@@ -12,7 +12,7 @@ const FeatureCourseGrid = ({ item }) => {
             <img
               className="w-full rounded-md object-cover"
               src={item.thumbnail}
-              alt=""
+              alt="Next LMS"
             />
           </div>
         </Fade>
@@ -30,13 +30,15 @@ const FeatureCourseGrid = ({ item }) => {
               <img
                 className="h-[60px] w-[60px] rounded-full border-2 border-[#F16126]"
                 src={item.authorImg}
-                alt=""
+                alt="Next LMS"
               />
             </Fade>
 
             <div>
               <Fade bottom>
-                <h4 className="text-[20px] font-medium">{item.author}</h4>
+                <h4 className="text-[16px] font-medium xl:text-[20px]">
+                  {item.author}
+                </h4>
               </Fade>
               <Fade bottom>
                 <div className="flex items-center gap-2">
@@ -67,7 +69,7 @@ const FeatureCourseGrid = ({ item }) => {
 
               <div>
                 <Fade bottom>
-                  <p className="text-sm text-[#77838F]">
+                  <p className="text-sm text-[#77838F] lg:text-xs xl:text-sm">
                     {item.authorPosition}
                   </p>
                 </Fade>
@@ -81,7 +83,7 @@ const FeatureCourseGrid = ({ item }) => {
             <Fade bottom>
               <Link
                 to={"/"}
-                className="text-[22px] font-semibold text-[#333] duration-300 ease-in-out hover:text-[#F16126]"
+                className="text-[18px] font-semibold text-[#333] duration-300 ease-in-out hover:text-[#F16126] xl:text-[22px]"
               >
                 {item.title}
               </Link>

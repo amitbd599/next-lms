@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ScrollToTop from "react-scroll-to-top";
+import RouteScrollToTop from "./Components/Common/RouteScrollToTop";
 import AboutPage from "./Pages/AboutPage";
 import BlogDetailsPage from "./Pages/BlogDetailsPage";
 import BlogPage from "./Pages/BlogPage";
@@ -22,6 +23,7 @@ import RegistrationPage from "./Pages/RegistrationPage";
 function App() {
   return (
     <BrowserRouter>
+      <RouteScrollToTop />
       <Routes>
         <Route exact path="/" element={<HomePage />} />
         <Route exact path="/about" element={<AboutPage />} />
@@ -46,7 +48,7 @@ function App() {
         <Route exact path="/registration" element={<RegistrationPage />} />
         <Route exact path="/error" element={<ErrorPage />} />
       </Routes>
-      <ScrollToTop smooth color="#fff" className="scrollToTop" />
+      {/* <ScrollToTop smooth color="#fff" className="scrollToTop" /> */}
     </BrowserRouter>
   );
 }

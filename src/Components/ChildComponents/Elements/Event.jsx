@@ -8,7 +8,11 @@ const Event = ({ item }) => {
       <div className=" rounded-lg px-4 py-4 shadow-lg duration-300 ease-in-out hover:shadow-xl">
         <div className="img__file relative overflow-hidden  rounded-md">
           <Fade>
-            <img className="w-full object-cover" src={item.thumbnail} alt="" />
+            <img
+              className="w-full object-cover"
+              src={item.thumbnail}
+              alt="Next LMS"
+            />
           </Fade>
           <Fade bottom>
             <span className="absolute bottom-2 right-2 z-10 rounded-full bg-[#F16126] px-3 py-1 text-sm text-white">
@@ -21,7 +25,7 @@ const Event = ({ item }) => {
             <Fade bottom>
               <Link
                 to={"/event-details"}
-                className="text-[22px] font-semibold leading-7 text-[#333] duration-300 ease-in-out hover:text-[#F16126]"
+                className="text-[18px] font-semibold leading-7 text-[#333] duration-300 ease-in-out hover:text-[#F16126] xl:text-[22px]"
               >
                 {item.title}
               </Link>

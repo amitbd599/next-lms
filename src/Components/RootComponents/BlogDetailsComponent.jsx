@@ -62,7 +62,7 @@ const BlogDetailsComponent = () => {
                     <img
                       className="rounded-md"
                       src="Assets/Images/blogs/Blog_10.png"
-                      alt=""
+                      alt="Next LMS"
                     />
                   </div>
                 </div>
@@ -179,10 +179,16 @@ const BlogDetailsComponent = () => {
                     <br />
                     <div className="flex gap-8">
                       <span>
-                        <img src="/Assets/Images/blogs/Blog_3.png" alt="" />
+                        <img
+                          src="/Assets/Images/blogs/Blog_3.png"
+                          alt="Next LMS"
+                        />
                       </span>
                       <span>
-                        <img src="/Assets/Images/blogs/Blog_2.png" alt="" />
+                        <img
+                          src="/Assets/Images/blogs/Blog_2.png"
+                          alt="Next LMS"
+                        />
                       </span>
                     </div>
                     <br />
@@ -271,7 +277,7 @@ const BlogDetailsComponent = () => {
                           <img
                             className="w-[80px] rounded-full"
                             src="/Assets/Images/students/Students_1.png"
-                            alt=""
+                            alt="Next LMS"
                           />
                         </div>
                       </div>
@@ -301,7 +307,7 @@ const BlogDetailsComponent = () => {
                           <img
                             className="w-[80px] rounded-full"
                             src="/Assets/Images/students/Students_2.png"
-                            alt=""
+                            alt="Next LMS"
                           />
                         </div>
                       </div>
@@ -332,7 +338,7 @@ const BlogDetailsComponent = () => {
                           <img
                             className="w-[80px] rounded-full"
                             src="/Assets/Images/students/Students_3.png"
-                            alt=""
+                            alt="Next LMS"
                           />
                         </div>
                       </div>
@@ -362,7 +368,7 @@ const BlogDetailsComponent = () => {
                           <img
                             className="w-[80px] rounded-full"
                             src="/Assets/Images/students/Students_2.png"
-                            alt=""
+                            alt="Next LMS"
                           />
                         </div>
                       </div>

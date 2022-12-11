@@ -34,10 +34,13 @@ const CourseAdvisorDetailsComponent = () => {
                   <img
                     className="w-full rounded-md object-cover"
                     src="/Assets/Images/advisors/Advisor_5.png"
-                    alt=""
+                    alt="Next LMS"
                   />
                   <span className="shape absolute top-[-54px] right-[-60px] z-[-10]">
-                    <img src="/Assets/Images/shape/shape_12.png" alt="" />
+                    <img
+                      src="/Assets/Images/shape/shape_12.png"
+                      alt="Next LMS"
+                    />
                   </span>
                 </div>
                 <div>

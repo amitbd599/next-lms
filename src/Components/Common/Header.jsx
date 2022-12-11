@@ -85,20 +85,26 @@ const Header = () => {
           <div className="flex items-center gap-2">
             <Fade>
               <div>
-                <button className="flex items-center gap-1.5  rounded-md px-3 py-2 duration-200 ease-in-out">
+                <Link
+                  to={"/registration"}
+                  className="flex items-center gap-1.5  rounded-md px-3 py-2 text-white duration-200 ease-in-out hover:text-[#F16126]"
+                >
                   <span>
-                    <FaEdit className="text-white " />
+                    <FaEdit />
                   </span>
-                  <span className="text-xs  text-white">Register</span>
-                </button>
+                  <span className="text-xs ">Register</span>
+                </Link>
               </div>
               <div>
-                <button className="flex items-center gap-1.5 rounded-md px-3 py-2">
+                <Link
+                  to={"/login"}
+                  className="flex items-center gap-1.5  rounded-md px-3 py-2 text-white duration-200 ease-in-out hover:text-[#F16126]"
+                >
                   <span>
-                    <FaUserEdit className="text-white" />
+                    <FaUserEdit />
                   </span>
-                  <span className="text-xs text-white">Login</span>
-                </button>
+                  <span className="text-xs">Login</span>
+                </Link>
               </div>
             </Fade>
           </div>
@@ -118,7 +124,7 @@ const Header = () => {
                       <img
                         className="w-[230px]"
                         src="/Assets/Images/logo.png"
-                        alt=""
+                        alt="Next LMS"
                       />
                     </Link>
                   </div>
@@ -127,11 +133,11 @@ const Header = () => {
                 <div className="header__right">
                   <nav className="lg:block">
                     <ul className="menu">
-                      <li className="root__dropdown">
+                      <li>
                         <Link to="/">Home</Link>
                       </li>
                       <li className="root__dropdown">
-                        <Link to="/course">Course</Link>
+                        <Link to="#course">Course</Link>
                         <ul className="subMenu">
                           <li>
                             <Link to="/course-grid-page">Course Grid</Link>
@@ -183,7 +189,7 @@ const Header = () => {
                         </ul>
                       </li>
                       <li className="root__dropdown">
-                        <Link to="#">Blog</Link>
+                        <Link to="#blog">Blog</Link>
                         <ul className="subMenu">
                           <li>
                             <Link to="/blog">Blog</Link>

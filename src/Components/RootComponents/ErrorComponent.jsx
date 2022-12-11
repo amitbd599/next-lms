@@ -48,7 +48,7 @@ const ErrorComponent = () => {
                 <img
                   className="object-cover"
                   src="/Assets/Images/shape/shape_13.png"
-                  alt=""
+                  alt="Next LMS"
                 />
               </div>
             </div>
