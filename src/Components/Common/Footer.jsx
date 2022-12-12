@@ -19,24 +19,24 @@ const Footer = () => {
       <div className="container mx-auto">
         <div className="grid grid-cols-12 gap-5 md:gap-10">
           <div className="col-span-12 mb-5 md:col-span-6 lg:col-span-4 lg:mb-0">
-            <Fade bottom>
-              <div className="img__file">
+            <div className="img__file">
+              <Fade bottom>
                 <img
                   className="w-[200px]"
                   src="Assets/Images/logo_white.png"
                   alt="Next LMS"
                 />
-              </div>
-            </Fade>
+              </Fade>
+            </div>
 
             <div className="mt-4">
-              <Fade bottom>
-                <p className="text-sm leading-relaxed text-white">
+              <p className="text-sm leading-relaxed text-white">
+                <Fade bottom>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Deserunt fuga commodi, ea ullam illo soluta inventore!
                   Praesentium doloribus laboriosam, ad soluta excepturi.
-                </p>
-              </Fade>
+                </Fade>
+              </p>
             </div>
             <div className="mt-4">
               <Fade bottom>
@@ -59,93 +59,105 @@ const Footer = () => {
           </div>
           <div className="col-span-12 mb-5 md:col-span-6 lg:col-span-2 lg:mb-0">
             <div className="mb-3">
-              <Fade bottom>
-                <h3 className="text-[22px] font-medium text-white">
-                  Categories
-                </h3>
-              </Fade>
+              <h3 className="text-[22px] font-medium text-white">
+                <Fade bottom>Categories</Fade>
+              </h3>
             </div>
             <div>
-              <Fade bottom>
-                <ul>
-                  <li>
+              <ul>
+                <li>
+                  <Fade bottom>
                     <Link
                       className="block py-1 text-sm text-white duration-300 ease-in-out hover:text-[#F16126]"
                       to={"/"}
                     >
                       All Courses
                     </Link>
-                  </li>
-                  <li>
+                  </Fade>
+                </li>
+                <li>
+                  <Fade bottom>
                     <Link
                       className="block py-1 text-sm text-white duration-300 ease-in-out hover:text-[#F16126]"
                       to={"/"}
                     >
                       Data Structure{" "}
                     </Link>
-                  </li>
-                  <li>
+                  </Fade>
+                </li>
+                <li>
+                  <Fade bottom>
                     <Link
                       className="block py-1 text-sm text-white duration-300 ease-in-out hover:text-[#F16126]"
                       to={"/"}
                     >
                       Web Development
                     </Link>
-                  </li>
-                  <li>
+                  </Fade>
+                </li>
+                <li>
+                  <Fade bottom>
                     <Link
                       className="block py-1 text-sm text-white duration-300 ease-in-out hover:text-[#F16126]"
                       to={"/"}
                     >
                       Electrical Machines
                     </Link>
-                  </li>
-                  <li>
+                  </Fade>
+                </li>
+                <li>
+                  <Fade bottom>
                     <Link
                       className="block py-1 text-sm text-white duration-300 ease-in-out hover:text-[#F16126]"
                       to={"/"}
                     >
                       Software{" "}
                     </Link>
-                  </li>
-                  <li>
+                  </Fade>
+                </li>
+                <li>
+                  <Fade bottom>
                     <Link
                       className="block py-1 text-sm text-white duration-300 ease-in-out hover:text-[#F16126]"
                       to={"/"}
                     >
                       Digital Marketing
                     </Link>
-                  </li>
-                  <li>
+                  </Fade>
+                </li>
+                <li>
+                  <Fade bottom>
                     <Link
                       className="block py-1 text-sm text-white duration-300 ease-in-out hover:text-[#F16126]"
                       to={"/"}
                     >
                       Affiliates Marketing
                     </Link>
-                  </li>
-                  <li>
+                  </Fade>
+                </li>
+                <li>
+                  <Fade bottom>
                     <Link
                       className="block py-1 text-sm text-white duration-300 ease-in-out hover:text-[#F16126]"
                       to={"/"}
                     >
                       Graphic Design
                     </Link>
-                  </li>
-                </ul>
-              </Fade>
+                  </Fade>
+                </li>
+              </ul>
             </div>
           </div>
 
           <div className="col-span-12 mb-5 md:col-span-6 lg:col-span-3 lg:mb-0">
             <div className="mb-3">
-              <Fade bottom>
-                <h3 className="text-[22px] font-medium text-white">Gallery</h3>
-              </Fade>
+              <h3 className="text-[22px] font-medium text-white">
+                <Fade bottom>Gallery</Fade>
+              </h3>
             </div>
             <div>
-              <Fade bottom>
-                <div className="grid grid-cols-3 gap-2">
+              <div className="grid grid-cols-3 gap-2">
+                <Fade bottom>
                   <span>
                     <img
                       className="w-[100px]"
@@ -153,6 +165,8 @@ const Footer = () => {
                       alt="Next LMS"
                     />
                   </span>
+                </Fade>
+                <Fade bottom>
                   <span>
                     <img
                       className="w-[100px]"
@@ -160,6 +174,8 @@ const Footer = () => {
                       alt="Next LMS"
                     />
                   </span>
+                </Fade>
+                <Fade bottom>
                   <span>
                     <img
                       className="w-[100px]"
@@ -167,6 +183,8 @@ const Footer = () => {
                       alt="Next LMS"
                     />
                   </span>
+                </Fade>
+                <Fade bottom>
                   <span>
                     <img
                       className="w-[100px]"
@@ -174,6 +192,8 @@ const Footer = () => {
                       alt="Next LMS"
                     />
                   </span>
+                </Fade>
+                <Fade bottom>
                   <span>
                     <img
                       className="w-[100px]"
@@ -181,6 +201,8 @@ const Footer = () => {
                       alt="Next LMS"
                     />
                   </span>
+                </Fade>
+                <Fade bottom>
                   <span>
                     <img
                       className="w-24"
@@ -188,53 +210,59 @@ const Footer = () => {
                       alt="Next LMS"
                     />
                   </span>
-                </div>
-              </Fade>
+                </Fade>
+              </div>
             </div>
           </div>
           <div className="col-span-12 mb-5 md:col-span-6 lg:col-span-3 lg:mb-0">
             <div className="mb-3">
-              <Fade bottom>
-                <h3 className="text-[22px] font-medium text-white">
-                  Contact Us
-                </h3>
-              </Fade>
+              <h3 className="text-[22px] font-medium text-white">
+                <Fade bottom>Contact Us</Fade>
+              </h3>
             </div>
             <div>
-              <Fade bottom>
-                <ul>
+              <ul>
+                <Fade bottom>
                   <li className="mb-2 flex items-start gap-2 py-1 text-sm text-white">
                     <span>
                       <FaPhoneAlt className="text-[18px] text-[#F16126]" />
                     </span>
                     <span>545 - 123 - 467</span>
                   </li>
+                </Fade>
+                <Fade bottom>
                   <li className="mb-2 flex items-start gap-2 py-1 text-sm text-white">
                     <span>
                       <FaEnvelope className="text-[18px] text-[#F16126]" />
                     </span>
                     <span>info@nextlms.com</span>
                   </li>
+                </Fade>
+                <Fade bottom>
                   <li className="mb-2 flex items-start gap-2 py-1 text-sm text-white">
                     <span>
                       <FaMapMarkerAlt className="text-[18px] text-[#F16126]" />
                     </span>
                     <span>New South London, UK</span>
                   </li>
+                </Fade>
+                <Fade bottom>
                   <li className="mb-2 flex items-start gap-2 py-1 text-sm text-white">
                     <span>
                       <FaFax className="text-[18px] text-[#F16126]" />
                     </span>
                     <span>864-223-0252</span>
                   </li>
+                </Fade>
+                <Fade bottom>
                   <li className="mb-2 flex items-start gap-2 py-1 text-sm text-white">
                     <span>
                       <FaHistory className="text-[18px] text-[#F16126]" />
                     </span>
                     <span> Sun - Fri 10:00AM - 9:30PM Sunday - CLOSED</span>
                   </li>
-                </ul>
-              </Fade>
+                </Fade>
+              </ul>
             </div>
           </div>
         </div>
@@ -242,12 +270,12 @@ const Footer = () => {
       <div className="container mx-auto mt-12 border-t border-t-[#E9ECEF] py-5">
         <div className=" text-center">
           <div>
-            <Fade bottom>
-              <p className="text-xs text-white">
+            <p className="text-xs text-white">
+              <Fade bottom>
                 © Copyrights 2022 NextLMS Designed By Amit Biswas. All rights
                 reserved.
-              </p>
-            </Fade>
+              </Fade>
+            </p>
           </div>
         </div>
       </div>

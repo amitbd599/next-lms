@@ -48,7 +48,7 @@ function App() {
         <Route exact path="/registration" element={<RegistrationPage />} />
         <Route exact path="/error" element={<ErrorPage />} />
       </Routes>
-      {/* <ScrollToTop smooth color="#fff" className="scrollToTop" /> */}
+      <ScrollToTop smooth color="#fff" className="scrollToTop" />
     </BrowserRouter>
   );
 }

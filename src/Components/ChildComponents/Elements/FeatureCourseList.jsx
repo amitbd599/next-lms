@@ -1,89 +1,119 @@
 import React from "react";
 import { FaBook, FaGlobeAmericas, FaStar } from "react-icons/fa";
+import { Fade } from "react-reveal";
 import { Link } from "react-router-dom";
 
 const FeatureCourseList = ({ item }) => {
   return (
-    <div className='itemContainer relative flex justify-center bg-white'>
-      <div className=' px-5 py-5 shadow-lg hover:shadow-xl rounded-lg ease-in-out duration-300 w-full'>
-        <div className='flex gap-10'>
-          <div className='img__file overflow-hidden rounded-md  relative'>
-            <img
-              className='rounded-md w-full object-cover'
-              src={item.thumbnail}
-              alt=''
-            />
+    <div className="itemContainer relative flex justify-center bg-white">
+      <div className=" w-full rounded-lg px-5 py-5 shadow-lg duration-300 ease-in-out hover:shadow-xl">
+        <div className="block gap-10 xl:flex">
+          <div className="img__file relative overflow-hidden  rounded-md">
+            <Fade>
+              <img
+                className="w-full rounded-md object-cover"
+                src={item.thumbnail}
+                alt=""
+              />
+            </Fade>
           </div>
-          <div className='text__file'>
+          <div className="text__file lg:py-5">
             <div>
-              <Link
-                to={"/"}
-                className='text-[#333] text-[22px] font-semibold hover:text-[#F16126] ease-in-out duration-300'
-              >
-                {item.title}
-              </Link>
-              <p>SCIENCE, TECH</p>
+              <Fade bottom>
+                <Link
+                  to={"/"}
+                  className="text-[22px] font-semibold text-[#333] duration-300 ease-in-out hover:text-[#F16126]"
+                >
+                  {item.title}
+                </Link>
+              </Fade>
+              <Fade bottom>
+                <p>SCIENCE, TECH</p>
+              </Fade>
             </div>
             <div>
-              <div>
-                <span className=' text-[40px] font-semibold'>
-                  ${item.price}
-                </span>
-              </div>
-              <div className='flex items-center gap-4 mt-0'>
-                <div className='item flex items-center gap-2'>
-                  <span>
-                    <FaBook className='text-[#F16126]' />
-                  </span>
-                  <span className='text-[#77838F] text-sm'>
-                    {item.lessons} Lessons
+              <Fade bottom>
+                <div>
+                  <span className=" text-[40px] font-semibold">
+                    ${item.price}
                   </span>
                 </div>
-                <div className='item flex items-center gap-2'>
-                  <span>
-                    <FaGlobeAmericas className='text-[#F16126]' />
-                  </span>
-                  <span className='text-[#77838F] text-sm'>Online Class</span>
+              </Fade>
+              <div className="mt-0 flex items-center gap-4">
+                <div className="item flex items-center gap-2">
+                  <Fade bottom>
+                    <span>
+                      <FaBook className="text-[#F16126]" />
+                    </span>
+                  </Fade>
+                  <Fade bottom>
+                    <span className="text-sm text-[#77838F]">
+                      {item.lessons} Lessons
+                    </span>
+                  </Fade>
+                </div>
+                <div className="item flex items-center gap-2">
+                  <Fade bottom>
+                    <span>
+                      <FaGlobeAmericas className="text-[#F16126]" />
+                    </span>
+                  </Fade>
+                  <Fade bottom>
+                    <span className="text-sm text-[#77838F]">Online Class</span>
+                  </Fade>
                 </div>
               </div>
             </div>
-            <div className='intro__section mt-4 px-2'>
-              <div className='flex gap-4'>
-                <img
-                  className='rounded-full border-2 border-[#F16126] w-[60px] h-[60px]'
-                  src={item.authorImg}
-                  alt=''
-                />
-                <div className=''>
-                  <h4 className='text-[20px] font-medium'>{item.author}</h4>
-                  <div className='flex gap-2 items-center'>
-                    <div className='flex '>
-                      <span>
-                        <FaStar className='text-[#F7B519]' />
-                      </span>
-                      <span>
-                        <FaStar className='text-[#F7B519]' />
-                      </span>
-                      <span>
-                        <FaStar className='text-[#F7B519]' />
-                      </span>
-                      <span>
-                        <FaStar className='text-[#F7B519]' />
-                      </span>
-                      <span>
-                        <FaStar className='text-[#F7B519]' />
-                      </span>
-                    </div>
+            <div className="intro__section mt-4 px-2">
+              <div className="flex gap-4">
+                <Fade bottom>
+                  <img
+                    className="h-[60px] w-[60px] rounded-full border-2 border-[#F16126]"
+                    src={item.authorImg}
+                    alt=""
+                  />
+                </Fade>
+
+                <div className="">
+                  <Fade bottom>
+                    <h4 className="text-[20px] font-medium">{item.author}</h4>
+                  </Fade>
+
+                  <div className="flex items-center gap-2">
+                    <Fade bottom>
+                      <div className="flex ">
+                        <span>
+                          <FaStar className="text-[#F7B519]" />
+                        </span>
+                        <span>
+                          <FaStar className="text-[#F7B519]" />
+                        </span>
+                        <span>
+                          <FaStar className="text-[#F7B519]" />
+                        </span>
+                        <span>
+                          <FaStar className="text-[#F7B519]" />
+                        </span>
+                        <span>
+                          <FaStar className="text-[#F7B519]" />
+                        </span>
+                      </div>
+                    </Fade>
+
                     <div>
-                      <p className='text-[#77838F]'>
-                        {item.rate}({item.totalRate})
-                      </p>
+                      <Fade bottom>
+                        <p className="text-[#77838F]">
+                          {item.rate}({item.totalRate})
+                        </p>
+                      </Fade>
                     </div>
                   </div>
                   <div>
-                    <p className='text-[#77838F] text-sm'>
-                      {item.authorPosition}
-                    </p>
+                    <Fade bottom>
+                      <p className="text-sm text-[#77838F]">
+                        {item.authorPosition}
+                      </p>
+                    </Fade>
                   </div>
                 </div>
               </div>

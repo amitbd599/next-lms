@@ -78,7 +78,7 @@ const HomeComponent = () => {
           <div className="grid-cols-12 gap-4 lg:grid">
             <div className="col-span-12 lg:col-span-6">
               <div className="leftSide">
-                <Fade left cascade>
+                <Fade bottom cascade>
                   <div className="flex justify-center gap-8 px-2 md:px-0 lg:justify-start">
                     <div className="item flex items-center gap-2">
                       <span>
@@ -102,130 +102,157 @@ const HomeComponent = () => {
                     </div>
                   </div>
                 </Fade>
-                <Fade left cascade>
-                  <div className="shape relative mt-5  md:flex md:justify-center lg:block lg:justify-start">
-                    <h2 className="relative z-10 text-center text-[40px] font-bold leading-[45px] text-white md:leading-[70px] lg:text-start lg:text-[50px] xl:text-[60px]">
+
+                <div className="shape relative mt-5  md:flex md:justify-center lg:block lg:justify-start">
+                  <Fade bottom>
+                    <h2 className="relative z-10 text-center text-[40px] font-bold leading-[45px] text-white md:leading-[70px] lg:text-start lg:text-[50px] xl:text-[62px]">
                       Growth You Career With Complete Courses
                     </h2>
-                    <span className="absolute top-[-5px] right-[10px] z-[-0]">
+                  </Fade>
+                  <span className="absolute top-[-5px] right-[10px] z-[-0]">
+                    <Fade bottom cascade>
                       <img
                         className="w-[250px]"
                         src="/Assets/Images/shape/shape_26.png"
                         alt="Next LMS"
                       />
-                    </span>
-                  </div>
-                </Fade>
-                <Fade left cascade>
-                  <div className="hidden lg:block">
-                    <div className="relative mt-5 flex">
-                      <div className="item relative top-0 ml-[0] h-[80px] w-[80px]">
+                    </Fade>
+                  </span>
+                </div>
+
+                <div className="hidden lg:block">
+                  <div className="relative mt-5 flex">
+                    <div className="item relative top-0 ml-[0] h-[80px] w-[80px]">
+                      <Fade bottom cascade>
                         <img
                           className=" rounded-full border-4 border-[#F16126]"
                           src="Assets/Images/profile/Ellipse_1.png"
                           alt="Next LMS"
                         />
-                      </div>
-                      <div className="item relative top-0 ml-[-25px]  h-[80px] w-[80px]">
+                      </Fade>
+                    </div>
+                    <div className="item relative top-0 ml-[-25px]  h-[80px] w-[80px]">
+                      <Fade bottom cascade>
                         <img
                           className=" rounded-full border-4 border-[#F16126]"
                           src="Assets/Images/profile/Ellipse_2.png"
                           alt="Next LMS"
                         />
-                      </div>
-                      <div className="item relative top-0 ml-[-25px]  h-[80px] w-[80px]">
+                      </Fade>
+                    </div>
+                    <div className="item relative top-0 ml-[-25px]  h-[80px] w-[80px]">
+                      <Fade bottom cascade>
                         <img
                           className=" rounded-full border-4 border-[#F16126]"
                           src="Assets/Images/profile/Ellipse_3.png"
                           alt="Next LMS"
                         />
-                      </div>
-                      <div className="item relative top-0 ml-[-25px]  h-[80px] w-[80px]">
+                      </Fade>
+                    </div>
+                    <div className="item relative top-0 ml-[-25px]  h-[80px] w-[80px]">
+                      <Fade bottom cascade>
                         <img
                           className=" rounded-full border-4 border-[#F16126]"
                           src="Assets/Images/profile/Ellipse_4.png"
                           alt="Next LMS"
                         />
-                      </div>
-                      <div className="item relative top-0 ml-[-25px]  h-[80px] w-[80px]">
+                      </Fade>
+                    </div>
+                    <div className="item relative top-0 ml-[-25px]  h-[80px] w-[80px]">
+                      <Fade bottom cascade>
                         <img
                           className=" rounded-full border-4 border-[#F16126]"
                           src="Assets/Images/profile/Ellipse_5.png"
                           alt="Next LMS"
                         />
-                      </div>
-                      <div className="item relative top-0 ml-[-25px]  h-[80px] w-[80px]">
+                      </Fade>
+                    </div>
+                    <div className="item relative top-0 ml-[-25px]  h-[80px] w-[80px]">
+                      <Fade bottom cascade>
                         <img
                           className=" rounded-full border-4 border-[#F16126]"
                           src="Assets/Images/profile/Ellipse_6.png"
                           alt="Next LMS"
                         />
-                      </div>
+                      </Fade>
                     </div>
                   </div>
-                </Fade>
+                </div>
               </div>
             </div>
             <div className="col-span-12 md:ml-8 lg:col-span-6">
               <div className="rightSide relative">
                 <div className=" shape mt-10 flex justify-center">
-                  <Fade right cascade>
-                    <div className="relative mt-5 flex">
-                      <div className="item relative top-0 ml-[0] h-[80px] w-[80px]">
+                  <div className="relative mt-5 flex">
+                    <div className="item relative top-0 ml-[0] h-[80px] w-[80px]">
+                      <Fade bottom cascade>
                         <img
                           className=" rounded-full border-4 border-[#F16126]"
                           src="/Assets/Images/shape/shape_1.png"
                           alt="Next LMS"
                         />
-                      </div>
-                      <div className="item relative top-0 ml-[-32px] h-[80px] w-[80px] md:ml-[-25px]">
+                      </Fade>
+                    </div>
+                    <div className="item relative top-0 ml-[-32px] h-[80px] w-[80px] md:ml-[-25px]">
+                      <Fade bottom cascade>
                         <img
                           className=" rounded-full border-4 border-[#F16126]"
                           src="/Assets/Images/shape/shape_2.png"
                           alt="Next LMS"
                         />
-                      </div>
-                      <div className="item relative top-0 ml-[-32px] h-[80px] w-[80px] md:ml-[-25px]">
+                      </Fade>
+                    </div>
+                    <div className="item relative top-0 ml-[-32px] h-[80px] w-[80px] md:ml-[-25px]">
+                      <Fade bottom cascade>
                         <img
                           className=" rounded-full border-4 border-[#F16126]"
                           src="/Assets/Images/shape/shape_3.png"
                           alt="Next LMS"
                         />
-                      </div>
-                      <div className="item relative top-0 ml-[-32px] h-[80px] w-[80px] md:ml-[-25px]">
+                      </Fade>
+                    </div>
+                    <div className="item relative top-0 ml-[-32px] h-[80px] w-[80px] md:ml-[-25px]">
+                      <Fade bottom cascade>
                         <img
                           className=" rounded-full border-4 border-[#F16126]"
                           src="/Assets/Images/shape/shape_4.png"
                           alt="Next LMS"
                         />
-                      </div>
-                      <div className="item relative top-0 ml-[-32px] h-[80px] w-[80px] md:ml-[-25px]">
+                      </Fade>
+                    </div>
+                    <div className="item relative top-0 ml-[-32px] h-[80px] w-[80px] md:ml-[-25px]">
+                      <Fade bottom cascade>
                         <img
                           className=" rounded-full border-4 border-[#F16126]"
                           src="/Assets/Images/shape/shape_5.png"
                           alt="Next LMS"
                         />
-                      </div>
-                      <div className="item relative top-0 ml-[-32px] h-[80px] w-[80px] md:ml-[-25px]">
+                      </Fade>
+                    </div>
+                    <div className="item relative top-0 ml-[-32px] h-[80px] w-[80px] md:ml-[-25px]">
+                      <Fade bottom cascade>
                         <img
                           className=" rounded-full border-4 border-[#F16126]"
                           src="/Assets/Images/shape/shape_6.png"
                           alt="Next LMS"
                         />
-                      </div>
-                      <div className="item relative top-0 ml-[-32px] h-[80px] w-[80px] md:ml-[-25px]">
+                      </Fade>
+                    </div>
+                    <div className="item relative top-0 ml-[-32px] h-[80px] w-[80px] md:ml-[-25px]">
+                      <Fade bottom cascade>
                         <img
                           className=" rounded-full border-4 border-[#F16126]"
                           src="/Assets/Images/shape/shape_30.png"
                           alt="Next LMS"
                         />
-                      </div>
+                      </Fade>
                     </div>
-                  </Fade>
+                  </div>
                 </div>
-                <Fade right cascade>
-                  <div className="mt-6 flex justify-center gap-4">
-                    <div className="item">
+
+                <div className="mt-6 flex justify-center gap-4">
+                  <div className="item">
+                    <Fade bottom>
                       <div className="text-right">
                         <h2 className="text-[40px] font-semibold text-white">
                           <CountUp delay={0} start={21} end={2617} />
@@ -234,8 +261,10 @@ const HomeComponent = () => {
                           Enrolled Students
                         </span>
                       </div>
-                    </div>
-                    <div className="item">
+                    </Fade>
+                  </div>
+                  <div className="item">
+                    <Fade bottom>
                       <div className="text-right">
                         <h2 className="text-[40px] font-semibold text-white">
                           <CountUp delay={0} start={21} end={902} />
@@ -244,8 +273,10 @@ const HomeComponent = () => {
                           Online Course
                         </span>
                       </div>
-                    </div>
-                    <div className="item">
+                    </Fade>
+                  </div>
+                  <div className="item">
+                    <Fade bottom>
                       <div className="text-right">
                         <h2 className="text-[40px] font-semibold text-white">
                           <CountUp delay={0} start={21} end={630} />K
@@ -254,12 +285,12 @@ const HomeComponent = () => {
                           Platform Followers
                         </span>
                       </div>
-                    </div>
+                    </Fade>
                   </div>
-                </Fade>
+                </div>
 
                 <div className="mt-14 md:mt-6">
-                  <Fade right cascade>
+                  <Fade bottom>
                     <div className="input__search relative flex justify-center">
                       <input
                         className="h-[64px] w-[430px] rounded-md border-2 border-white bg-transparent px-6 py-4 text-white"
@@ -305,28 +336,24 @@ const HomeComponent = () => {
           <div className="grid grid-cols-12 gap-5">
             <div className="col-span-12 lg:col-span-6">
               <div>
-                <Fade>
-                  <h2 className="relative z-10 flex gap-3 text-[40px] font-semibold text-[#333]">
-                    <Fade left>
-                      <span>Featured</span>
-                    </Fade>
-                    <Fade right>
-                      <span className="text-[#F16126]">Courses</span>{" "}
-                    </Fade>
-                  </h2>
-                  <Fade bottom cascade>
-                    <p className="mt-1 text-base text-[#77838F]">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Amet doloribus ipsam vero eaque, repellendus recusandae
-                      aut delectus nostrum reiciendis vel!
-                    </p>
+                <h2 className="relative z-10 flex gap-3 text-[40px] font-semibold text-[#333]">
+                  <Fade bottom>
+                    <span>Featured</span>
+                    <span className="text-[#F16126]">Courses</span>
                   </Fade>
-                </Fade>
+                </h2>
+                <p className="mt-1 text-base text-[#77838F]">
+                  <Fade bottom>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Amet doloribus ipsam vero eaque, repellendus recusandae aut
+                    delectus nostrum reiciendis vel!
+                  </Fade>
+                </p>
               </div>
             </div>
             <div className="col-span-12 lg:col-span-6">
               <div className=" mt-2 flex justify-start lg:mt-5 lg:justify-end">
-                <Fade right>
+                <Fade bottom>
                   <button className="flex items-center gap-2 rounded-md bg-[#F16126] px-4 py-4">
                     <span className="text-white">
                       <FaArrowRight />
@@ -359,28 +386,24 @@ const HomeComponent = () => {
           <div className="grid grid-cols-12 gap-5">
             <div className="col-span-12 lg:col-span-6">
               <div>
-                <Fade>
-                  <h2 className="relative z-10 flex gap-3 text-[40px] font-semibold text-[#333]">
-                    <Fade left>
-                      <span>Trending</span>
-                    </Fade>
-                    <Fade right>
-                      <span className="text-[#F16126]">Categories</span>{" "}
-                    </Fade>
-                  </h2>
-                  <Fade bottom cascade>
-                    <p className="mt-1 text-base text-[#77838F]">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Amet doloribus ipsam vero eaque, repellendus recusandae
-                      aut delectus nostrum reiciendis vel!
-                    </p>
+                <h2 className="relative z-10 flex gap-3 text-[40px] font-semibold text-[#333]">
+                  <Fade bottom>
+                    <span>Trending</span>
+                    <span className="text-[#F16126]">Categories</span>{" "}
                   </Fade>
-                </Fade>
+                </h2>
+                <p className="mt-1 text-base text-[#77838F]">
+                  <Fade bottom>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Amet doloribus ipsam vero eaque, repellendus recusandae aut
+                    delectus nostrum reiciendis vel!
+                  </Fade>
+                </p>
               </div>
             </div>
             <div className="col-span-12 lg:col-span-6">
               <div className="mt-2 flex justify-start lg:mt-5 lg:justify-end">
-                <Fade right>
+                <Fade bottom>
                   <button className="flex items-center gap-2 rounded-md bg-[#F16126] px-4 py-4">
                     <span className="text-white">
                       <FaArrowRight />
@@ -442,28 +465,24 @@ const HomeComponent = () => {
           <div className="grid grid-cols-12 gap-5">
             <div className="col-span-12 lg:col-span-6">
               <div>
-                <Fade>
-                  <h2 className="relative z-10 flex gap-3 text-[40px] font-semibold text-[#333]">
-                    <Fade left>
-                      <span>Upcoming</span>
-                    </Fade>
-                    <Fade right>
-                      <span className="text-[#F16126]">Events</span>{" "}
-                    </Fade>
-                  </h2>
-                  <Fade bottom cascade>
-                    <p className="mt-1 text-base text-[#77838F]">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Amet doloribus ipsam vero eaque, repellendus recusandae
-                      aut delectus nostrum reiciendis vel!
-                    </p>
+                <h2 className="relative z-10 flex gap-3 text-[40px] font-semibold text-[#333]">
+                  <Fade bottom>
+                    <span>Upcoming</span>
+                    <span className="text-[#F16126]">Events</span>{" "}
                   </Fade>
-                </Fade>
+                </h2>
+                <p className="mt-1 text-base text-[#77838F]">
+                  <Fade bottom>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Amet doloribus ipsam vero eaque, repellendus recusandae aut
+                    delectus nostrum reiciendis vel!
+                  </Fade>
+                </p>
               </div>
             </div>
             <div className="col-span-12 lg:col-span-6">
               <div className="mt-2 flex justify-start lg:mt-5 lg:justify-end">
-                <Fade right>
+                <Fade bottom>
                   <button className="flex items-center gap-2 rounded-md bg-[#F16126] px-4 py-4">
                     <span className="text-white">
                       <FaArrowRight />
@@ -497,28 +516,24 @@ const HomeComponent = () => {
           <div className="grid grid-cols-12 gap-5">
             <div className="col-span-12 lg:col-span-6">
               <div>
-                <Fade>
-                  <h2 className="relative z-10 flex gap-3 text-[40px] font-semibold text-[#333]">
-                    <Fade left>
-                      <span>Course</span>
-                    </Fade>
-                    <Fade right>
-                      <span className="text-[#F16126]">Advisor</span>{" "}
-                    </Fade>
-                  </h2>
-                  <Fade bottom cascade>
-                    <p className="mt-1 text-sm text-[#77838F]">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Amet doloribus ipsam vero eaque, repellendus recusandae
-                      aut delectus nostrum reiciendis vel!
-                    </p>
+                <h2 className="relative z-10 flex gap-3 text-[40px] font-semibold text-[#333]">
+                  <Fade bottom>
+                    <span>Course</span>
+                    <span className="text-[#F16126]">Advisor</span>{" "}
                   </Fade>
-                </Fade>
+                </h2>
+                <p className="mt-1 text-sm text-[#77838F]">
+                  <Fade bottom>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Amet doloribus ipsam vero eaque, repellendus recusandae aut
+                    delectus nostrum reiciendis vel!
+                  </Fade>
+                </p>
               </div>
             </div>
             <div className="col-span-12 lg:col-span-6">
               <div className="mt-2 flex justify-start lg:mt-5 lg:justify-end">
-                <Fade right>
+                <Fade bottom>
                   <button className="flex items-center gap-2 rounded-md bg-[#F16126] px-4 py-4">
                     <span className="text-white">
                       <FaArrowRight />
@@ -544,29 +559,27 @@ const HomeComponent = () => {
             ))}
           </div>
         </div>
-        {/* Become An Instructor */}
+        {/* Become An Advisor */}
 
         <div className="container mx-auto mt-12 lg:mt-14">
           <div className="flex justify-center">
             <div className="px-2 text-center md:px-[50px] lg:px-[150px]">
-              <Fade bottom>
-                <h2 className="text-[35px] font-semibold lg:text-[48px]">
-                  Become An Instructor
-                </h2>
-              </Fade>
-              <Fade bottom>
-                <p>
+              <h2 className="text-[35px] font-semibold lg:text-[48px]">
+                <Fade bottom>Become An Advisor</Fade>
+              </h2>
+              <p>
+                <Fade bottom>
                   At Thriving Skills, you can become an instructor at zero cost
                   and earn up to 50% of the revenue share. And we will promote
                   your course on other platforms.
-                </p>
-              </Fade>
+                </Fade>
+              </p>
 
               <div className="mt-6 flex justify-center">
                 <Fade bottom>
                   <Link className="my__btn" to={"/"}>
                     <span className="top-key"></span>
-                    <span className="text">Appiy for An Instructor</span>
+                    <span className="text">Apply for An Advisor</span>
                     <span className="bottom-key-1"></span>
                     <span className="bottom-key-2"></span>
                   </Link>
@@ -583,7 +596,7 @@ const HomeComponent = () => {
           <div className="grid grid-cols-12 gap-5">
             <div className="col-span-12 lg:col-span-6">
               <div>
-                <Fade left cascade>
+                <Fade bottom cascade>
                   <div>
                     <h2 className=" text-[35px] font-semibold leading-[40px] xl:text-[40px] xl:leading-[50px]">
                       Get Awesome 80s of online Courses For Free!
@@ -650,9 +663,9 @@ const HomeComponent = () => {
             </div>
             <div className="col-span-12 lg:col-span-6 lg:pl-10">
               <div className="h-full px-5 py-5 shadow-lg md:px-10 md:py-10">
-                <Fade right cascade>
-                  <div className="flex h-full items-center">
-                    <div>
+                <div className="flex h-full items-center">
+                  <div>
+                    <Fade bottom>
                       <div className="mb-4">
                         <input
                           className="text-slate-400 w-full rounded-lg border-2 border-[#E9ECEF] px-3 py-3"
@@ -660,7 +673,10 @@ const HomeComponent = () => {
                           placeholder="Email :"
                         />
                       </div>
-                      <div className="mb-4 gap-3 lg:flex">
+                    </Fade>
+
+                    <div className="mb-4 gap-3 lg:flex">
+                      <Fade bottom>
                         <div className="mb-4 lg:mb-0">
                           <input
                             className="text-slate-400 w-full rounded-lg border-2 border-[#E9ECEF] px-3 py-3"
@@ -668,6 +684,8 @@ const HomeComponent = () => {
                             placeholder="First Name :"
                           />
                         </div>
+                      </Fade>
+                      <Fade bottom>
                         <div>
                           <input
                             className="text-slate-400 w-full rounded-lg border-2 border-[#E9ECEF] px-3 py-3"
@@ -675,7 +693,9 @@ const HomeComponent = () => {
                             placeholder="Last Name :"
                           />
                         </div>
-                      </div>
+                      </Fade>
+                    </div>
+                    <Fade bottom>
                       <div className="mb-4">
                         <input
                           className="text-slate-400 w-full rounded-lg border-2 border-[#E9ECEF] px-3 py-3"
@@ -683,6 +703,8 @@ const HomeComponent = () => {
                           placeholder="Subject :"
                         />
                       </div>
+                    </Fade>
+                    <Fade bottom>
                       <div className="mb-4">
                         <input
                           className="text-slate-400 w-full rounded-lg border-2 border-[#E9ECEF] px-3 py-3"
@@ -690,17 +712,20 @@ const HomeComponent = () => {
                           placeholder="Phone :"
                         />
                       </div>
-                      <div>
+                    </Fade>
+
+                    <div>
+                      <Fade bottom>
                         <button className="flex items-center gap-2 rounded-md bg-[#F16126] px-4 py-4">
                           <span className="text-white">
                             <FaArrowRight />
                           </span>
                           <span className="text-white">Register Now</span>
                         </button>
-                      </div>
+                      </Fade>
                     </div>
                   </div>
-                </Fade>
+                </div>
               </div>
             </div>
           </div>
@@ -713,28 +738,24 @@ const HomeComponent = () => {
           <div className="grid grid-cols-12 gap-5">
             <div className="col-span-12 lg:col-span-6">
               <div>
-                <Fade>
-                  <h2 className="relative z-10 flex gap-3 text-[40px] font-semibold text-[#333]">
-                    <Fade left>
-                      <span>Blog</span>
-                    </Fade>
-                    <Fade right>
-                      <span className="text-[#F16126]">Posts</span>{" "}
-                    </Fade>
-                  </h2>
-                  <Fade bottom cascade>
-                    <p className="mt-1 text-base text-[#77838F]">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Amet doloribus ipsam vero eaque, repellendus recusandae
-                      aut delectus nostrum reiciendis vel!
-                    </p>
+                <h2 className="relative z-10 flex gap-3 text-[40px] font-semibold text-[#333]">
+                  <Fade bottom>
+                    <span>Blog</span>
+                    <span className="text-[#F16126]">Posts</span>{" "}
                   </Fade>
-                </Fade>
+                </h2>
+                <p className="mt-1 text-base text-[#77838F]">
+                  <Fade bottom>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Amet doloribus ipsam vero eaque, repellendus recusandae aut
+                    delectus nostrum reiciendis vel!
+                  </Fade>
+                </p>
               </div>
             </div>
             <div className="col-span-12 lg:col-span-6">
               <div className="mt-2 flex justify-start lg:mt-5 lg:justify-end">
-                <Fade right>
+                <Fade bottom>
                   <button className="flex items-center gap-2 rounded-md bg-[#F16126] px-4 py-4">
                     <span className="text-white">
                       <FaArrowRight />
@@ -768,23 +789,19 @@ const HomeComponent = () => {
           <div className="grid grid-cols-12 gap-5">
             <div className="col-span-12 lg:col-span-6">
               <div>
-                <Fade>
-                  <h2 className="relative z-10 flex gap-3 text-[40px] font-semibold text-[#333]">
-                    <Fade left>
-                      <span>Students</span>
-                    </Fade>
-                    <Fade right>
-                      <span className="text-[#F16126]">Says</span>{" "}
-                    </Fade>
-                  </h2>
-                  <Fade bottom cascade>
-                    <p className="mt-1 text-base text-[#77838F]">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Amet doloribus ipsam vero eaque, repellendus recusandae
-                      aut delectus nostrum reiciendis vel!
-                    </p>
+                <h2 className="relative z-10 flex gap-3 text-[40px] font-semibold text-[#333]">
+                  <Fade bottom>
+                    <span>Students</span>
+                    <span className="text-[#F16126]">Says</span>{" "}
                   </Fade>
-                </Fade>
+                </h2>
+                <p className="mt-1 text-base text-[#77838F]">
+                  <Fade bottom>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Amet doloribus ipsam vero eaque, repellendus recusandae aut
+                    delectus nostrum reiciendis vel!
+                  </Fade>
+                </p>
               </div>
             </div>
           </div>

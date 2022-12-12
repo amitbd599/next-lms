@@ -1,5 +1,4 @@
 import React from "react";
-import TrackVisibility from "react-on-screen";
 import CountUp from "react-countup";
 import Marquee from "react-fast-marquee";
 import Footer from "../Common/Footer";
@@ -43,12 +42,12 @@ const AboutComponent = () => {
       <IntroSection title={"About US"} />
 
       {/* ============ About Details  ============*/}
-      <div className="aboutDetails mt-[60px] py-[80px]">
+      <div className="aboutDetails mt-[40px] py-[80px] md:py-[60px] lg:py-[70px] xl:py-[80px] ">
         <div className="container mx-auto">
           <div className="grid grid-cols-12 gap-5">
             <div className="col-span-12 lg:col-span-6">
               <div>
-                <Fade left>
+                <Fade>
                   <div className="img__section relative flex justify-center lg:block">
                     <div className='relative w-[330px] after:absolute after:left-[20px] after:top-[20px] after:z-[-99] after:h-full after:w-full after:rounded-md after:bg-[#F16126] after:content-[""] lg:w-[420px]'>
                       <img
@@ -88,20 +87,24 @@ const AboutComponent = () => {
             </div>
             <div className="col-span-12 lg:col-span-6">
               <div className="mt-[40px] md:mt-[40px] lg:mt-0">
-                <Fade right>
-                  <h2 className="text-[24px] font-semibold tracking-[6px] text-[#F16126]">
-                    ABOUT OUR NEXT LMS
-                  </h2>
-                  <h3 className="mt-4 text-[30px]  font-semibold leading-[35px] md:text-[40px] md:leading-[45px]">
+                <h2 className="text-[24px] font-semibold tracking-[6px] text-[#F16126]">
+                  <Fade bottom>ABOUT OUR NEXT LMS</Fade>
+                </h2>
+                <h3 className="mt-4 text-[30px]  font-semibold leading-[35px] md:text-[40px] md:leading-[45px]">
+                  <Fade bottom>
                     Education system consists of excellent education and ideals.
-                  </h3>
-                  <p className="mt-4 leading-relaxed">
+                  </Fade>
+                </h3>
+                <p className="mt-4 leading-relaxed">
+                  <Fade bottom>
                     An education system refers to the economic and social
                     factors that typically make up public schools at the
                     federal, state or community levels. Such factors include
                     public funding, school facilities, staffing.
-                  </p>
-                  <div>
+                  </Fade>
+                </p>
+                <div>
+                  <Fade bottom>
                     <ul className="mt-4 list-disc pl-8">
                       <li>
                         The term education system generally refers to public
@@ -117,8 +120,8 @@ const AboutComponent = () => {
                         education sector.
                       </li>
                     </ul>
-                  </div>
-                </Fade>
+                  </Fade>
+                </div>
               </div>
             </div>
           </div>
@@ -126,34 +129,30 @@ const AboutComponent = () => {
       </div>
 
       {/* ============  Popular Courses ============ */}
-      <div className="aboutDetails mt-[60px] bg-[#F1F1F1] py-[80px]">
+      <div className="aboutDetails mt-[60px] bg-[#F1F1F1] py-[50px] md:py-[60px] lg:py-[70px] xl:py-[80px]">
         {/* Heading Text */}
         <div className="container mx-auto ">
           <div className="grid grid-cols-12 gap-5">
             <div className="col-span-12 lg:col-span-6">
               <div>
-                <Fade>
-                  <h2 className="relative z-10 flex gap-3 text-[40px] font-semibold text-[#333]">
-                    <Fade left>
-                      <span>Popular</span>
-                    </Fade>
-                    <Fade right>
-                      <span className="text-[#F16126]">Courses</span>{" "}
-                    </Fade>
-                  </h2>
-                  <Fade bottom cascade>
-                    <p className="mt-1 text-base text-[#77838F]">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Amet doloribus ipsam vero eaque, repellendus recusandae
-                      aut delectus nostrum reiciendis vel!
-                    </p>
+                <h2 className="relative z-10 flex gap-3 text-[40px] font-semibold text-[#333]">
+                  <Fade bottom>
+                    <span>Popular</span>
+                    <span className="text-[#F16126]">Courses</span>{" "}
                   </Fade>
-                </Fade>
+                </h2>
+                <p className="mt-1 text-base text-[#77838F]">
+                  <Fade bottom>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Amet doloribus ipsam vero eaque, repellendus recusandae aut
+                    delectus nostrum reiciendis vel!
+                  </Fade>
+                </p>
               </div>
             </div>
             <div className="col-span-12 lg:col-span-6">
               <div className="mt-2 flex justify-start lg:mt-5 lg:justify-end">
-                <Fade right>
+                <Fade bottom>
                   <button className="flex items-center gap-2 rounded-md bg-[#F16126] px-4 py-4">
                     <span className="text-white">
                       <FaArrowRight />
@@ -168,7 +167,7 @@ const AboutComponent = () => {
         <div className="container mx-auto mt-10 lg:mt-20">
           <div className="grid grid-cols-12 gap-6">
             <div className="col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-4">
-              <Fade left>
+              <Fade bottom>
                 <div className="flex justify-center rounded-lg bg-white px-5 py-10 shadow-xl">
                   <div>
                     <div className="flex justify-center">
@@ -208,7 +207,7 @@ const AboutComponent = () => {
               </Fade>
             </div>
             <div className="col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-4">
-              <Fade right>
+              <Fade bottom>
                 <div className="flex justify-center rounded-lg bg-white px-5 py-10 shadow-xl">
                   <div>
                     <div className="flex justify-center">
@@ -230,39 +229,37 @@ const AboutComponent = () => {
         </div>
       </div>
       {/* ============ Course Advisor ============ */}
-      <div className="courseAdvisor py-[80px]">
+      <div className="courseAdvisor py-[50px] md:py-[60px] lg:py-[70px] xl:py-[80px]">
         {/* Heading Text */}
         <div className="container mx-auto">
           <div className="grid grid-cols-12 gap-5">
             <div className="col-span-12 lg:col-span-6">
               <div>
-                <Fade>
-                  <h2 className="relative z-10 flex gap-3 text-[40px] font-semibold text-[#333]">
-                    <Fade left>
-                      <span>Course</span>
-                    </Fade>
-                    <Fade right>
-                      <span className="text-[#F16126]">Advisor</span>{" "}
-                    </Fade>
-                  </h2>
-                  <Fade bottom cascade>
-                    <p className="mt-1 text-base text-[#77838F]">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Amet doloribus ipsam vero eaque, repellendus recusandae
-                      aut delectus nostrum reiciendis vel!
-                    </p>
+                <h2 className="relative z-10 flex gap-3 text-[40px] font-semibold text-[#333]">
+                  <Fade bottom>
+                    <span>Course</span>
+                    <span className="text-[#F16126]">Advisor</span>{" "}
                   </Fade>
-                </Fade>
+                </h2>
+                <p className="mt-1 text-base text-[#77838F]">
+                  <Fade bottom>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Amet doloribus ipsam vero eaque, repellendus recusandae aut
+                    delectus nostrum reiciendis vel!
+                  </Fade>
+                </p>
               </div>
             </div>
             <div className="col-span-12 lg:col-span-6">
               <div className="mt-2 flex justify-start lg:mt-5 lg:justify-end">
-                <button className="flex items-center gap-2 rounded-md bg-[#F16126] px-4 py-4">
-                  <span className="text-white">
-                    <FaArrowRight />
-                  </span>
-                  <span className="text-white">All Advisor</span>
-                </button>
+                <Fade bottom>
+                  <button className="flex items-center gap-2 rounded-md bg-[#F16126] px-4 py-4">
+                    <span className="text-white">
+                      <FaArrowRight />
+                    </span>
+                    <span className="text-white">All Advisor</span>
+                  </button>
+                </Fade>
               </div>
             </div>
           </div>
@@ -282,28 +279,25 @@ const AboutComponent = () => {
           </div>
         </div>
         {/* Become An Instructor */}
-
         <div className="container mx-auto mt-12 lg:mt-14">
           <div className="flex justify-center">
             <div className="px-2 text-center md:px-[50px] lg:px-[150px]">
-              <Fade bottom>
-                <h2 className="text-[35px] font-semibold lg:text-[48px]">
-                  Become An Instructor
-                </h2>
-              </Fade>
-              <Fade bottom>
-                <p>
+              <h2 className="text-[35px] font-semibold lg:text-[48px]">
+                <Fade bottom>Become An Advisor</Fade>
+              </h2>
+              <p>
+                <Fade bottom>
                   At Thriving Skills, you can become an instructor at zero cost
                   and earn up to 50% of the revenue share. And we will promote
                   your course on other platforms.
-                </p>
-              </Fade>
+                </Fade>
+              </p>
 
               <div className="mt-6 flex justify-center">
                 <Fade bottom>
                   <Link className="my__btn" to={"/"}>
                     <span className="top-key"></span>
-                    <span className="text">Appiy for An Instructor</span>
+                    <span className="text">Apply for An Advisor</span>
                     <span className="bottom-key-1"></span>
                     <span className="bottom-key-2"></span>
                   </Link>
@@ -314,29 +308,25 @@ const AboutComponent = () => {
         </div>
       </div>
       {/* ============ Students Says ============ */}
-      <div className="studentsSays bg-[#F1F1F1]  py-[80px]">
+      <div className="studentsSays bg-[#F1F1F1]  py-[50px] md:py-[60px] lg:py-[70px] xl:py-[80px]">
         {/* Heading Text */}
         <div className="container mx-auto">
           <div className="grid grid-cols-12 gap-5">
             <div className="col-span-12 lg:col-span-6">
               <div>
-                <Fade>
-                  <h2 className="relative z-10 flex gap-3 text-[40px] font-semibold text-[#333]">
-                    <Fade left>
-                      <span>Students</span>
-                    </Fade>
-                    <Fade right>
-                      <span className="text-[#F16126]">Says</span>{" "}
-                    </Fade>
-                  </h2>
-                  <Fade bottom cascade>
-                    <p className="mt-1 text-base text-[#77838F]">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Amet doloribus ipsam vero eaque, repellendus recusandae
-                      aut delectus nostrum reiciendis vel!
-                    </p>
+                <h2 className="relative z-10 flex gap-3 text-[40px] font-semibold text-[#333]">
+                  <Fade bottom>
+                    <span>Students</span>
+                    <span className="text-[#F16126]">Says</span>{" "}
                   </Fade>
-                </Fade>
+                </h2>
+                <p className="mt-1 text-base text-[#77838F]">
+                  <Fade bottom>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Amet doloribus ipsam vero eaque, repellendus recusandae aut
+                    delectus nostrum reiciendis vel!
+                  </Fade>
+                </p>
               </div>
             </div>
           </div>
@@ -358,29 +348,25 @@ const AboutComponent = () => {
         </div>
       </div>
       {/* ============ Our Partner ============ */}
-      <div className="ourPartner  py-[80px]">
+      <div className="ourPartner  py-[50px] md:py-[60px] lg:py-[70px] xl:py-[80px]">
         {/* Heading Text */}
         <div className="container mx-auto">
           <div className="grid grid-cols-12 gap-5">
             <div className="col-span-12 lg:col-span-6">
               <div>
-                <Fade>
-                  <h2 className="relative z-10 flex gap-3 text-[40px] font-semibold text-[#333]">
-                    <Fade left>
-                      <span>Our</span>
-                    </Fade>
-                    <Fade right>
-                      <span className="text-[#F16126]">Partner</span>{" "}
-                    </Fade>
-                  </h2>
-                  <Fade bottom cascade>
-                    <p className="mt-1 text-base text-[#77838F]">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Amet doloribus ipsam vero eaque, repellendus recusandae
-                      aut delectus nostrum reiciendis vel!
-                    </p>
+                <h2 className="relative z-10 flex gap-3 text-[40px] font-semibold text-[#333]">
+                  <Fade bottom>
+                    <span>Our</span>
+                    <span className="text-[#F16126]">Partner</span>{" "}
                   </Fade>
-                </Fade>
+                </h2>
+                <p className="mt-1 text-base text-[#77838F]">
+                  <Fade bottom>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Amet doloribus ipsam vero eaque, repellendus recusandae aut
+                    delectus nostrum reiciendis vel!
+                  </Fade>
+                </p>
               </div>
             </div>
           </div>
