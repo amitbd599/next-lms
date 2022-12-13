@@ -23,21 +23,25 @@ const FAQComponent = () => {
       {/* ============ Intro Section ============*/}
       <IntroSection title={"FAQ"} />
       {/* ============ FAQ ============ */}
-      <div className='faqSection gridCourses py-[80px]'>
+      <div className="faqSection gridCourses py-[50px] md:py-[60px] lg:py-[70px] xl:py-[80px]">
         {/* Heading text */}
-        <div className='container mx-auto mt-10'>
-          <div className='grid grid-cols-12 gap-5'>
-            <div className='col-span-12 mb-4'>
-              <div className='flex justify-center text-center px-40'>
+        <div className="container mx-auto">
+          <div className="grid grid-cols-12 gap-5">
+            <div className="col-span-12 mb-4">
+              <div className="flex justify-center text-center md:px-10 lg:px-40">
                 <div>
-                  <h2 className='text-[35px] font-semibold'>
-                    We Are Always Ready To Help You
-                  </h2>
-                  <p className='text-sm mt-2'>
-                    If there is any query then you can get all the information
-                    from here. We will always try to provide all information
-                    accurately. Below is all the information and description.
-                  </p>
+                  <Fade>
+                    <h2 className="text-[35px] font-semibold">
+                      We Are Always Ready To Help You
+                    </h2>
+                  </Fade>
+                  <Fade>
+                    <p className="mt-2 text-sm">
+                      If there is any query then you can get all the information
+                      from here. We will always try to provide all information
+                      accurately. Below is all the information and description.
+                    </p>
+                  </Fade>
                 </div>
               </div>
             </div>
@@ -45,13 +49,13 @@ const FAQComponent = () => {
         </div>
 
         {/* FAQ Info */}
-        <div className='container mx-auto mt-10'>
-          <div className='grid grid-cols-12 gap-5'>
-            <div className='col-span-12 mb-4'>
-              <div className='itemOverview mt-4'>
-                <div className='px-[100px]'>
+        <div className="container mx-auto mt-5 lg:mt-10">
+          <div className="grid grid-cols-12 gap-5">
+            <div className="col-span-12 mb-4">
+              <div className="itemOverview mt-4">
+                <div className="md:px-10 lg:px-[100px]">
                   <Tabs>
-                    <div className='flex justify-center'>
+                    <div className="flex justify-center">
                       <TabList>
                         {/* Tab Header STUDENTS */}
                         <Tab>STUDENTS</Tab>
@@ -69,172 +73,150 @@ const FAQComponent = () => {
                     {/* TabPanel STUDENTS */}
                     <TabPanel>
                       <div>
-                        <div className='mt-5'>
-                          {/* Course Accordion */}
-                          <div className='mt-2'>
-                            <div>
-                              <Fade>
-                                <Accordion allowZeroExpanded>
-                                  {faqData.STUDENTS.map((item, index) => (
-                                    <AccordionItem key={index}>
-                                      <AccordionItemHeading>
-                                        <AccordionItemButton>
-                                          <div className='flex justify-between items-center w-full pl-8  '>
-                                            <span className='text-sm font-medium'>
-                                              {item.qus}
-                                            </span>
-                                          </div>
-                                        </AccordionItemButton>
-                                      </AccordionItemHeading>
-                                      <AccordionItemPanel>
-                                        <p className='text-sm leading-relaxed'>
-                                          {item.ans}
-                                        </p>
-                                      </AccordionItemPanel>
-                                    </AccordionItem>
-                                  ))}
-                                </Accordion>{" "}
-                              </Fade>
-                            </div>
-                          </div>
+                        {/* Course Accordion */}
+                        <div>
+                          <Fade>
+                            <Accordion allowZeroExpanded>
+                              {faqData.STUDENTS.map((item, index) => (
+                                <AccordionItem key={index}>
+                                  <AccordionItemHeading>
+                                    <AccordionItemButton>
+                                      <div className="flex w-full items-center justify-between pl-8  ">
+                                        <span className="text-sm font-medium">
+                                          {item.qus}
+                                        </span>
+                                      </div>
+                                    </AccordionItemButton>
+                                  </AccordionItemHeading>
+                                  <AccordionItemPanel>
+                                    <p className="text-sm leading-relaxed">
+                                      {item.ans}
+                                    </p>
+                                  </AccordionItemPanel>
+                                </AccordionItem>
+                              ))}
+                            </Accordion>{" "}
+                          </Fade>
                         </div>
                       </div>
                     </TabPanel>
                     {/* TabPanel TEACHERS */}
                     <TabPanel>
                       <div>
-                        <div className='mt-5'>
-                          {/* Course Accordion */}
-                          <div className='mt-2'>
-                            <div>
-                              <Fade>
-                                <Accordion allowZeroExpanded>
-                                  {faqData.TEACHERS.map((item, index) => (
-                                    <AccordionItem key={index}>
-                                      <AccordionItemHeading>
-                                        <AccordionItemButton>
-                                          <div className='flex justify-between items-center w-full pl-8  '>
-                                            <span className='text-sm font-medium'>
-                                              {item.qus}
-                                            </span>
-                                          </div>
-                                        </AccordionItemButton>
-                                      </AccordionItemHeading>
-                                      <AccordionItemPanel>
-                                        <p className='text-sm leading-relaxed'>
-                                          {item.ans}
-                                        </p>
-                                      </AccordionItemPanel>
-                                    </AccordionItem>
-                                  ))}
-                                </Accordion>{" "}
-                              </Fade>
-                            </div>
-                          </div>
+                        {/* Course Accordion */}
+                        <div>
+                          <Fade>
+                            <Accordion allowZeroExpanded>
+                              {faqData.TEACHERS.map((item, index) => (
+                                <AccordionItem key={index}>
+                                  <AccordionItemHeading>
+                                    <AccordionItemButton>
+                                      <div className="flex w-full items-center justify-between pl-8  ">
+                                        <span className="text-sm font-medium">
+                                          {item.qus}
+                                        </span>
+                                      </div>
+                                    </AccordionItemButton>
+                                  </AccordionItemHeading>
+                                  <AccordionItemPanel>
+                                    <p className="text-sm leading-relaxed">
+                                      {item.ans}
+                                    </p>
+                                  </AccordionItemPanel>
+                                </AccordionItem>
+                              ))}
+                            </Accordion>{" "}
+                          </Fade>
                         </div>
                       </div>
                     </TabPanel>
                     {/* FUTURE STUDENTS */}
                     <TabPanel>
                       <div>
-                        <div className='mt-5'>
-                          {/* Course Accordion */}
-                          <div className='mt-2'>
-                            <div>
-                              <Fade>
-                                <Accordion allowZeroExpanded>
-                                  {faqData.FUTURE_STUDENTS.map(
-                                    (item, index) => (
-                                      <AccordionItem key={index}>
-                                        <AccordionItemHeading>
-                                          <AccordionItemButton>
-                                            <div className='flex justify-between items-center w-full pl-8  '>
-                                              <span className='text-sm font-medium'>
-                                                {item.qus}
-                                              </span>
-                                            </div>
-                                          </AccordionItemButton>
-                                        </AccordionItemHeading>
-                                        <AccordionItemPanel>
-                                          <p className='text-sm leading-relaxed'>
-                                            {item.ans}
-                                          </p>
-                                        </AccordionItemPanel>
-                                      </AccordionItem>
-                                    )
-                                  )}
-                                </Accordion>{" "}
-                              </Fade>
-                            </div>
-                          </div>
+                        {/* Course Accordion */}
+                        <div>
+                          <Fade>
+                            <Accordion allowZeroExpanded>
+                              {faqData.FUTURE_STUDENTS.map((item, index) => (
+                                <AccordionItem key={index}>
+                                  <AccordionItemHeading>
+                                    <AccordionItemButton>
+                                      <div className="flex w-full items-center justify-between pl-8  ">
+                                        <span className="text-sm font-medium">
+                                          {item.qus}
+                                        </span>
+                                      </div>
+                                    </AccordionItemButton>
+                                  </AccordionItemHeading>
+                                  <AccordionItemPanel>
+                                    <p className="text-sm leading-relaxed">
+                                      {item.ans}
+                                    </p>
+                                  </AccordionItemPanel>
+                                </AccordionItem>
+                              ))}
+                            </Accordion>{" "}
+                          </Fade>
                         </div>
                       </div>
                     </TabPanel>
                     {/* FUTURE INTERNATIONAL */}
                     <TabPanel>
                       <div>
-                        <div className='mt-5'>
-                          {/* Course Accordion */}
-                          <div className='mt-2'>
-                            <div>
-                              <Fade>
-                                <Accordion allowZeroExpanded>
-                                  {faqData.INTERNATIONAL.map((item, index) => (
-                                    <AccordionItem key={index}>
-                                      <AccordionItemHeading>
-                                        <AccordionItemButton>
-                                          <div className='flex justify-between items-center w-full pl-8  '>
-                                            <span className='text-sm font-medium'>
-                                              {item.qus}
-                                            </span>
-                                          </div>
-                                        </AccordionItemButton>
-                                      </AccordionItemHeading>
-                                      <AccordionItemPanel>
-                                        <p className='text-sm leading-relaxed'>
-                                          {item.ans}
-                                        </p>
-                                      </AccordionItemPanel>
-                                    </AccordionItem>
-                                  ))}
-                                </Accordion>{" "}
-                              </Fade>
-                            </div>
-                          </div>
+                        {/* Course Accordion */}
+                        <div>
+                          <Fade>
+                            <Accordion allowZeroExpanded>
+                              {faqData.INTERNATIONAL.map((item, index) => (
+                                <AccordionItem key={index}>
+                                  <AccordionItemHeading>
+                                    <AccordionItemButton>
+                                      <div className="flex w-full items-center justify-between pl-8  ">
+                                        <span className="text-sm font-medium">
+                                          {item.qus}
+                                        </span>
+                                      </div>
+                                    </AccordionItemButton>
+                                  </AccordionItemHeading>
+                                  <AccordionItemPanel>
+                                    <p className="text-sm leading-relaxed">
+                                      {item.ans}
+                                    </p>
+                                  </AccordionItemPanel>
+                                </AccordionItem>
+                              ))}
+                            </Accordion>{" "}
+                          </Fade>
                         </div>
                       </div>
                     </TabPanel>
                     {/* FUTURE TEAM */}
                     <TabPanel>
                       <div>
-                        <div className='mt-5'>
-                          {/* Course Accordion */}
-                          <div className='mt-2'>
-                            <div>
-                              <Fade>
-                                <Accordion allowZeroExpanded>
-                                  {faqData.TEAM.map((item, index) => (
-                                    <AccordionItem key={index}>
-                                      <AccordionItemHeading>
-                                        <AccordionItemButton>
-                                          <div className='flex justify-between items-center w-full pl-8  '>
-                                            <span className='text-sm font-medium'>
-                                              {item.qus}
-                                            </span>
-                                          </div>
-                                        </AccordionItemButton>
-                                      </AccordionItemHeading>
-                                      <AccordionItemPanel>
-                                        <p className='text-sm leading-relaxed'>
-                                          {item.ans}
-                                        </p>
-                                      </AccordionItemPanel>
-                                    </AccordionItem>
-                                  ))}
-                                </Accordion>{" "}
-                              </Fade>
-                            </div>
-                          </div>
+                        {/* Course Accordion */}
+                        <div>
+                          <Fade>
+                            <Accordion allowZeroExpanded>
+                              {faqData.TEAM.map((item, index) => (
+                                <AccordionItem key={index}>
+                                  <AccordionItemHeading>
+                                    <AccordionItemButton>
+                                      <div className="flex w-full items-center justify-between pl-8  ">
+                                        <span className="text-sm font-medium">
+                                          {item.qus}
+                                        </span>
+                                      </div>
+                                    </AccordionItemButton>
+                                  </AccordionItemHeading>
+                                  <AccordionItemPanel>
+                                    <p className="text-sm leading-relaxed">
+                                      {item.ans}
+                                    </p>
+                                  </AccordionItemPanel>
+                                </AccordionItem>
+                              ))}
+                            </Accordion>{" "}
+                          </Fade>
                         </div>
                       </div>
                     </TabPanel>

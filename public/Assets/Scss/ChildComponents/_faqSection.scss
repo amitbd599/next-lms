@@ -13,6 +13,15 @@
       color: #77838f;
       margin-right: 20px;
       transition: all 0.2s linear;
+      @media #{$lg-device} {
+        margin-bottom: 10px;
+      }
+      @media #{$md-device} {
+        margin-bottom: 10px;
+      }
+      @media #{$sm-device} {
+        margin-bottom: 10px;
+      }
     }
 
     .react-tabs__tab:hover,
@@ -24,6 +33,9 @@
     }
     .react-tabs__tab-panel {
       margin-top: 50px;
+      @media #{$md-device} {
+        margin-top: 30px;
+      }
     }
   }
 }

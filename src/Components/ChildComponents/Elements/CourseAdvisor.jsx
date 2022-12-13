@@ -1,6 +1,7 @@
 import React from "react";
 import { FaFacebook, FaGitAlt, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { Fade } from "react-reveal";
+import { Link } from "react-router-dom";
 
 const CourseAdvisor = ({ item }) => {
   return (
@@ -41,9 +42,12 @@ const CourseAdvisor = ({ item }) => {
         <div className="text__file mt-5 mb-3">
           <div className="text-center">
             <Fade bottom>
-              <h3 className="text-[18px] font-semibold xl:text-[22px]">
+              <Link
+                to={"/course-advisor-details"}
+                className="text-[18px] font-semibold text-[#333] duration-300 ease-in-out hover:text-[#F16126] xl:text-[22px]"
+              >
                 {item.name}
-              </h3>
+              </Link>
               <p className="text-sm">{item.position}</p>
             </Fade>
           </div>

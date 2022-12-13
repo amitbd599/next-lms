@@ -104,7 +104,7 @@ const CourseListComponent = () => {
           </div>
         </div>
         {/* Courses Info */}
-        <div className="container mx-auto mt-5 md:mt-14">
+        <div className="container mx-auto mt-2 md:mt-14">
           <div className="grid grid-cols-12 md:gap-8">
             <div className="col-span-12 mb-4 md:col-span-6 lg:col-span-7 xl:col-span-8">
               {coursesData.map((item, index) => (

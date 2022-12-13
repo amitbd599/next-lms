@@ -1,4 +1,5 @@
 import React from "react";
+import { Fade } from "react-reveal";
 import blogData from "../../Database/blogData";
 import Blog from "../ChildComponents/Elements/Blog";
 import Footer from "../Common/Footer";
@@ -14,60 +15,65 @@ const BlogComponents = () => {
       {/* ============ Intro Section ============*/}
       <IntroSection title={"Blog"} />
       {/* ============ Blog Section ============*/}
-      <div className='featureCourses gridCourses py-[80px]'>
-        <div className='container mx-auto mt-14'>
-          <div className='grid grid-cols-12 gap-5'>
+      <div className="blogSection  py-[50px] md:py-[60px] lg:py-[70px] xl:py-[80px]">
+        <div className="container mx-auto ">
+          <div className="grid grid-cols-12 gap-5">
             {blogData.map((item, index) => (
-              <div key={index} className='col-span-4 mb-20'>
+              <div
+                key={index}
+                className="col-span-12 mb-16 md:col-span-6 md:mb-20 lg:col-span-4 lg:mb-28 xl:mb-20"
+              >
                 <Blog item={item} />
               </div>
             ))}
           </div>
         </div>
         {/* Pagination Section */}
-        <div className='container mx-auto mt-14'>
-          <div aria-label='Page navigation'>
-            <div className='flex justify-center'>
-              <ul class='inline-flex space-x-2'>
-                <li>
-                  <button class='flex items-center justify-center w-10 h-10 text-[#F16126] transition-colors duration-150 rounded-full focus:shadow-outline hover:bg-[#f0612657]'>
-                    <svg class='w-4 h-4 fill-current' viewBox='0 0 20 20'>
-                      <path
-                        d='M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z'
-                        clip-rule='evenodd'
-                        fill-rule='evenodd'
-                      ></path>
-                    </svg>
-                  </button>
-                </li>
-                <li>
-                  <button class='w-10 h-10 text-[#F16126] transition-colors duration-150 rounded-full focus:shadow-outline hover:bg-[#f0612657]'>
-                    1
-                  </button>
-                </li>
-                <li>
-                  <button class='w-10 h-10 text-[#F16126] transition-colors duration-150 rounded-full focus:shadow-outline hover:bg-[#f0612657]'>
-                    2
-                  </button>
-                </li>
-                <li>
-                  <button class='w-10 h-10 text-white transition-colors duration-150 bg-[#F16126] border border-r-0 border-[#F16126] rounded-full focus:shadow-outline'>
-                    3
-                  </button>
-                </li>
-                <li>
-                  <button class='flex items-center justify-center w-10 h-10 text-[#F16126] transition-colors duration-150 bg-white rounded-full focus:shadow-outline hover:bg-[#f0612657]'>
-                    <svg class='w-4 h-4 fill-current' viewBox='0 0 20 20'>
-                      <path
-                        d='M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z'
-                        clip-rule='evenodd'
-                        fill-rule='evenodd'
-                      ></path>
-                    </svg>
-                  </button>
-                </li>
-              </ul>
-            </div>
+        <div className="container mx-auto mt-5 md:mt-14">
+          <div aria-label="Page navigation">
+            <Fade bottom>
+              <div className="flex justify-center">
+                <ul class="inline-flex space-x-2">
+                  <li>
+                    <button class="focus:shadow-outline flex h-10 w-10 items-center justify-center rounded-full text-[#F16126] transition-colors duration-150 hover:bg-[#f0612657]">
+                      <svg class="h-4 w-4 fill-current" viewBox="0 0 20 20">
+                        <path
+                          d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
+                          clip-rule="evenodd"
+                          fill-rule="evenodd"
+                        ></path>
+                      </svg>
+                    </button>
+                  </li>
+                  <li>
+                    <button class="focus:shadow-outline h-10 w-10 rounded-full text-[#F16126] transition-colors duration-150 hover:bg-[#f0612657]">
+                      1
+                    </button>
+                  </li>
+                  <li>
+                    <button class="focus:shadow-outline h-10 w-10 rounded-full text-[#F16126] transition-colors duration-150 hover:bg-[#f0612657]">
+                      2
+                    </button>
+                  </li>
+                  <li>
+                    <button class="focus:shadow-outline h-10 w-10 rounded-full border border-r-0 border-[#F16126] bg-[#F16126] text-white transition-colors duration-150">
+                      3
+                    </button>
+                  </li>
+                  <li>
+                    <button class="focus:shadow-outline flex h-10 w-10 items-center justify-center rounded-full bg-white text-[#F16126] transition-colors duration-150 hover:bg-[#f0612657]">
+                      <svg class="h-4 w-4 fill-current" viewBox="0 0 20 20">
+                        <path
+                          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                          clip-rule="evenodd"
+                          fill-rule="evenodd"
+                        ></path>
+                      </svg>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </Fade>
           </div>
         </div>
       </div>

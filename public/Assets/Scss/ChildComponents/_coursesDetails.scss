@@ -12,6 +12,16 @@
       padding: 16px 40px;
       color: #77838f;
       margin-right: 20px;
+      border-radius: 5px !important;
+      @media #{$lg-device} {
+        margin-top: 10px;
+      }
+      @media #{$md-device} {
+        margin-top: 10px;
+      }
+      @media #{$sm-device} {
+        margin-top: 10px;
+      }
     }
 
     .react-tabs__tab--selected {
@@ -23,5 +33,8 @@
     .react-tabs__tab-panel {
       margin-top: 50px;
     }
+  }
+  .accordion__button {
+    border-radius: 5px !important;
   }
 }

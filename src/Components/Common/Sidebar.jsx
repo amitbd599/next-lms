@@ -113,7 +113,7 @@ const Sidebar = () => {
               {blogData.slice(0, 5).map((item, index) => (
                 <li key={index} className="mb-6">
                   <div className="flex w-full gap-3">
-                    <div className="w-4/12">
+                    <div className="w-auto lg:w-4/12">
                       <Fade bottom>
                         <img
                           className="w-[120px] rounded-lg"

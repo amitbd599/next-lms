@@ -17,7 +17,7 @@ const FeatureCourseList = ({ item }) => {
               />
             </Fade>
           </div>
-          <div className="text__file lg:py-5">
+          <div className="text__file mt-4 md:mt-0 lg:py-5">
             <div>
               <Fade bottom>
                 <Link
@@ -28,7 +28,7 @@ const FeatureCourseList = ({ item }) => {
                 </Link>
               </Fade>
               <Fade bottom>
-                <p>SCIENCE, TECH</p>
+                <p>{item.tag}</p>
               </Fade>
             </div>
             <div>
