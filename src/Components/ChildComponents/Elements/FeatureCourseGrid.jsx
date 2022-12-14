@@ -7,15 +7,15 @@ const FeatureCourseGrid = ({ item }) => {
   return (
     <div className="itemContainer relative flex justify-center">
       <div className=" w-full rounded-lg px-4 py-4 shadow-lg duration-300 ease-in-out hover:shadow-xl">
-        <Fade>
-          <div className="img__file relative overflow-hidden  rounded-md">
+        <div className="img__file relative overflow-hidden  rounded-md">
+          <Fade>
             <img
               className="w-full rounded-md object-cover"
               src={item.thumbnail}
               alt="Next LMS"
             />
-          </div>
-        </Fade>
+          </Fade>
+        </div>
         <Fade>
           <div className="absolute right-[24px] bottom-[200px] z-20 flex h-[80px] w-[80px] items-center justify-center rounded-full bg-[#F16126]">
             <span className="text-[22px] font-semibold text-white">

@@ -1,15 +1,22 @@
 import React, { Fragment, Suspense } from "react";
 import { Helmet } from "react-helmet";
-import CourseAdvisorDetailsComponent from "../Components/RootComponents/CourseAdvisorDetailsComponent";
+import Loader from "../Components/Common/Loader";
+const CourseAdvisorDetailsComponent = React.lazy(() =>
+  import("../Components/RootComponents/CourseAdvisorDetailsComponent")
+);
 const CourseAdvisorDetailsPage = () => {
   return (
     <Fragment>
-      <Suspense fallback={""}>
+      <Suspense fallback={<Loader />}>
         <Helmet>
-          <title>Advisor Details || NetGrid - React Portfolio Template</title>
+          <title>
+            Advisor Details || Next LMS - Professional LMS Online Education
+            Course React Template
+          </title>
           <meta
-            name='description'
-            content='NetGrid - React Portfolio Template'
+            name="description"
+            content="Next LMS - Professional LMS Online Education Course React
+            Template"
           />
         </Helmet>
         <CourseAdvisorDetailsComponent />

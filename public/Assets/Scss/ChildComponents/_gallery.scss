@@ -1,6 +1,9 @@
 .gallery {
   .img__file {
     column-count: 3;
+    @media #{$sm-device} {
+      column-count: 2;
+    }
   }
   img {
     height: auto !important;

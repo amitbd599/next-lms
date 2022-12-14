@@ -7,7 +7,8 @@ import Lightbox from "react-image-lightbox";
 import "react-image-lightbox/style.css";
 import { useState } from "react";
 import { BiFullscreen } from "react-icons/bi";
-const GalleryComponent = (props) => {
+import { Fade } from "react-reveal";
+const GalleryComponent = () => {
   const [photoIndex, setPhotoIndex] = useState(0);
   const [isOpen, setIsOpen] = useState(false);
   const images = [
@@ -65,52 +66,54 @@ const GalleryComponent = (props) => {
       <IntroSection title={"Gallery"} />
 
       {/* ============  Gallery Info ============ */}
-      <div className="gallery  py-[80px]">
+      <div className="gallery  py-[50px] md:py-[60px] lg:py-[70px] xl:py-[80px]">
         <div className="container mx-auto">
           <div className="grid grid-cols-12">
             <div className="col-span-12">
               <div className="py-6 dark:bg-gray-800 dark:text-gray-50">
                 <div className="img__file">
-                  {images.map((item, index) => (
-                    <div className="single__img relative" key={index}>
-                      {isOpen && (
-                        <Lightbox
-                          mainSrc={images[photoIndex].bigImage}
-                          nextSrc={images[(photoIndex + 1) % images.length]}
-                          prevSrc={
-                            images[
-                              (photoIndex + images.length - 1) % images.length
-                            ]
-                          }
-                          onCloseRequest={() => {
-                            setIsOpen(false);
-                          }}
-                          onMovePrevRequest={() =>
-                            setPhotoIndex(
-                              (photoIndex + images.length - 1) % images.length
-                            )
-                          }
-                          onMoveNextRequest={() =>
-                            setPhotoIndex((photoIndex + 1) % images.length)
-                          }
-                        />
-                      )}
+                  <Fade>
+                    {images.map((item, index) => (
+                      <div className="single__img relative" key={index}>
+                        {isOpen && (
+                          <Lightbox
+                            mainSrc={images[photoIndex].bigImage}
+                            nextSrc={images[(photoIndex + 1) % images.length]}
+                            prevSrc={
+                              images[
+                                (photoIndex + images.length - 1) % images.length
+                              ]
+                            }
+                            onCloseRequest={() => {
+                              setIsOpen(false);
+                            }}
+                            onMovePrevRequest={() =>
+                              setPhotoIndex(
+                                (photoIndex + images.length - 1) % images.length
+                              )
+                            }
+                            onMoveNextRequest={() =>
+                              setPhotoIndex((photoIndex + 1) % images.length)
+                            }
+                          />
+                        )}
 
-                      <img
-                        className="z-20 mb-4 cursor-pointer rounded-lg"
-                        src={item.bigImage}
-                        alt="Next LMS"
-                      />
-                      <div
-                        onClick={() => {
-                          setIsOpen(true);
-                        }}
-                        className="shape absolute top-0 left-0 z-10"
-                      >
-                        <BiFullscreen className="text-[80px]" />
+                        <img
+                          className="z-20 mb-4 cursor-pointer rounded-lg"
+                          src={item.bigImage}
+                          alt="Next LMS"
+                        />
+                        <div
+                          onClick={() => {
+                            setIsOpen(true);
+                          }}
+                          className="shape absolute top-0 left-0 z-10"
+                        >
+                          <BiFullscreen className="text-[80px]" />
+                        </div>
                       </div>
-                    </div>
-                  ))}
+                    ))}
+                  </Fade>
                 </div>
               </div>
             </div>

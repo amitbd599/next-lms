@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   FaArrowRight,
   FaBuffer,
@@ -26,10 +26,8 @@ import StudentsSays from "../ChildComponents/Elements/StudentsSays";
 import NewsLetter from "../Common/NewsLetter";
 import Header from "../Common/Header";
 import Footer from "../Common/Footer";
-import { useEffect } from "react";
 
 const HomeComponent = () => {
-  useEffect(() => {}, [HomeComponent]);
   const countData = [
     {
       count: 4350,
@@ -69,7 +67,7 @@ const HomeComponent = () => {
     ],
   };
   return (
-    <section>
+    <section className="relative">
       {/* ============ Header Section ============*/}
       <Header />
       {/* ============ Hero Section ============ */}

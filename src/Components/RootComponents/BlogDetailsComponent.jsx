@@ -22,7 +22,7 @@ const BlogDetailsComponent = () => {
       {/* ============ Header Section ============*/}
       <Header />
       {/* ============ Intro Section ============*/}
-      <IntroSection title={"Blog"} />
+      <IntroSection title={"Blog Details"} />
       {/* Single Blog Section */}
       <div className="blogDetails py-[50px] md:py-[60px] lg:py-[70px] xl:py-[80px]">
         <div className="container mx-auto">
