@@ -1,6 +1,6 @@
 /*********************************************************************************
 
-	Template Name: Next LMS
+	Template Name: Next LMS - Professional LMS Online Education Course React Template
 	Note: This is style css.
 
 **********************************************************************************/
@@ -8,58 +8,37 @@
 /**************************************************************
 
 	STYLESHEET INDEXING
-	|
+
 	|
 	|___ Default Styles
 	|	|
-	|	|___ variables
-	|	|___ mixins
+	|	|___ variable
 	|	|___ reset
-	|	|___ typography
-	|	|___ extend
-	|	|___ animations
-	|	|___ shortcode
-	|	|___ spacing
-	|
-	|
-	|___Header Styles
-	|	|___ header
-	|	|___ mainmenu
-	|
-	|
-	|___Inner Styles
-	|	|___ breadcrump
-	|	|___ section-title
 	|	|___ button
-	|	|___ pagination
-	|	|___ socialicon
-	|	|___ footer
+	|	|___ animation
+	|	|___ loader
 	|
-	|___Elements Styles
-	|	|___ portfolio
-	|	|___ service
-	|	|___ slider
-	|	|___ counterup
-	|	|___ testimonial
-	|	|___ brand
-	|	|___ team
-	|	|___ callto-action
-	|	|___ tab
-	|	|___ accordion
-	|	|___ list
-	|	|___ contact
+	|___ Components Styles
+	|	|___ topHeader
+	|	|___ navbar
+	|	|___ heroSection
+	|	|___ featureCourses
+	|	|___ trendingCategories
+	|	|___ map
+	|	|___ event
+	|	|___ courseAdvisor
+	|	|___ blogSection
+	|	|___ studentsSays
+	|	|___ introSection
+	|	|___ aboutDetails
+	|	|___ coursesDetails
+	|	|___ react-accessible-accordion
+	|	|___ faqSection
+	|	|___ scrollToTop
+	|	|___ gallery
+	|	|___ modalVideo
 	|
-	|___BLog Styles
-	|	|___ blog
-	|	|___ blog-details
-	|
-	|___Template Styles
-	|	|___ about
-	|	|___ portfolio-details
-	|	|___ service-details
-	|	|___ preview
-	|
-	|
+
 	|___ END STYLESHEET INDEXING
 
 ***************************************************************/
@@ -75,26 +54,23 @@
 @import "Common/loader";
 
 /**************************************
-    Header Styles
+    Components Styles
 ***************************************/
-@import "Header/topHeader";
-@import "Header/navbar";
-
-/**************************************
-    ChildComponents Styles
-***************************************/
-@import "ChildComponents/heroSection";
-@import "ChildComponents/featureCourses";
-@import "ChildComponents/trendingCategories";
-@import "ChildComponents/map";
-@import "ChildComponents/event";
-@import "ChildComponents/courseAdvisor";
-@import "ChildComponents/blogSection";
-@import "ChildComponents/studentsSays";
-@import "ChildComponents/introSection";
-@import "ChildComponents/aboutDetails";
-@import "ChildComponents/coursesDetails";
-@import "ChildComponents/react-accessible-accordion";
-@import "ChildComponents/faqSection";
-@import "ChildComponents/scrollToTop";
-@import "ChildComponents/gallery";
+@import "Components/topHeader";
+@import "Components/navbar";
+@import "Components/heroSection";
+@import "Components/featureCourses";
+@import "Components/trendingCategories";
+@import "Components/map";
+@import "Components/event";
+@import "Components/courseAdvisor";
+@import "Components/blogSection";
+@import "Components/studentsSays";
+@import "Components/introSection";
+@import "Components/aboutDetails";
+@import "Components/coursesDetails";
+@import "Components/react-accessible-accordion";
+@import "Components/faqSection";
+@import "Components/scrollToTop";
+@import "Components/gallery";
+@import "Components/modalVideo";

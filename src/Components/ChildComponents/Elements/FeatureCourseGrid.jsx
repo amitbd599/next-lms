@@ -82,7 +82,7 @@ const FeatureCourseGrid = ({ item }) => {
           <div>
             <Fade bottom>
               <Link
-                to={"/"}
+                to={"/course-details"}
                 className="text-[18px] font-semibold text-[#333] duration-300 ease-in-out hover:text-[#F16126] xl:text-[22px]"
               >
                 {item.title}

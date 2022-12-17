@@ -17,11 +17,11 @@ const FeatureCourseList = ({ item }) => {
               />
             </Fade>
           </div>
-          <div className="text__file mt-4 md:mt-0 lg:py-5">
+          <div className="text__file mt-4 md:mt-0 lg:py-2">
             <div>
               <Fade bottom>
                 <Link
-                  to={"/"}
+                  to={"/course-details"}
                   className="text-[22px] font-semibold text-[#333] duration-300 ease-in-out hover:text-[#F16126]"
                 >
                   {item.title}

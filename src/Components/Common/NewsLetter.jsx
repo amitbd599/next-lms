@@ -4,7 +4,7 @@ import { Fade } from "react-reveal";
 
 const NewsLetter = () => {
   return (
-    <div className="newsLetter w-full bg-[#002147]  py-16">
+    <div className="newsLetter relative z-0  w-full bg-[#002147] py-16">
       <div className="container mx-auto">
         <div className="grid grid-cols-12 gap-5">
           <div className="col-span-12 lg:col-span-6">

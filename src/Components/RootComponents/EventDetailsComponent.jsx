@@ -254,13 +254,13 @@ const EventDetailsComponent = () => {
                         <div className="relative mt-3">
                           <Fade>
                             <img
-                              className="w-[250px]"
-                              src="/Assets/Images/shape/shape_11.png"
+                              className="w-[200px]"
+                              src="/Assets/Images/shape/shape_26.png"
                               alt=""
                             />
                           </Fade>
 
-                          <div className="text__file absolute top-[4px] left-[55px]">
+                          <div className="text__file absolute top-[15px] left-[35px]">
                             <Fade>
                               <p className="text-white">
                                 <span className="text-[30px] font-semibold">

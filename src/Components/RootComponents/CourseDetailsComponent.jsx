@@ -30,8 +30,14 @@ import "react-tabs/style/react-tabs.css";
 import courseContentData from "../../Database/courseContentData";
 import { Link } from "react-router-dom";
 import { Fade } from "react-reveal";
+import VideoModal from "../ChildComponents/Elements/VideoModal";
 const CourseDetailsComponent = () => {
+  // const [isOpen, setOpen] = useState(false);
   const [isOpen, setOpen] = useState(false);
+
+  function handleChange() {
+    setOpen(!isOpen);
+  }
   return (
     <section>
       {/* ============ Header Section ============*/}
@@ -42,7 +48,7 @@ const CourseDetailsComponent = () => {
       <div className="coursesDetails gridCourses py-[50px] md:py-[60px] lg:py-[70px] xl:py-[80px]">
         <div className="container mx-auto">
           <div className="grid grid-cols-12 gap-3 xl:gap-6">
-            <div className="col-span-12 lg:col-span-8 ">
+            <div className="relative  col-span-12 lg:col-span-8">
               {/* Intro Advisor */}
               <div className="rounded-md bg-[#002147] px-10 py-8 shadow-lg">
                 <div>
@@ -105,7 +111,7 @@ const CourseDetailsComponent = () => {
               {/* Item Overview */}
               <div className="itemOverview mt-8 lg:mt-10 xl:mt-14">
                 <div>
-                  <Fade>
+                  <>
                     <Tabs>
                       <TabList>
                         {/* Tab Header Overview */}
@@ -268,7 +274,7 @@ const CourseDetailsComponent = () => {
 
                             {/* Course Accordion */}
                             <div className="mt-2">
-                              <Fade>
+                              <>
                                 <div>
                                   <Accordion allowZeroExpanded>
                                     {courseContentData.map((item, index) => (
@@ -289,36 +295,7 @@ const CourseDetailsComponent = () => {
                                           {item?.content.map(
                                             (childItem, childIndex) => (
                                               <div key={childIndex}>
-                                                <ModalVideo
-                                                  channel="youtube"
-                                                  autoplay
-                                                  isOpen={isOpen}
-                                                  videoId="tujhGdn1EMI"
-                                                  onClose={() => setOpen(false)}
-                                                />
-                                                <button
-                                                  className="block w-full"
-                                                  onClick={() => setOpen(true)}
-                                                >
-                                                  <div className="flex items-center justify-between">
-                                                    <div className="my-2 flex items-start gap-4  py-1 text-[#77838F] duration-300 ease-in-out hover:text-[#F16126] md:items-center">
-                                                      <span>
-                                                        <BsPlayCircleFill className=" text-[25px]" />
-                                                      </span>
-                                                      <span className="text-left text-sm font-medium">
-                                                        {childItem.title}
-                                                      </span>
-                                                    </div>
-                                                    <div className="flex items-center gap-3">
-                                                      <span className="text-sm">
-                                                        04.54
-                                                      </span>
-                                                      <span>
-                                                        <BsUnlock />
-                                                      </span>
-                                                    </div>
-                                                  </div>
-                                                </button>
+                                                <VideoModal item={childItem} />
                                               </div>
                                             )
                                           )}
@@ -327,7 +304,7 @@ const CourseDetailsComponent = () => {
                                     ))}
                                   </Accordion>
                                 </div>
-                              </Fade>
+                              </>
                             </div>
                           </div>
                         </div>
@@ -737,11 +714,11 @@ const CourseDetailsComponent = () => {
                         </div>
                       </TabPanel>
                     </Tabs>
-                  </Fade>
+                  </>
                 </div>
               </div>
             </div>
-            <div className="col-span-12 mt-8 lg:col-span-4 lg:mt-0 lg:pl-4">
+            <div className="relative  col-span-12 mt-8 lg:col-span-4 lg:mt-0 lg:pl-4">
               <div className="rounded-md bg-white px-3 py-3 shadow-lg">
                 <Fade>
                   <Link to={"/"}>

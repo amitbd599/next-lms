@@ -48,15 +48,6 @@ const GalleryComponent = () => {
     {
       bigImage: "/Assets/Images/gallery/gallery_12.png",
     },
-    {
-      bigImage: "/Assets/Images/gallery/gallery_13.png",
-    },
-    {
-      bigImage: "/Assets/Images/gallery/gallery_14.png",
-    },
-    {
-      bigImage: "/Assets/Images/gallery/gallery_15.png",
-    },
   ];
   return (
     <section>
