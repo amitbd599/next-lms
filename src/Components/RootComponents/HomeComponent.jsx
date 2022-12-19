@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   FaArrowRight,
   FaBuffer,
@@ -77,34 +77,40 @@ const HomeComponent = () => {
             <div className="col-span-12 lg:col-span-6">
               <div className="leftSide">
                 <Fade bottom cascade>
-                  <div className="flex justify-center gap-8 px-2 md:px-0 lg:justify-start">
-                    <div className="item flex items-center gap-2">
-                      <span>
-                        <FaGraduationCap className="text-primary text-[20px]" />
-                      </span>
-                      <span className="text-[14px] text-white">
-                        Transmission
-                      </span>
-                    </div>
-                    <div className="item flex items-center gap-2">
-                      <span>
-                        <FaBuffer className="text-primary text-[20px]" />
-                      </span>
-                      <span className="text-[14px] text-white">Equivalent</span>
-                    </div>
-                    <div className="item flex items-center gap-2">
-                      <span>
-                        <FaSquareRootAlt className="text-primary text-[20px]" />
-                      </span>
-                      <span className="text-[14px] text-white">Education</span>
+                  <div className="flex justify-center sm:block">
+                    <div className="justify-center gap-2 px-2 text-center sm:flex sm:gap-5 md:gap-8 md:px-0 lg:justify-start">
+                      <div className="item mb-2 flex items-center gap-2 sm:mb-0">
+                        <span>
+                          <FaGraduationCap className="text-primary text-[20px]" />
+                        </span>
+                        <span className="text-[14px] text-white">
+                          Transmission
+                        </span>
+                      </div>
+                      <div className="item mb-2 flex items-center gap-2 sm:mb-0">
+                        <span>
+                          <FaBuffer className="text-primary text-[20px]" />
+                        </span>
+                        <span className="text-[14px] text-white">
+                          Equivalent
+                        </span>
+                      </div>
+                      <div className="item mb-2 flex items-center gap-2 sm:mb-0">
+                        <span>
+                          <FaSquareRootAlt className="text-primary text-[20px]" />
+                        </span>
+                        <span className="text-[14px] text-white">
+                          Education
+                        </span>
+                      </div>
                     </div>
                   </div>
                 </Fade>
 
                 <div className="shape relative mt-5  md:flex md:justify-center lg:block lg:justify-start">
                   <Fade bottom>
-                    <h2 className="relative z-10 text-center text-[40px] font-bold leading-[45px] text-white md:leading-[70px] lg:text-start lg:text-[50px] xl:text-[62px]">
-                      Growth You Career With Complete Courses
+                    <h2 className="relative z-10 text-center text-[32px] font-bold leading-[35px] text-white sm:text-[38px] sm:leading-[50px] md:leading-[70px] lg:text-start lg:text-[50px] xl:text-[62px]">
+                      Growth Your Career With Complete Courses
                     </h2>
                   </Fade>
                   <span className="absolute top-[-5px] right-[10px] z-[-0]">
@@ -191,7 +197,7 @@ const HomeComponent = () => {
                         />
                       </Fade>
                     </div>
-                    <div className="item relative top-0 ml-[-32px] h-[80px] w-[80px] md:ml-[-25px]">
+                    <div className="item relative top-0 ml-[-42px] h-[80px] w-[80px] sm:ml-[-32px] md:ml-[-25px]">
                       <Fade bottom cascade>
                         <img
                           className=" rounded-full border-4 border-[#F16126]"
@@ -200,7 +206,7 @@ const HomeComponent = () => {
                         />
                       </Fade>
                     </div>
-                    <div className="item relative top-0 ml-[-32px] h-[80px] w-[80px] md:ml-[-25px]">
+                    <div className="item relative top-0 ml-[-42px] h-[80px] w-[80px] sm:ml-[-32px] md:ml-[-25px]">
                       <Fade bottom cascade>
                         <img
                           className=" rounded-full border-4 border-[#F16126]"
@@ -209,7 +215,7 @@ const HomeComponent = () => {
                         />
                       </Fade>
                     </div>
-                    <div className="item relative top-0 ml-[-32px] h-[80px] w-[80px] md:ml-[-25px]">
+                    <div className="item relative top-0 ml-[-42px] h-[80px] w-[80px] sm:ml-[-32px] md:ml-[-25px]">
                       <Fade bottom cascade>
                         <img
                           className=" rounded-full border-4 border-[#F16126]"
@@ -218,7 +224,7 @@ const HomeComponent = () => {
                         />
                       </Fade>
                     </div>
-                    <div className="item relative top-0 ml-[-32px] h-[80px] w-[80px] md:ml-[-25px]">
+                    <div className="item relative top-0 ml-[-42px] h-[80px] w-[80px] sm:ml-[-32px] md:ml-[-25px]">
                       <Fade bottom cascade>
                         <img
                           className=" rounded-full border-4 border-[#F16126]"
@@ -227,7 +233,7 @@ const HomeComponent = () => {
                         />
                       </Fade>
                     </div>
-                    <div className="item relative top-0 ml-[-32px] h-[80px] w-[80px] md:ml-[-25px]">
+                    <div className="item relative top-0 ml-[-42px] h-[80px] w-[80px] sm:ml-[-32px] md:ml-[-25px]">
                       <Fade bottom cascade>
                         <img
                           className=" rounded-full border-4 border-[#F16126]"
@@ -236,7 +242,7 @@ const HomeComponent = () => {
                         />
                       </Fade>
                     </div>
-                    <div className="item relative top-0 ml-[-32px] h-[80px] w-[80px] md:ml-[-25px]">
+                    <div className="item relative top-0 ml-[-42px] h-[80px] w-[80px] sm:ml-[-32px] md:ml-[-25px]">
                       <Fade bottom cascade>
                         <img
                           className=" rounded-full border-4 border-[#F16126]"
@@ -252,7 +258,7 @@ const HomeComponent = () => {
                   <div className="item">
                     <Fade bottom>
                       <div className="text-right">
-                        <h2 className="text-[40px] font-semibold text-white">
+                        <h2 className="text-[32px] font-semibold leading-[40px] text-white sm:text-[40px]">
                           <CountUp delay={0} start={21} end={2617} />
                         </h2>
                         <span className="text-sm text-white">
@@ -264,7 +270,7 @@ const HomeComponent = () => {
                   <div className="item">
                     <Fade bottom>
                       <div className="text-right">
-                        <h2 className="text-[40px] font-semibold text-white">
+                        <h2 className="text-[32px] font-semibold leading-[40px] text-white sm:text-[40px]">
                           <CountUp delay={0} start={21} end={902} />
                         </h2>
                         <span className="text-sm text-white">
@@ -276,7 +282,7 @@ const HomeComponent = () => {
                   <div className="item">
                     <Fade bottom>
                       <div className="text-right">
-                        <h2 className="text-[40px] font-semibold text-white">
+                        <h2 className="text-[32px] font-semibold leading-[40px] text-white sm:text-[40px]">
                           <CountUp delay={0} start={21} end={630} />K
                         </h2>
                         <span className="text-sm text-white">
@@ -287,20 +293,22 @@ const HomeComponent = () => {
                   </div>
                 </div>
 
-                <div className="mt-14 md:mt-6">
+                <div className="mt-8 md:mt-6">
                   <Fade bottom>
-                    <div className="input__search relative flex justify-center">
+                    <div className="input__search relative block justify-center md:flex">
                       <input
-                        className="h-[64px] w-[430px] rounded-md border-2 border-white bg-transparent px-6 py-4 text-white"
+                        className="h-[64px] w-full rounded-md border-2 border-white bg-transparent px-6 py-4 text-white md:w-[430px]"
                         type="text"
                         placeholder="Enter Course Name"
                       />
-                      <button className="absolute top-[7px] right-[8px] flex h-[50px] items-center gap-2 rounded-md bg-[#F16126] px-4 py-2 text-white md:right-[128px] lg:right-[7px] xl:right-[53px]">
-                        <span>
-                          <FaSearch />
-                        </span>
-                        <span>Search</span>
-                      </button>
+                      <span className="mt-3 flex justify-center md:block">
+                        <button className="top-[7px] flex h-[50px] items-center gap-2 rounded-md bg-[#F16126] px-4 py-2 text-white sm:right-[-16px] md:absolute md:right-[128px] lg:right-[7px] xl:right-[53px]">
+                          <span>
+                            <FaSearch />
+                          </span>
+                          <span>Search</span>
+                        </button>
+                      </span>
                     </div>
                   </Fade>
                 </div>
@@ -334,30 +342,33 @@ const HomeComponent = () => {
           <div className="grid grid-cols-12 gap-5">
             <div className="col-span-12 lg:col-span-6">
               <div>
-                <h2 className="relative z-10 flex gap-3 text-[40px] font-semibold text-[#333]">
+                <h2 className="relative z-10 flex gap-3 text-[32px] font-semibold text-[#333] md:text-[40px]">
                   <Fade bottom>
                     <span>Featured</span>
                     <span className="text-[#F16126]">Courses</span>
                   </Fade>
                 </h2>
-                <p className="mt-1 text-base text-[#77838F]">
-                  <Fade bottom>
+                <Fade bottom>
+                  <p className="mt-1 text-base text-[#77838F]">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Amet doloribus ipsam vero eaque, repellendus recusandae aut
                     delectus nostrum reiciendis vel!
-                  </Fade>
-                </p>
+                  </p>
+                </Fade>
               </div>
             </div>
             <div className="col-span-12 lg:col-span-6">
               <div className=" mt-2 flex justify-start lg:mt-5 lg:justify-end">
                 <Fade bottom>
-                  <button className="flex items-center gap-2 rounded-md bg-[#F16126] px-4 py-4">
+                  <Link
+                    to={"/course-grid-page"}
+                    className="flex items-center gap-2 rounded-md bg-[#F16126] px-4 py-4"
+                  >
                     <span className="text-white">
                       <FaArrowRight />
                     </span>
                     <span className="text-white">All Courses</span>
-                  </button>
+                  </Link>
                 </Fade>
               </div>
             </div>
@@ -384,30 +395,33 @@ const HomeComponent = () => {
           <div className="grid grid-cols-12 gap-5">
             <div className="col-span-12 lg:col-span-6">
               <div>
-                <h2 className="relative z-10 flex gap-3 text-[40px] font-semibold text-[#333]">
+                <h2 className="relative z-10 flex gap-3 text-[32px] font-semibold text-[#333] md:text-[40px]">
                   <Fade bottom>
                     <span>Trending</span>
                     <span className="text-[#F16126]">Categories</span>{" "}
                   </Fade>
                 </h2>
-                <p className="mt-1 text-base text-[#77838F]">
-                  <Fade bottom>
+                <Fade bottom>
+                  <p className="mt-1 text-base text-[#77838F]">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Amet doloribus ipsam vero eaque, repellendus recusandae aut
                     delectus nostrum reiciendis vel!
-                  </Fade>
-                </p>
+                  </p>
+                </Fade>
               </div>
             </div>
             <div className="col-span-12 lg:col-span-6">
               <div className="mt-2 flex justify-start lg:mt-5 lg:justify-end">
                 <Fade bottom>
-                  <button className="flex items-center gap-2 rounded-md bg-[#F16126] px-4 py-4">
+                  <Link
+                    to={"/category"}
+                    className="flex items-center gap-2 rounded-md bg-[#F16126] px-4 py-4"
+                  >
                     <span className="text-white">
                       <FaArrowRight />
                     </span>
                     <span className="text-white">All Categories</span>
-                  </button>
+                  </Link>
                 </Fade>
               </div>
             </div>
@@ -463,30 +477,33 @@ const HomeComponent = () => {
           <div className="grid grid-cols-12 gap-5">
             <div className="col-span-12 lg:col-span-6">
               <div>
-                <h2 className="relative z-10 flex gap-3 text-[40px] font-semibold text-[#333]">
+                <h2 className="relative z-10 flex gap-3 text-[32px] font-semibold text-[#333] md:text-[40px]">
                   <Fade bottom>
                     <span>Upcoming</span>
                     <span className="text-[#F16126]">Events</span>{" "}
                   </Fade>
                 </h2>
-                <p className="mt-1 text-base text-[#77838F]">
-                  <Fade bottom>
+                <Fade bottom>
+                  <p className="mt-1 text-base text-[#77838F]">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Amet doloribus ipsam vero eaque, repellendus recusandae aut
                     delectus nostrum reiciendis vel!
-                  </Fade>
-                </p>
+                  </p>
+                </Fade>
               </div>
             </div>
             <div className="col-span-12 lg:col-span-6">
               <div className="mt-2 flex justify-start lg:mt-5 lg:justify-end">
                 <Fade bottom>
-                  <button className="flex items-center gap-2 rounded-md bg-[#F16126] px-4 py-4">
+                  <Link
+                    to={"/event"}
+                    className="flex items-center gap-2 rounded-md bg-[#F16126] px-4 py-4"
+                  >
                     <span className="text-white">
                       <FaArrowRight />
                     </span>
                     <span className="text-white">All Events</span>
-                  </button>
+                  </Link>
                 </Fade>
               </div>
             </div>
@@ -514,30 +531,33 @@ const HomeComponent = () => {
           <div className="grid grid-cols-12 gap-5">
             <div className="col-span-12 lg:col-span-6">
               <div>
-                <h2 className="relative z-10 flex gap-3 text-[40px] font-semibold text-[#333]">
+                <h2 className="relative z-10 flex gap-3 text-[32px] font-semibold text-[#333] md:text-[40px]">
                   <Fade bottom>
                     <span>Course</span>
                     <span className="text-[#F16126]">Advisor</span>{" "}
                   </Fade>
                 </h2>
-                <p className="mt-1 text-sm text-[#77838F]">
-                  <Fade bottom>
+                <Fade bottom>
+                  <p className="mt-1 text-sm text-[#77838F]">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Amet doloribus ipsam vero eaque, repellendus recusandae aut
                     delectus nostrum reiciendis vel!
-                  </Fade>
-                </p>
+                  </p>
+                </Fade>
               </div>
             </div>
             <div className="col-span-12 lg:col-span-6">
               <div className="mt-2 flex justify-start lg:mt-5 lg:justify-end">
                 <Fade bottom>
-                  <button className="flex items-center gap-2 rounded-md bg-[#F16126] px-4 py-4">
+                  <Link
+                    to={"/course-advisor"}
+                    className="flex items-center gap-2 rounded-md bg-[#F16126] px-4 py-4"
+                  >
                     <span className="text-white">
                       <FaArrowRight />
                     </span>
                     <span className="text-white">All Advisor</span>
-                  </button>
+                  </Link>
                 </Fade>
               </div>
             </div>
@@ -562,16 +582,16 @@ const HomeComponent = () => {
         <div className="container mx-auto mt-12 lg:mt-14">
           <div className="flex justify-center">
             <div className="px-2 text-center md:px-[50px] lg:px-[150px]">
-              <h2 className="text-[35px] font-semibold lg:text-[48px]">
+              <h2 className="text-[28px] font-semibold sm:text-[35px] lg:text-[48px]">
                 <Fade bottom>Become An Advisor</Fade>
               </h2>
-              <p>
-                <Fade bottom>
+              <Fade bottom>
+                <p>
                   At Thriving Skills, you can become an instructor at zero cost
                   and earn up to 50% of the revenue share. And we will promote
                   your course on other platforms.
-                </Fade>
-              </p>
+                </p>
+              </Fade>
 
               <div className="mt-6 flex justify-center">
                 <Fade bottom>
@@ -662,7 +682,7 @@ const HomeComponent = () => {
             <div className="col-span-12 lg:col-span-6 lg:pl-10">
               <div className="h-full px-5 py-5 shadow-lg md:px-10 md:py-10">
                 <div className="flex h-full items-center">
-                  <div>
+                  <div className="w-full">
                     <Fade bottom>
                       <div className="mb-4">
                         <input
@@ -736,30 +756,33 @@ const HomeComponent = () => {
           <div className="grid grid-cols-12 gap-5">
             <div className="col-span-12 lg:col-span-6">
               <div>
-                <h2 className="relative z-10 flex gap-3 text-[40px] font-semibold text-[#333]">
+                <h2 className="relative z-10 flex gap-3 text-[32px] font-semibold text-[#333] md:text-[40px]">
                   <Fade bottom>
                     <span>Blog</span>
                     <span className="text-[#F16126]">Posts</span>{" "}
                   </Fade>
                 </h2>
-                <p className="mt-1 text-base text-[#77838F]">
-                  <Fade bottom>
+                <Fade bottom>
+                  <p className="mt-1 text-base text-[#77838F]">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Amet doloribus ipsam vero eaque, repellendus recusandae aut
                     delectus nostrum reiciendis vel!
-                  </Fade>
-                </p>
+                  </p>
+                </Fade>
               </div>
             </div>
             <div className="col-span-12 lg:col-span-6">
               <div className="mt-2 flex justify-start lg:mt-5 lg:justify-end">
                 <Fade bottom>
-                  <button className="flex items-center gap-2 rounded-md bg-[#F16126] px-4 py-4">
+                  <Link
+                    to={"/blog"}
+                    className="flex items-center gap-2 rounded-md bg-[#F16126] px-4 py-4"
+                  >
                     <span className="text-white">
                       <FaArrowRight />
                     </span>
                     <span className="text-white">All Blog Post</span>
-                  </button>
+                  </Link>
                 </Fade>
               </div>
             </div>
@@ -772,7 +795,7 @@ const HomeComponent = () => {
             {blogData.slice(0, 3).map((item, index) => (
               <div
                 key={index}
-                className="col-span-12  mb-20  md:col-span-6 lg:col-span-4"
+                className="col-span-12  mb-32 sm:mb-24  md:col-span-6 lg:col-span-4"
               >
                 <Blog item={item} />
               </div>
@@ -787,19 +810,19 @@ const HomeComponent = () => {
           <div className="grid grid-cols-12 gap-5">
             <div className="col-span-12 lg:col-span-6">
               <div>
-                <h2 className="relative z-10 flex gap-3 text-[40px] font-semibold text-[#333]">
+                <h2 className="relative z-10 flex gap-3 text-[32px] font-semibold text-[#333] md:text-[40px]">
                   <Fade bottom>
                     <span>Students</span>
                     <span className="text-[#F16126]">Says</span>{" "}
                   </Fade>
                 </h2>
-                <p className="mt-1 text-base text-[#77838F]">
-                  <Fade bottom>
+                <Fade bottom>
+                  <p className="mt-1 text-base text-[#77838F]">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Amet doloribus ipsam vero eaque, repellendus recusandae aut
                     delectus nostrum reiciendis vel!
-                  </Fade>
-                </p>
+                  </p>
+                </Fade>
               </div>
             </div>
           </div>

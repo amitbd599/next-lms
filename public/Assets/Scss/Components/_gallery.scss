@@ -1,7 +1,11 @@
 .gallery {
   .img__file {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
     column-count: 3;
     @media #{$sm-device} {
+      -webkit-column-count: 2;
+      -moz-column-count: 2;
       column-count: 2;
     }
   }
@@ -20,6 +24,8 @@
       background: #333;
       opacity: 0;
       z-index: 0;
+      -webkit-transition: all 0.32s linear;
+      -o-transition: all 0.32s linear;
       transition: all 0.32s linear;
     }
     .shape {
@@ -27,9 +33,13 @@
       opacity: 0;
       left: 50%;
       top: 50%;
+      -webkit-transform: translateX(-50%) translateY(-50%);
+      -ms-transform: translateX(-50%) translateY(-50%);
       transform: translateX(-50%) translateY(-50%);
       cursor: pointer;
       color: #fff;
+      -webkit-transition: all 0.2s linear;
+      -o-transition: all 0.2s linear;
       transition: all 0.2s linear;
     }
 

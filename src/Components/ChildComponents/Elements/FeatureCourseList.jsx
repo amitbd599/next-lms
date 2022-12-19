@@ -9,13 +9,11 @@ const FeatureCourseList = ({ item }) => {
       <div className=" w-full rounded-lg px-5 py-5 shadow-lg duration-300 ease-in-out hover:shadow-xl">
         <div className="block gap-10 xl:flex">
           <div className="img__file relative overflow-hidden  rounded-md">
-            <Fade>
-              <img
-                className="w-full rounded-md object-cover"
-                src={item.thumbnail}
-                alt=""
-              />
-            </Fade>
+            <img
+              className="w-full rounded-md object-cover"
+              src={item.thumbnail}
+              alt=""
+            />
           </div>
           <div className="text__file mt-4 md:mt-0 lg:py-2">
             <div>

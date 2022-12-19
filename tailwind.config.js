@@ -8,15 +8,16 @@ module.exports = withMT({
     container: {
       padding: {
         DEFAULT: "1rem",
-        sm: "2rem",
+        sm: "1rem",
+        md: "2rem",
         lg: "4rem",
         xl: "5rem",
         "2xl": "6rem",
       },
     },
     screens: {
-      sm: "640px",
-      // => @media (min-width: 640px) { ... }
+      sm: "380px",
+      // => @media (min-width: 380px) { ... }
 
       md: "768px",
       // => @media (min-width: 768px) { ... }
@@ -31,21 +32,6 @@ module.exports = withMT({
       // => @media (min-width: 1536px) { ... }
     },
   },
+  important: true,
   plugins: [],
 });
-
-// module.exports = {
-//   content: ["./src/**/*.{js,jsx,ts,tsx}"],
-//   theme: {
-//     container: {
-//       padding: {
-//         DEFAULT: "1rem",
-//         sm: "2rem",
-//         lg: "4rem",
-//         xl: "5rem",
-//         "2xl": "6rem",
-//       },
-//     },
-//   },
-//   plugins: [],
-// };

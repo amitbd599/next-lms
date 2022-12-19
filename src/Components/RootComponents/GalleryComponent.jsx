@@ -90,7 +90,7 @@ const GalleryComponent = () => {
                         )}
 
                         <img
-                          className="z-20 mb-4 cursor-pointer rounded-lg"
+                          className="z-20 mb-4 w-full cursor-pointer rounded-lg object-cover"
                           src={item.bigImage}
                           alt="Next LMS"
                         />

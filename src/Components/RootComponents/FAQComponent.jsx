@@ -8,7 +8,6 @@ import {
 } from "react-accessible-accordion";
 import { Fade } from "react-reveal";
 import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
-import courseContentData from "../../Database/courseContentData";
 import faqData from "../../Database/faqData";
 import Footer from "../Common/Footer";
 import Header from "../Common/Header";

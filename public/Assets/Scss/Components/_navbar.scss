@@ -34,10 +34,14 @@ menu Area
 nav {
   ul {
     &.menu {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-pack: end;
+      -ms-flex-pack: end;
       justify-content: flex-end;
       list-style: none;
-
+      -ms-flex-wrap: wrap;
       flex-wrap: wrap;
       > li {
         margin: 0 15px;
@@ -46,8 +50,9 @@ nav {
           margin: 0 12px;
         }
         > a {
+          -webkit-transition: all 0.2s linear;
+          -o-transition: all 0.2s linear;
           transition: all 0.2s linear;
-
           color: #333;
           font-size: 16px;
           font-weight: 500;
@@ -66,8 +71,11 @@ nav {
             opacity: 0;
             visibility: hidden;
             background-color: #fff;
+            -webkit-box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
             box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
             text-align: left;
+            -webkit-transition: all 0.2s linear;
+            -o-transition: all 0.2s linear;
             transition: all 0.2s linear;
             padding: 12px 0;
             border-radius: 4px;
@@ -80,6 +88,8 @@ nav {
                 color: #333;
                 margin: 0 10px;
                 border-radius: 3px;
+                -webkit-transition: all 0.2s linear;
+                -o-transition: all 0.2s linear;
                 transition: all 0.2s linear;
               }
               &:hover {
@@ -227,7 +237,12 @@ nav {
                 content: "";
                 right: 0;
                 top: 50%;
+                -webkit-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
                 transform: translateY(-50%);
+                -webkit-transition: all 0.3s
+                  cubic-bezier(0.645, 0.045, 0.355, 1);
+                -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
                 transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
                 background: transparent;
                 left: auto;
@@ -255,7 +270,12 @@ nav {
                 content: "";
                 right: 0;
                 top: 50%;
+                -webkit-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
                 transform: translateY(-50%);
+                -webkit-transition: all 0.3s
+                  cubic-bezier(0.645, 0.045, 0.355, 1);
+                -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
                 transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
                 background: transparent;
                 left: auto;
@@ -283,7 +303,12 @@ nav {
                 content: "";
                 right: 0;
                 top: 50%;
+                -webkit-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
                 transform: translateY(-50%);
+                -webkit-transition: all 0.3s
+                  cubic-bezier(0.645, 0.045, 0.355, 1);
+                -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
                 transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
                 background: transparent;
                 left: auto;
@@ -323,31 +348,40 @@ nav {
             @media #{$lg-device} {
               position: relative;
               height: 0;
+              -webkit-transition: 0.3s;
+              -o-transition: 0.3s;
               transition: 0.3s;
               padding: 0;
               opacity: 0;
               visibility: hidden;
               background: transparent;
+              -webkit-box-shadow: inherit;
               box-shadow: inherit;
             }
             @media #{$md-device} {
               position: relative;
               height: 0;
+              -webkit-transition: 0.3s;
+              -o-transition: 0.3s;
               transition: 0.3s;
               padding: 0;
               opacity: 0;
               visibility: hidden;
               background: transparent;
+              -webkit-box-shadow: inherit;
               box-shadow: inherit;
             }
             @media #{$sm-device} {
               position: relative;
               height: 0;
+              -webkit-transition: 0.3s;
+              -o-transition: 0.3s;
               transition: 0.3s;
               padding: 0;
               opacity: 0;
               visibility: hidden;
               background: transparent;
+              -webkit-box-shadow: inherit;
               box-shadow: inherit;
             }
             li {

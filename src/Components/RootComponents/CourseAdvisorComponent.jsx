@@ -38,13 +38,13 @@ const CourseAdvisorComponent = () => {
               <h2 className="text-[35px] font-semibold lg:text-[48px]">
                 <Fade bottom>Become An Advisor</Fade>
               </h2>
-              <p>
-                <Fade bottom>
+              <Fade bottom>
+                <p>
                   At Thriving Skills, you can become an instructor at zero cost
                   and earn up to 50% of the revenue share. And we will promote
                   your course on other platforms.
-                </Fade>
-              </p>
+                </p>
+              </Fade>
 
               <div className="mt-6 flex justify-center">
                 <Fade bottom>

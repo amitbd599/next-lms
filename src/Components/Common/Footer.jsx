@@ -30,13 +30,13 @@ const Footer = () => {
             </div>
 
             <div className="mt-4">
-              <p className="text-sm leading-relaxed text-white">
-                <Fade bottom>
+              <Fade bottom>
+                <p className="text-sm leading-relaxed text-white">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Deserunt fuga commodi, ea ullam illo soluta inventore!
                   Praesentium doloribus laboriosam, ad soluta excepturi.
-                </Fade>
-              </p>
+                </p>
+              </Fade>
             </div>
             <div className="mt-4">
               <Fade bottom>
@@ -81,7 +81,7 @@ const Footer = () => {
                       className="block py-1 text-sm text-white duration-300 ease-in-out hover:text-[#F16126]"
                       to={"/"}
                     >
-                      Data Structure{" "}
+                      Data Structure
                     </Link>
                   </Fade>
                 </li>
@@ -111,7 +111,7 @@ const Footer = () => {
                       className="block py-1 text-sm text-white duration-300 ease-in-out hover:text-[#F16126]"
                       to={"/"}
                     >
-                      Software{" "}
+                      Software
                     </Link>
                   </Fade>
                 </li>
@@ -160,7 +160,7 @@ const Footer = () => {
                 <Fade bottom>
                   <span>
                     <img
-                      className="w-[100px]"
+                      className="w-full object-cover"
                       src="/Assets/Images/blogs/Blog_1.png"
                       alt="Next LMS"
                     />
@@ -169,7 +169,7 @@ const Footer = () => {
                 <Fade bottom>
                   <span>
                     <img
-                      className="w-[100px]"
+                      className="w-full object-cover"
                       src="/Assets/Images/blogs/Blog_2.png"
                       alt="Next LMS"
                     />
@@ -178,7 +178,7 @@ const Footer = () => {
                 <Fade bottom>
                   <span>
                     <img
-                      className="w-[100px]"
+                      className="w-full object-cover"
                       src="/Assets/Images/blogs/Blog_3.png"
                       alt="Next LMS"
                     />
@@ -187,7 +187,7 @@ const Footer = () => {
                 <Fade bottom>
                   <span>
                     <img
-                      className="w-[100px]"
+                      className="w-full object-cover"
                       src="/Assets/Images/blogs/Blog_4.png"
                       alt="Next LMS"
                     />
@@ -196,7 +196,7 @@ const Footer = () => {
                 <Fade bottom>
                   <span>
                     <img
-                      className="w-[100px]"
+                      className="w-full object-cover"
                       src="/Assets/Images/blogs/Blog_5.png"
                       alt="Next LMS"
                     />
@@ -205,7 +205,7 @@ const Footer = () => {
                 <Fade bottom>
                   <span>
                     <img
-                      className="w-24"
+                      className="w-full object-cover"
                       src="/Assets/Images/blogs/Blog_6.png"
                       alt="Next LMS"
                     />
@@ -270,12 +270,12 @@ const Footer = () => {
       <div className="container mx-auto mt-12 border-t border-t-[#E9ECEF] py-5">
         <div className=" text-center">
           <div>
-            <p className="text-xs text-white">
-              <Fade bottom>
+            <Fade bottom>
+              <p className="text-xs text-white">
                 © Copyrights 2022 NextLMS Designed By Amit Biswas. All rights
                 reserved.
-              </Fade>
-            </p>
+              </p>
+            </Fade>
           </div>
         </div>
       </div>

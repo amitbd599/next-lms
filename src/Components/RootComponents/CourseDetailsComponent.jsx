@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   FaBookReader,
   FaDollarSign,
@@ -24,20 +24,13 @@ import {
   AccordionItemButton,
   AccordionItemPanel,
 } from "react-accessible-accordion";
-import { BsPlayCircleFill, BsUnlock } from "react-icons/bs";
-import ModalVideo from "react-modal-video";
+
 import "react-tabs/style/react-tabs.css";
 import courseContentData from "../../Database/courseContentData";
 import { Link } from "react-router-dom";
 import { Fade } from "react-reveal";
 import VideoModal from "../ChildComponents/Elements/VideoModal";
 const CourseDetailsComponent = () => {
-  // const [isOpen, setOpen] = useState(false);
-  const [isOpen, setOpen] = useState(false);
-
-  function handleChange() {
-    setOpen(!isOpen);
-  }
   return (
     <section>
       {/* ============ Header Section ============*/}

@@ -149,7 +149,7 @@ const BlogDetailsComponent = () => {
                             language] devs that want to feel at home writing JS.
                             I don’t agree with this. JS is not perfect but it is
                             great. They mocked it for years, now it’s a first
-                            class citizen with first support in everything.
+                            className citizen with first support in everything.
                             Learn to work with it instead of trying to make it
                             work the way you are used to and you will come to
                             love it.
@@ -471,7 +471,7 @@ const BlogDetailsComponent = () => {
                         name="txtname"
                         rows="6"
                         cols="50"
-                        maxlength="200"
+                        maxLength="200"
                         placeholder="Leave A Comment ..."
                       ></textarea>
                     </Fade>

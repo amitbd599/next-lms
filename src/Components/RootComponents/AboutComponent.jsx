@@ -42,16 +42,16 @@ const AboutComponent = () => {
       <IntroSection title={"About US"} />
 
       {/* ============ About Details  ============*/}
-      <div className="aboutDetails mt-[40px] py-[80px] md:py-[60px] lg:py-[70px] xl:py-[80px] ">
+      <div className="aboutDetails mt-[40px] overflow-hidden py-[80px] md:py-[60px] lg:py-[70px] xl:py-[80px]">
         <div className="container mx-auto">
           <div className="grid grid-cols-12 gap-5">
-            <div className="col-span-12 lg:col-span-6">
+            <div className="col-span-12 md:pr-[120px] lg:col-span-6">
               <div>
                 <Fade>
                   <div className="img__section relative flex justify-center lg:block">
-                    <div className='relative w-[330px] after:absolute after:left-[20px] after:top-[20px] after:z-[-99] after:h-full after:w-full after:rounded-md after:bg-[#F16126] after:content-[""] lg:w-[420px]'>
+                    <div className='relative w-full after:absolute after:left-[20px] after:top-[20px] after:z-[-99] after:h-full after:w-full after:rounded-md after:bg-[#F16126] after:content-[""] '>
                       <img
-                        className="rounded-md"
+                        className="w-full rounded-md object-cover"
                         src="/Assets/Images/aboutInfo.png"
                         alt=""
                       />
@@ -95,14 +95,14 @@ const AboutComponent = () => {
                     Education system consists of excellent education and ideals.
                   </Fade>
                 </h3>
-                <p className="mt-4 leading-relaxed">
-                  <Fade bottom>
+                <Fade bottom>
+                  <p className="mt-4 leading-relaxed">
                     An education system refers to the economic and social
                     factors that typically make up public schools at the
                     federal, state or community levels. Such factors include
                     public funding, school facilities, staffing.
-                  </Fade>
-                </p>
+                  </p>
+                </Fade>
                 <div>
                   <Fade bottom>
                     <ul className="mt-4 list-disc pl-8">
@@ -118,6 +118,9 @@ const AboutComponent = () => {
                       <li>
                         The government should provide more funding to the
                         education sector.
+                      </li>
+                      <li>
+                        Repellendus recusandae aut delectus nostrum reiciendis.
                       </li>
                     </ul>
                   </Fade>
@@ -141,24 +144,27 @@ const AboutComponent = () => {
                     <span className="text-[#F16126]">Courses</span>{" "}
                   </Fade>
                 </h2>
-                <p className="mt-1 text-base text-[#77838F]">
-                  <Fade bottom>
+                <Fade bottom>
+                  <p className="mt-1 text-base text-[#77838F]">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Amet doloribus ipsam vero eaque, repellendus recusandae aut
                     delectus nostrum reiciendis vel!
-                  </Fade>
-                </p>
+                  </p>
+                </Fade>
               </div>
             </div>
             <div className="col-span-12 lg:col-span-6">
               <div className="mt-2 flex justify-start lg:mt-5 lg:justify-end">
                 <Fade bottom>
-                  <button className="flex items-center gap-2 rounded-md bg-[#F16126] px-4 py-4">
+                  <Link
+                    to={"/course-grid-page"}
+                    className="flex items-center gap-2 rounded-md bg-[#F16126] px-4 py-4"
+                  >
                     <span className="text-white">
                       <FaArrowRight />
                     </span>
                     <span className="text-white">View All Courses</span>
-                  </button>
+                  </Link>
                 </Fade>
               </div>
             </div>
@@ -241,24 +247,27 @@ const AboutComponent = () => {
                     <span className="text-[#F16126]">Advisor</span>{" "}
                   </Fade>
                 </h2>
-                <p className="mt-1 text-base text-[#77838F]">
-                  <Fade bottom>
+                <Fade bottom>
+                  <p className="mt-1 text-base text-[#77838F]">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Amet doloribus ipsam vero eaque, repellendus recusandae aut
                     delectus nostrum reiciendis vel!
-                  </Fade>
-                </p>
+                  </p>
+                </Fade>
               </div>
             </div>
             <div className="col-span-12 lg:col-span-6">
               <div className="mt-2 flex justify-start lg:mt-5 lg:justify-end">
                 <Fade bottom>
-                  <button className="flex items-center gap-2 rounded-md bg-[#F16126] px-4 py-4">
+                  <Link
+                    to={"/course-advisor"}
+                    className="flex items-center gap-2 rounded-md bg-[#F16126] px-4 py-4"
+                  >
                     <span className="text-white">
                       <FaArrowRight />
                     </span>
                     <span className="text-white">All Advisor</span>
-                  </button>
+                  </Link>
                 </Fade>
               </div>
             </div>
@@ -285,13 +294,13 @@ const AboutComponent = () => {
               <h2 className="text-[35px] font-semibold lg:text-[48px]">
                 <Fade bottom>Become An Advisor</Fade>
               </h2>
-              <p>
-                <Fade bottom>
+              <Fade bottom>
+                <p>
                   At Thriving Skills, you can become an instructor at zero cost
                   and earn up to 50% of the revenue share. And we will promote
                   your course on other platforms.
-                </Fade>
-              </p>
+                </p>
+              </Fade>
 
               <div className="mt-6 flex justify-center">
                 <Fade bottom>
@@ -320,13 +329,13 @@ const AboutComponent = () => {
                     <span className="text-[#F16126]">Says</span>{" "}
                   </Fade>
                 </h2>
-                <p className="mt-1 text-base text-[#77838F]">
-                  <Fade bottom>
+                <Fade bottom>
+                  <p className="mt-1 text-base text-[#77838F]">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Amet doloribus ipsam vero eaque, repellendus recusandae aut
                     delectus nostrum reiciendis vel!
-                  </Fade>
-                </p>
+                  </p>
+                </Fade>
               </div>
             </div>
           </div>
@@ -360,13 +369,13 @@ const AboutComponent = () => {
                     <span className="text-[#F16126]">Partner</span>{" "}
                   </Fade>
                 </h2>
-                <p className="mt-1 text-base text-[#77838F]">
-                  <Fade bottom>
+                <Fade bottom>
+                  <p className="mt-1 text-base text-[#77838F]">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Amet doloribus ipsam vero eaque, repellendus recusandae aut
                     delectus nostrum reiciendis vel!
-                  </Fade>
-                </p>
+                  </p>
+                </Fade>
               </div>
             </div>
           </div>
@@ -376,6 +385,27 @@ const AboutComponent = () => {
           <div>
             <Fade>
               <Marquee gradientColor={[255, 255, 255]}>
+                <div className="mx-10">
+                  <img src="Assets/Images/partner/partner_1.png" alt="" />
+                </div>
+                <div className="mx-10">
+                  <img src="Assets/Images/partner/partner_2.png" alt="" />
+                </div>
+                <div className="mx-10">
+                  <img src="Assets/Images/partner/partner_3.png" alt="" />
+                </div>
+                <div className="mx-10">
+                  <img src="Assets/Images/partner/partner_4.png" alt="" />
+                </div>
+                <div className="mx-10">
+                  <img src="Assets/Images/partner/partner_5.png" alt="" />
+                </div>
+                <div className="mx-10">
+                  <img src="Assets/Images/partner/partner_6.png" alt="" />
+                </div>
+                <div className="mx-10">
+                  <img src="Assets/Images/partner/partner_7.png" alt="" />
+                </div>
                 <div className="mx-10">
                   <img src="Assets/Images/partner/partner_1.png" alt="" />
                 </div>

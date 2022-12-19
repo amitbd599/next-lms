@@ -2,12 +2,11 @@
   .itemContainer {
     &:hover {
       .img__file img {
+        -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
         transform: scale(1.05);
       }
     }
-  }
-  .slick-slide {
-    // width: 425px !important;
   }
   .slick-dots li.slick-active button:before {
     color: #f16126;

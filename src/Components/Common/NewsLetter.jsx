@@ -18,14 +18,14 @@ const NewsLetter = () => {
                 <h2 className="text-[48px] font-semibold text-white">
                   <Fade bottom>Newsletter</Fade>
                 </h2>
-                <p className="text-sm leading-relaxed text-white">
-                  <Fade bottom>
+                <Fade bottom>
+                  <p className="text-sm leading-relaxed text-white">
                     There’s certainly still a place for those, too, but in
                     2022-2023 we saw the return of the newsletter. With so much
                     content and news on the web, people are willing to subscribe
                     – and even pay – for someone else to cut through.
-                  </Fade>
-                </p>
+                  </p>
+                </Fade>
               </div>
             </div>
           </div>
@@ -38,9 +38,11 @@ const NewsLetter = () => {
                     type="text"
                     placeholder="Email :"
                   />
-                  <button className="absolute bottom-0 right-0 rounded-md bg-[#F16126] py-[16px] px-[25px] text-white">
-                    Subscribe
-                  </button>
+                  <span className="mt-3 flex md:mt-0 md:block">
+                    <button className=" bottom-0 right-0 rounded-md bg-[#F16126] py-[16px] px-[25px] text-white md:absolute">
+                      Subscribe
+                    </button>
+                  </span>
                 </div>
               </Fade>
             </div>

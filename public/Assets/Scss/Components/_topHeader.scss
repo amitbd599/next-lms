@@ -1,18 +1,22 @@
-// Top Header Section Css
-
 .top__header {
   button {
     span,
     svg {
+      -webkit-transition: all 0.2s linear;
+      -o-transition: all 0.2s linear;
       transition: all 0.2s linear;
     }
     &:hover {
       span {
         color: #f16126;
+        -webkit-transition: all 0.2s linear;
+        -o-transition: all 0.2s linear;
         transition: all 0.2s linear;
       }
       svg {
         color: #f16126;
+        -webkit-transition: all 0.2s linear;
+        -o-transition: all 0.2s linear;
         transition: all 0.2s linear;
       }
     }

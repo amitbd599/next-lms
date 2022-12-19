@@ -7,13 +7,11 @@ const Event = ({ item }) => {
     <div className="itemContainer relative flex justify-center">
       <div className=" rounded-lg px-4 py-4 shadow-lg duration-300 ease-in-out hover:shadow-xl">
         <div className="img__file relative overflow-hidden  rounded-md">
-          <Fade>
-            <img
-              className="w-full object-cover"
-              src={item.thumbnail}
-              alt="Next LMS"
-            />
-          </Fade>
+          <img
+            className="w-full object-cover"
+            src={item.thumbnail}
+            alt="Next LMS"
+          />
           <Fade bottom>
             <span className="absolute bottom-2 right-2 z-10 rounded-full bg-[#F16126] px-3 py-1 text-sm text-white">
               21 Jan, 2023

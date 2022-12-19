@@ -154,7 +154,7 @@ const ContactComponent = () => {
                       name="txtname"
                       rows="10"
                       cols="50"
-                      maxlength="200"
+                      maxLength="200"
                       placeholder="Massage"
                       className="w-full rounded-md border border-[#E9ECEF] px-4 py-3 text-sm"
                     ></textarea>

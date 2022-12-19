@@ -1,6 +1,6 @@
 const blogData = [
   {
-    title: "How can I learn to focus well?",
+    title: "How can I learn to focus well us?",
     thumbnail: "/Assets/Images/blogs/Blog_1.png",
     date: "Jan 10, 2023",
     des: "When you meditate, you're essentially training your brain to focus on one thing for an extended period of time.",

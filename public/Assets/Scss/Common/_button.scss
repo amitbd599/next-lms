@@ -19,6 +19,7 @@
   text-decoration: none;
   text-transform: none;
   -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -40,6 +41,7 @@
     -ms-transform-origin: center;
     transform-origin: center;
     -webkit-transition: background 0.3s linear, width 0.3s linear;
+    -o-transition: background 0.3s linear, width 0.3s linear;
     transition: background 0.3s linear, width 0.3s linear;
   }
   .text {
@@ -49,6 +51,7 @@
     display: block;
     text-align: left;
     -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     text-transform: uppercase;
     text-decoration: none;
@@ -62,6 +65,7 @@
     position: absolute;
     background: #e8e8e8;
     -webkit-transition: width 0.5s ease-out, left 0.3s ease-out;
+    -o-transition: width 0.5s ease-out, left 0.3s ease-out;
     transition: width 0.5s ease-out, left 0.3s ease-out;
   }
   .bottom-key-1 {
@@ -72,6 +76,7 @@
     position: absolute;
     background: #e8e8e8;
     -webkit-transition: width 0.5s ease-out, right 0.3s ease-out;
+    -o-transition: width 0.5s ease-out, right 0.3s ease-out;
     transition: width 0.5s ease-out, right 0.3s ease-out;
   }
   .bottom-key-2 {
@@ -82,6 +87,7 @@
     position: absolute;
     background: #e8e8e8;
     -webkit-transition: width 0.5s ease-out, right 0.3s ease-out;
+    -o-transition: width 0.5s ease-out, right 0.3s ease-out;
     transition: width 0.5s ease-out, right 0.3s ease-out;
   }
   &:hover {
@@ -125,6 +131,7 @@
   border-top: 3px solid var(--color);
   border-left: 3px solid var(--color);
   -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
   transition: 0.5s;
 }
 
@@ -140,6 +147,7 @@
   border-right: 3px solid var(--color);
   border-bottom: 3px solid var(--color);
   -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
   transition: 0.5s;
 }
 
