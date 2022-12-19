@@ -21,7 +21,7 @@ const BlogComponents = () => {
             {blogData.map((item, index) => (
               <div
                 key={index}
-                className="col-span-12 mb-16 md:col-span-6 md:mb-20 lg:col-span-4 lg:mb-28 xl:mb-20"
+                className="col-span-12 mb-32 sm:mb-20 md:col-span-6 md:mb-20 lg:col-span-4 lg:mb-28 xl:mb-20"
               >
                 <Blog item={item} />
               </div>

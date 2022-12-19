@@ -35,7 +35,7 @@ const CourseAdvisorComponent = () => {
         <div className="container mx-auto mt-12 lg:mt-14">
           <div className="flex justify-center">
             <div className="px-2 text-center md:px-[50px] lg:px-[150px]">
-              <h2 className="text-[35px] font-semibold lg:text-[48px]">
+              <h2 className="text-[28px] font-semibold sm:text-[35px] lg:text-[48px]">
                 <Fade bottom>Become An Advisor</Fade>
               </h2>
               <Fade bottom>

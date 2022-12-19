@@ -100,7 +100,7 @@ const GalleryComponent = () => {
                           }}
                           className="shape absolute top-0 left-0 z-10"
                         >
-                          <BiFullscreen className="text-[80px]" />
+                          <BiFullscreen className="text-[50px] md:text-[80px]" />
                         </div>
                       </div>
                     ))}

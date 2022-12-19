@@ -7,6 +7,12 @@
       border: none;
       margin: 0;
       padding: 0;
+      @media #{$md-device} {
+        display: block;
+      }
+      @media #{$sm-device} {
+        display: block;
+      }
     }
 
     .react-tabs__tab {
@@ -24,9 +30,13 @@
       }
       @media #{$md-device} {
         margin-bottom: 10px;
+        display: inline-block;
+        padding: 12px 18px;
       }
       @media #{$sm-device} {
         margin-bottom: 10px;
+        display: inline-block;
+        padding: 12px 18px;
       }
     }
 
@@ -36,6 +46,14 @@
       border-radius: 5px;
       padding: 12px 30px;
       color: #fff;
+      @media #{$md-device} {
+        display: inline-block;
+        padding: 12px 18px;
+      }
+      @media #{$sm-device} {
+        display: inline-block;
+        padding: 12px 18px;
+      }
     }
     .react-tabs__tab-panel {
       margin-top: 50px;

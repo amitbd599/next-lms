@@ -17,10 +17,10 @@ const ErrorComponent = () => {
         {/* Error Info */}
         <div className="container mx-auto ">
           <div className="flex items-center justify-center">
-            <div className="px-[15px] md:px-[50px] lg:px-[150px] xl:px-[250px]">
+            <div className=" md:px-[50px] lg:px-[150px] xl:px-[250px]">
               <div className="text-center">
                 <Fade bottom>
-                  <h2 className="text-[30px] font-semibold leading-[40px] md:text-[40px] md:leading-[50px]">
+                  <h2 className="text-[25px] font-semibold leading-[30px] sm:text-[30px] sm:leading-[35px]">
                     Opps! Things you are looking for doesn’t exists!
                   </h2>
                 </Fade>

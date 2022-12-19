@@ -43,7 +43,7 @@ const CourseDetailsComponent = () => {
           <div className="grid grid-cols-12 gap-3 xl:gap-6">
             <div className="relative  col-span-12 lg:col-span-8">
               {/* Intro Advisor */}
-              <div className="rounded-md bg-[#002147] px-10 py-8 shadow-lg">
+              <div className="rounded-md bg-[#002147] px-3 py-8 shadow-lg sm:px-5 md:px-10">
                 <div>
                   <Fade bottom>
                     <h2 className="text-[25px] font-semibold text-white md:text-[35px]">
@@ -51,11 +51,11 @@ const CourseDetailsComponent = () => {
                     </h2>
                   </Fade>
                 </div>
-                <div className="mt-4 flex gap-4 md:mt-6">
+                <div className="mt-4 flex gap-2 sm:gap-4 md:mt-6">
                   <div>
                     <Fade bottom>
                       <img
-                        className="w-[80px] rounded-full "
+                        className="w-[60px] rounded-full sm:w-[80px] "
                         src="/Assets/Images/advisors/Advisor_1.png"
                         alt="Next LMS"
                       />
@@ -227,7 +227,7 @@ const CourseDetailsComponent = () => {
                         <div>
                           <Fade>
                             <div>
-                              <h2 className="text-[25px] font-medium">
+                              <h2 className="text-[20px] font-medium sm:text-[25px]">
                                 Getting Started with MERN Stack Development
                               </h2>
                               <p className="mt-3 text-sm leading-relaxed">
@@ -274,11 +274,11 @@ const CourseDetailsComponent = () => {
                                       <AccordionItem key={index}>
                                         <AccordionItemHeading>
                                           <AccordionItemButton>
-                                            <div className="flex w-full items-center justify-between pl-8  ">
-                                              <span className="text-sm">
+                                            <div className="w-full items-center justify-between pl-8 sm:flex  ">
+                                              <span className="inline-block text-sm">
                                                 {item.title}
                                               </span>
-                                              <span className="rounded-full bg-[#F16126] px-2 py-0.5 text-xs">
+                                              <span className="inline-block rounded-full bg-[#F16126] px-2 py-0.5 text-xs">
                                                 6 Lecture - 96 Min
                                               </span>
                                             </div>

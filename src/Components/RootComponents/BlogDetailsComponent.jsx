@@ -43,19 +43,19 @@ const BlogDetailsComponent = () => {
                   <Fade>
                     <div className="mt-2 flex gap-3">
                       <div className="flex items-center gap-2 border-r-2 pr-3">
-                        <span>
+                        <span className="hidden sm:block">
                           <FaUserAlt className="text-sm text-[#F16126]" />
                         </span>
                         <span className="text-sm">Admin</span>
                       </div>
                       <div className="flex items-center gap-2 border-r-2 pr-3">
-                        <span>
+                        <span className="hidden sm:block">
                           <FaHistory className="text-sm text-[#F16126]" />
                         </span>
                         <span className="text-sm">Jan 10, 2022 </span>
                       </div>
                       <div className="flex items-center gap-2 pr-3">
-                        <span>
+                        <span className="hidden sm:block">
                           <FaRegEye className="text-sm text-[#F16126]" />
                         </span>
                         <span className="text-sm">Jan 10, 2022 </span>
@@ -234,10 +234,10 @@ const BlogDetailsComponent = () => {
                   </Fade>
                 </div>
                 {/* Tag and Search Box */}
-                <div className="mt-8 block items-center justify-between border-b border-[#E9ECEF] pb-10 md:flex">
+                <div className="mt-8 hidden items-center justify-between border-b border-[#E9ECEF] pb-10 sm:block md:flex">
                   <Fade>
                     <div className="tag ">
-                      <div className="flex items-center gap-4">
+                      <div className="flex items-center gap-2 md:gap-4">
                         <span className="text-lg font-semibold text-[#333]">
                           Tags :
                         </span>

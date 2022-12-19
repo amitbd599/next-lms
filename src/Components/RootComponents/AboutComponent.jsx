@@ -42,7 +42,7 @@ const AboutComponent = () => {
       <IntroSection title={"About US"} />
 
       {/* ============ About Details  ============*/}
-      <div className="aboutDetails mt-[40px] overflow-hidden py-[80px] md:py-[60px] lg:py-[70px] xl:py-[80px]">
+      <div className="aboutDetails mt-[40px] overflow-hidden pt-[80px]  md:py-[60px] lg:py-[70px] xl:py-[80px]">
         <div className="container mx-auto">
           <div className="grid grid-cols-12 gap-5">
             <div className="col-span-12 md:pr-[120px] lg:col-span-6">
@@ -56,7 +56,7 @@ const AboutComponent = () => {
                         alt=""
                       />
                     </div>
-                    <div className="shape_1">
+                    <div className="shape_1 hidden sm:block">
                       <img
                         className="w-[120px] object-cover"
                         src="/Assets/Images/shape/shape_8.png"
@@ -138,7 +138,7 @@ const AboutComponent = () => {
           <div className="grid grid-cols-12 gap-5">
             <div className="col-span-12 lg:col-span-6">
               <div>
-                <h2 className="relative z-10 flex gap-3 text-[40px] font-semibold text-[#333]">
+                <h2 className="relative z-10 flex gap-3 text-[32px] font-semibold text-[#333] md:text-[40px]">
                   <Fade bottom>
                     <span>Popular</span>
                     <span className="text-[#F16126]">Courses</span>{" "}
@@ -241,7 +241,7 @@ const AboutComponent = () => {
           <div className="grid grid-cols-12 gap-5">
             <div className="col-span-12 lg:col-span-6">
               <div>
-                <h2 className="relative z-10 flex gap-3 text-[40px] font-semibold text-[#333]">
+                <h2 className="relative z-10 flex gap-3 text-[32px] font-semibold text-[#333] md:text-[40px]">
                   <Fade bottom>
                     <span>Course</span>
                     <span className="text-[#F16126]">Advisor</span>{" "}
@@ -287,11 +287,11 @@ const AboutComponent = () => {
             ))}
           </div>
         </div>
-        {/* Become An Instructor */}
+        {/* Become An Advisor */}
         <div className="container mx-auto mt-12 lg:mt-14">
           <div className="flex justify-center">
             <div className="px-2 text-center md:px-[50px] lg:px-[150px]">
-              <h2 className="text-[35px] font-semibold lg:text-[48px]">
+              <h2 className="text-[28px] font-semibold sm:text-[35px] lg:text-[48px]">
                 <Fade bottom>Become An Advisor</Fade>
               </h2>
               <Fade bottom>
@@ -323,7 +323,7 @@ const AboutComponent = () => {
           <div className="grid grid-cols-12 gap-5">
             <div className="col-span-12 lg:col-span-6">
               <div>
-                <h2 className="relative z-10 flex gap-3 text-[40px] font-semibold text-[#333]">
+                <h2 className="relative z-10 flex gap-3 text-[32px] font-semibold text-[#333] md:text-[40px]">
                   <Fade bottom>
                     <span>Students</span>
                     <span className="text-[#F16126]">Says</span>{" "}
@@ -363,7 +363,7 @@ const AboutComponent = () => {
           <div className="grid grid-cols-12 gap-5">
             <div className="col-span-12 lg:col-span-6">
               <div>
-                <h2 className="relative z-10 flex gap-3 text-[40px] font-semibold text-[#333]">
+                <h2 className="relative z-10 flex gap-3 text-[32px] font-semibold text-[#333] md:text-[40px]">
                   <Fade bottom>
                     <span>Our</span>
                     <span className="text-[#F16126]">Partner</span>{" "}

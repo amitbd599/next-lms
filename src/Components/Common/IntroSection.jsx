@@ -11,7 +11,7 @@ const IntroSection = (item) => {
             <div>
               <div>
                 <Fade>
-                  <h2 className="text-[48px] font-semibold text-white">
+                  <h2 className="text-[36px] font-semibold text-white sm:text-[48px]">
                     {item.title}
                   </h2>
                 </Fade>

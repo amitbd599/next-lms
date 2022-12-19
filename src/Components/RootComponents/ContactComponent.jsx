@@ -105,7 +105,7 @@ const ContactComponent = () => {
             <div className="col-span-12 mt-8 lg:col-span-5 lg:mt-0">
               <div>
                 <Fade bottom>
-                  <h2 className="mb-10 inline border-b-4 border-[#333] pb-1 text-[28px] font-semibold md:text-[35px]">
+                  <h2 className="mb-10 inline border-b-4 border-[#333] pb-1 text-[22px] font-semibold sm:text-[28px] md:text-[35px]">
                     Send Us Message Anytime
                   </h2>
                 </Fade>

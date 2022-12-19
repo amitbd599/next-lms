@@ -22,7 +22,7 @@ const FAQComponent = () => {
       {/* ============ Intro Section ============*/}
       <IntroSection title={"FAQ"} />
       {/* ============ FAQ ============ */}
-      <div className="faqSection gridCourses py-[50px] md:py-[60px] lg:py-[70px] xl:py-[80px]">
+      <div className="faqSection gridCourses py-[20px] md:py-[60px] lg:py-[70px] xl:py-[80px]">
         {/* Heading text */}
         <div className="container mx-auto">
           <div className="grid grid-cols-12 gap-5">
@@ -30,7 +30,7 @@ const FAQComponent = () => {
               <div className="flex justify-center text-center md:px-10 lg:px-40">
                 <div>
                   <Fade>
-                    <h2 className="text-[35px] font-semibold">
+                    <h2 className="text-[28px] font-semibold sm:text-[35px]">
                       We Are Always Ready To Help You
                     </h2>
                   </Fade>
@@ -54,7 +54,7 @@ const FAQComponent = () => {
               <div className="itemOverview mt-4">
                 <div className="md:px-10 lg:px-[100px]">
                   <Tabs>
-                    <div className="flex justify-center">
+                    <div className=" justify-center md:flex">
                       <TabList>
                         {/* Tab Header STUDENTS */}
                         <Tab>STUDENTS</Tab>
