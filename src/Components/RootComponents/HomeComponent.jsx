@@ -293,7 +293,7 @@ const HomeComponent = () => {
                   </div>
                 </div>
 
-                <div className="mt-8 md:mt-6">
+                <div className="mt-8 flex justify-center md:mt-6">
                   <Fade bottom>
                     <div className="input__search relative block justify-center md:flex">
                       <input
@@ -302,7 +302,7 @@ const HomeComponent = () => {
                         placeholder="Enter Course Name"
                       />
                       <span className="mt-3 flex justify-center md:block">
-                        <button className="top-[7px] flex h-[50px] items-center gap-2 rounded-md bg-[#F16126] px-4 py-2 text-white sm:right-[-16px] md:absolute md:right-[128px] lg:right-[7px] xl:right-[53px]">
+                        <button className="top-[7px] flex h-[50px] items-center gap-2 rounded-md bg-[#F16126] px-4 py-2 text-white sm:right-[-16px] md:absolute md:right-[128px] lg:right-[7px] xl:right-[8px]">
                           <span>
                             <FaSearch />
                           </span>
